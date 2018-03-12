@@ -1,0 +1,3 @@
+"apache/ap_rotor4.wav"  "hldm-br/cracklife/apache/ap_rotor4.wav"
+"apache/ap_whine1.wav"  "hldm-br/cracklife/apache/ap_whine1.wav"
+"weapons/mortarhit.wav" "hldm-br/cracklife/weapons/mortarhit.wav"
