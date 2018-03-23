@@ -1,6 +1,6 @@
 // Crack-Life 1 sentences file. DO NOT MODIFY THIS SHIT -R4to0
 
-// HUMAN GRUNTS
+// Human Grunts - Grenade
 HG_GREN0 hldm-br/cracklife/hgrunt/clik(p120) grenade1 clik
 HG_GREN1 hldm-br/cracklife/hgrunt/(t30) grenade2 clik
 HG_GREN2 hldm-br/cracklife/hgrunt/clik grenade3 clik
@@ -9,7 +9,7 @@ HG_GREN4 hldm-br/cracklife/hgrunt/clik(p110) grenade3 clik(p110)
 HG_GREN5 hldm-br/cracklife/hgrunt/clik grenade3 clik
 HG_GREN6 hldm-br/cracklife/hgrunt/clik grenade1 clik(p120)
 
-// Player Alert
+// Human Grunts - Player Alert
 HG_ALERT0 hldm-br/cracklife/hgrunt/(t30) freeman1(t20 p105), clik(p110)
 HG_ALERT1 hldm-br/cracklife/hgrunt/clik(p110) freeman2 clik
 HG_ALERT2 hldm-br/cracklife/hgrunt/clik freeman1 clik
@@ -18,13 +18,13 @@ HG_ALERT4 hldm-br/cracklife/hgrunt/(t20) freeman3, clik(p110) clik
 HG_ALERT5 hldm-br/cracklife/hgrunt/(t20) freeman2 clik
 HG_ALERT6 hldm-br/cracklife/hgrunt/(t30) freeman1 clik(p120)
 
-// Monster Alert
+// Human Grunts - Monster Alert
 HG_MONST0 hldm-br/cracklife/hgrunt/clik (t40) alien1 clik
 HG_MONST1 hldm-br/cracklife/hgrunt/clik alien2 clik(p120)
 HG_MONST2 hldm-br/cracklife/hgrunt/clik(p120) alien3 clik
 HG_MONST3 hldm-br/cracklife/hgrunt/clik clik (t30) alien2 clik(p120)
 
-// Take cover
+// Human Grunts - Take cover
 HG_COVER0 hldm-br/cracklife/hgrunt/clik (t30) cover1 (t0) clik
 HG_COVER1 hldm-br/cracklife/hgrunt/clik (t45) cover2 (t10) clik
 HG_COVER2 hldm-br/cracklife/hgrunt/clik (t45) cover3 (t10) clik
@@ -34,13 +34,13 @@ HG_COVER5 hldm-br/cracklife/hgrunt/clik(p120) cover3 clik
 HG_COVER6 hldm-br/cracklife/hgrunt/clik (t40) cover1 clik
 HG_COVER7 hldm-br/cracklife/hgrunt/clik (t40) cover2 clik
 
-// Throw grenade
+// Human Grunts - Throw grenade
 HG_THROW0 hldm-br/cracklife/hgrunt/clik(p120) throw1 (e100) clik
 HG_THROW1 hldm-br/cracklife/hgrunt/clik (t30) throw2 clik
 HG_THROW2 hldm-br/cracklife/hgrunt/clik (t35) throw3 clik(p120)
 HG_THROW3 hldm-br/cracklife/hgrunt/clik(p110) throw1 clik
  
-// Taunt
+// Human Grunts - Taunt
 HG_TAUNT0 hldm-br/cracklife/hgrunt/clik (t30 e75) taunt1 clik
 HG_TAUNT1 hldm-br/cracklife/hgrunt/clik(p120) (t40) taunt2 clik
 HG_TAUNT2 hldm-br/cracklife/hgrunt/clik (t40) taunt3 clik
@@ -48,18 +48,18 @@ HG_TAUNT3 hldm-br/cracklife/hgrunt/clik (t40) taunt4 clik
 HG_TAUNT4 hldm-br/cracklife/hgrunt/clik(p120) taunt5 clik
 HG_TAUNT5 hldm-br/cracklife/hgrunt/clik(p110) taunt6 clik
 
-// Charge
+// Human Grunts - Charge
 HG_CHARGE0 hldm-br/cracklife/hgrunt/clik charge1 clik
 HG_CHARGE1 hldm-br/cracklife/hgrunt/clik(p110) charge2 clik
 HG_CHARGE2 hldm-br/cracklife/hgrunt/clik(p120) charge3 clik
 HG_CHARGE3 hldm-br/cracklife/hgrunt/clik charge4 clik(p120)
 
-// Idle
+// Human Grunts - Idle
 HG_IDLE0 hgrunt/gr_idle1
 HG_IDLE1 hgrunt/gr_idle2
 HG_IDLE2 hgrunt/gr_idle3
 
-//narrative
+// Human Grunts - Narrative
 
 //HG_SNOOP1A hldm-br/cracklife/hgrunt/c2a2_hg_chat1a // cracklife_07_a2
 //HG_SNOOP2A hldm-br/cracklife/hgrunt/c2a2_hg_chat2a // cracklife_07_a2
@@ -539,10 +539,7 @@ HEV_DET5 fvox/blip blip blip, antitoxin_shot(e25) radiation_detected(e50), onehu
 //HEV_GR2r fvox/range eighteen meters
 
 
-// BARNEY
-
-// BARNEY
-
+// Barney - Follow Player
 BA_OK0 hldm-br/cracklife/barney/ba_iwish
 BA_OK1 barney/hellonicesuit
 BA_OK2 barney/imwithyou
@@ -551,6 +548,7 @@ BA_OK4 hldm-br/cracklife/barney/ba_watchit
 BA_OK5 hldm-br/cracklife/barney/fuckyou
 BA_OK6 hldm-br/cracklife/barney/fuckyou
 
+// Barney - Stop following player
 BA_WAIT0 hldm-br/cracklife/taunts/taunt1
 BA_WAIT1 hldm-br/cracklife/agrunt/ag_alert2
 BA_WAIT2 hldm-br/cracklife/plats/elevmove2
@@ -558,6 +556,7 @@ BA_WAIT3 hldm-br/cracklife/ambience/alienflyby1
 BA_WAIT4 hldm-br/cracklife/player/pl_slosh1
 BA_WAIT5 hldm-br/cracklife/player/pl_ladder1
 
+// Barney - First seen player
 BA_HELLO0 barney/hellonicesuit
 BA_HELLO1 barney/howdy
 BA_HELLO2 barney/howyoudoing
@@ -566,6 +565,7 @@ BA_HELLO4 barney/hayfella
 BA_HELLO5 barney/heybuddy
 BA_HELLO6 barney/heyfella
 
+// Barney - Questioning other NPC
 BA_QUESTION0 barney/beertopside
 BA_QUESTION1 barney/wayout
 BA_QUESTION2 barney/getanyworse
@@ -582,6 +582,7 @@ BA_QUESTION12 barney/somethingmoves
 BA_QUESTION13 barney/thinking
 BA_QUESTION14 barney/missingleg
 
+// Barney - Answering other NPC
 BA_ANSWER0 barney/noway
 BA_ANSWER1 barney/ireckon
 BA_ANSWER2 barney/soundsright
@@ -605,12 +606,13 @@ BA_ANSWER19 barney/bequiet
 BA_ANSWER20 barney/youtalkmuch
 BA_ANSWER21 barney/alreadyasked
 
-// player is staring at scientist
+// Barney - player is staring at scientist
 BA_STARE0 barney/yup
 BA_STARE1 barney/yessir
 BA_STARE2 barney/howyoudoing
 BA_STARE3 barney/heyfella
 
+// Barney - Idling
 BA_IDLE0 barney/whatisthat
 BA_IDLE1 barney/coldone
 BA_IDLE2 barney/guyresponsible
@@ -623,6 +625,7 @@ BA_IDLE8 barney/ambush
 BA_IDLE9 barney/survive
 BA_IDLE10 barney/stophere
 
+// Barney - Attacking
 BA_ATTACK0 barney/openfire(e50)
 BA_ATTACK1 barney/openfire(s50)
 BA_ATTACK2 barney/standback
@@ -630,26 +633,31 @@ BA_ATTACK3 barney/whatisthat
 BA_ATTACK4 barney/diebloodsucker
 BA_ATTACK5 barney/aimforhead
 
+// Barney - Hear something*
 BA_HEAR0 barney/hearsomething
 BA_HEAR1 barney/icanhear
 BA_HEAR2 barney/soundsbad
 
+// Barney - Smells something
 BA_SMELL0 barney/somethingdied
 BA_SMELL1 barney/somethingstinky
 BA_SMELL2 barney/stench
 
+// Barney - Heals (?)
 BA_CUREA barney/checkwounds
 BA_CUREB barney/youneedmedic
 BA_CUREC barney/realbadwound
 
+// Barney - Getting hit
 BA_SCARED0 barney/donthurtem
 BA_SCARED1 barney/leavealone
 
+// Barney - Wounded
 BA_WOUND0 barney/imhit
 BA_WOUND1 barney/hitbad
 BA_MORTAL0 barney/imdead
 
-//If you shoot Barney:
+// Barney - If you shoot Barney:
 BA_SHOT0 hldm-br/cracklife/barney/ba_whoathere
 BA_SHOT1 hldm-br/cracklife/barney/ba_dotoyou
 BA_SHOT2 hldm-br/cracklife/barney/ba_watchit
@@ -657,7 +665,7 @@ BA_SHOT3 hldm-br/cracklife/barney/ba_whatyou
 BA_SHOT4 hldm-br/cracklife/barney/ba_friends
 BA_SHOT5 hldm-br/cracklife/barney/ba_pissme
 
-//When Barney’s really pissed at you:
+// Barney - When Barney’s really pissed at you:
 BA_MAD0 hldm-br/cracklife/barney/ba_stepoff
 BA_MAD1 hldm-br/cracklife/barney/ba_iwish
 BA_MAD2 hldm-br/cracklife/barney/ba_uwish
@@ -666,7 +674,7 @@ BA_MAD4 hldm-br/cracklife/barney/ba_endline
 BA_MAD5 hldm-br/cracklife/barney/ba_dontmake
 BA_MAD6 hldm-br/cracklife/barney/ba_tomb
 
-//When Barney’s killed something
+// Barney - When Barney’s killed something
 BA_KILL0 barney/ba_gotone
 BA_KILL1 barney/ba_another
 BA_KILL2 barney/ba_buttugly
@@ -676,27 +684,27 @@ BA_KILL5 barney/ba_firepl
 BA_KILL6 barney/ba_bring
 
 
-//If you use Barney in Hazard Course
+// Barney - If you use Barney in Hazard Course
 BA_HAZ_OK0 holo/tr_ba_use
 
-//If you unuse Barney in Hazard Course
+// Barney - If you unuse Barney in Hazard Course
 BA_HAZ_WAIT0 holo/tr_ba_unuse
 
-//Barney in Hazard Course
+// Barney - Barney in Hazard Course
 BA_LIGHTSON holo/tr_ba_lightson
 
-//If you use Barney before the disaster
+// Barney - If you use Barney before the disaster
 BA_POK0 hldm-br/cracklife/barney/ba_post
 BA_POK1 hldm-br/cracklife/barney/ba_duty
 BA_POK2 hldm-br/cracklife/barney/ba_raincheck
 BA_POK3 hldm-br/cracklife/barney/ba_later
 
-// if barney can't follow you
+// Barney - if barney can't follow you
 BA_STOP0 barney/stop1
 BA_STOP1 barney/stop2
 //BA_STOP2 barney/stop3
 
-//scripted_sentences
+// Barney - scripted sentences
 
 //c1a0 scripts
 //BA_LATE hldm-br/cracklife/barney/c1a0_ba_late //cracklife_c00
@@ -737,16 +745,16 @@ BA_AGAIN barney/c2a1_ba_again
 
 //c2a4 scripts
 BA_LONGNITE barney/c2a4_ba_longnite
-BA_STERIL barney/c2a4_ba_steril
+//BA_STERIL barney/c2a4_ba_steril //cracklife_c10
 BA_TEACH barney/c2a4_ba_teach
 
 BA_ARG1A barney/c2a4_ba_arg1a
 BA_ARG2A barney/c2a4_ba_arg3a
 BA_ARG3A barney/c2a4_ba_arg5a
 
-BA_TAU1A hldm-br/cracklife/barney/c2a4_ba_1tau
-BA_TAU3A hldm-br/cracklife/barney/c2a4_ba_3tau
-BA_TAU5A hldm-br/cracklife/barney/c2a4_ba_5tau
+//BA_TAU1A hldm-br/cracklife/barney/c2a4_ba_1tau //cracklife_c10
+//BA_TAU3A hldm-br/cracklife/barney/c2a4_ba_3tau //cracklife_c10
+//BA_TAU5A hldm-br/cracklife/barney/c2a4_ba_5tau //cracklife_c10
 
 //BA_ALIVE hldm-br/cracklife/barney/c2a4_ba_alive //cracklife_c10
 
@@ -764,7 +772,7 @@ BA_SNIPED hldm-br/cracklife/barney/c2a5_ba_sniped
 BA_PORTSTAY hldm-br/cracklife/barney/c3a2_ba_stay
 
 //crack life scripts
-BA_FUCKYOU hldm-br/cracklife/barney/fuckyou
+//BA_FUCKYOU hldm-br/cracklife/barney/fuckyou
 
 
 // SCIENTIST
@@ -1010,27 +1018,27 @@ SC_POK4 hldm-br/cracklife/scientist/sci_somewhere_cl1
 
 //SC_1MUMBLE hldm-br/cracklife/scientist/c1a0_sci_mumble //cracklife_c01_a1
 
-SC_DISA hldm-br/cracklife/scientist/c1a0_sci_disa
-SC_DIS1A hldm-br/cracklife/scientist/c1a0_sci_dis1a
-SC_DIS1B hldm-br/cracklife/scientist/c1a0_sci_dis1b
-SC_DIS1C hldm-br/cracklife/scientist/c1a0_sci_dis1c
-SC_DIS1D hldm-br/cracklife/scientist/c1a0_sci_dis1d
+//SC_DISA hldm-br/cracklife/scientist/c1a0_sci_disa //cracklife_c01_a2
+//SC_DIS1A hldm-br/cracklife/scientist/c1a0_sci_dis1a //cracklife_c01_a2
+//SC_DIS1B hldm-br/cracklife/scientist/c1a0_sci_dis1b //cracklife_c01_a2
+//SC_DIS1C hldm-br/cracklife/scientist/c1a0_sci_dis1c //cracklife_c01_a2
+//SC_DIS1D hldm-br/cracklife/scientist/c1a0_sci_dis1d //cracklife_c01_a2
 
-SC_DIS2A hldm-br/cracklife/scientist/c1a0_sci_dis2a
-SC_DIS3A hldm-br/cracklife/scientist/c1a0_sci_dis3a
+//SC_DIS2A hldm-br/cracklife/scientist/c1a0_sci_dis2a //cracklife_c01_a2
+//SC_DIS3A hldm-br/cracklife/scientist/c1a0_sci_dis3a //cracklife_c01_a2
 SC_DIS4A hldm-br/cracklife/scientist/c1a0_sci_dis4a
-SC_DIS5A hldm-br/cracklife/scientist/c1a0_sci_dis5a
-SC_DIS6A hldm-br/cracklife/scientist/c1a0_sci_dis6a
-SC_DIS7A hldm-br/cracklife/scientist/c1a0_sci_dis7a
+//SC_DIS5A hldm-br/cracklife/scientist/c1a0_sci_dis5a //cracklife_c01_a2
+//SC_DIS6A hldm-br/cracklife/scientist/c1a0_sci_dis6a //cracklife_c01_a2
+//SC_DIS7A hldm-br/cracklife/scientist/c1a0_sci_dis7a //cracklife_c01_a2
 SC_DIS8A hldm-br/cracklife/scientist/c1a0_sci_dis8a
-SC_DIS9A hldm-br/cracklife/scientist/c1a0_sci_dis9a
-SC_DIS10A hldm-br/cracklife/scientist/c1a0_sci_dis10a
-SC_DIS11A hldm-br/cracklife/scientist/c1a0_sci_dis11a
-SC_DIS12A hldm-br/cracklife/scientist/c1a0_sci_dis12a
-SC_DIS13A hldm-br/cracklife/scientist/c1a0_sci_dis13a
-SC_DIS14A hldm-br/cracklife/scientist/c1a0_sci_dis14a
-SC_DIS15A hldm-br/cracklife/scientist/c1a0_sci_dis15a
-SC_DIS16A hldm-br/cracklife/scientist/c1a0_sci_dis16a
+//SC_DIS9A hldm-br/cracklife/scientist/c1a0_sci_dis9a //cracklife_c01_a2
+//SC_DIS10A hldm-br/cracklife/scientist/c1a0_sci_dis10a //cracklife_c01_a2
+//SC_DIS11A hldm-br/cracklife/scientist/c1a0_sci_dis11a //cracklife_c01_a2
+//SC_DIS12A hldm-br/cracklife/scientist/c1a0_sci_dis12a //cracklife_c01_a2
+//SC_DIS13A hldm-br/cracklife/scientist/c1a0_sci_dis13a //cracklife_c01_a2
+//SC_DIS14A hldm-br/cracklife/scientist/c1a0_sci_dis14a //cracklife_c16_a4
+//SC_DIS15A hldm-br/cracklife/scientist/c1a0_sci_dis15a //cracklife_c01_a2
+SC_DIS16A hldm-br/cracklife/scientist/c1a0_sci_dis16a //cracklife_c01_a2
 SC_DIS17A hldm-br/cracklife/scientist/c1a0_sci_dis17a
 
 //SC_GETAWAY hldm-br/cracklife/scientist/c1a0_sci_getaway // crakclife_c01_a1
@@ -1085,7 +1093,7 @@ SC_ATLAST scientist/c1a3_sci_atlast
 //SC_SILO1A hldm-br/cracklife/scientist/c1a3_sci_silo1a //cracklife_c04
 //SC_SILO2A hldm-br/cracklife/scientist/c1a3_sci_silo2a //cracklife_c04
 //SC_TEAM hldm-br/cracklife/scientist/c1a3_sci_team //cracklife_c04
-SC_THANKGOD hldm-br/cracklife/scientist/c1a3_sci_thankgod
+//SC_THANKGOD hldm-br/cracklife/scientist/c1a3_sci_thankgod //cracklife_c16_a4
 
 //c1a4 scripts
 SC_TRAINEND scientist/c1a4_sci_trainend
@@ -1105,8 +1113,8 @@ SC_TENT hldm-br/cracklife/scientist/c1a4_sci_tent
 SC_ARG1A scientist/c2a4_sci_arg2a
 SC_ARG2A scientist/c2a4_sci_arg4a
 
-SC_TAU2A hldm-br/cracklife/scientist/c2a4_sci_2tau
-SC_TAU4A hldm-br/cracklife/scientist/c2a4_sci_4tau
+//SC_TAU2A hldm-br/cracklife/scientist/c2a4_sci_2tau //cracklife_c10
+//SC_TAU4A hldm-br/cracklife/scientist/c2a4_sci_4tau //cracklife_c10
 
 //SC_1PSURG hldm-br/cracklife/scientist/c2a4_sci_scanner //cracklife_c10
 //SC_2PSURG hldm-br/cracklife/scientist/c2a4_sci_sugicaloff //cracklife_c10
@@ -1138,7 +1146,7 @@ SC_LEBUZ hldm-br/cracklife/scientist/c2a5_sci_lebuz
 //SC_FOOL hldm-br/cracklife/scientist/c3a2_sci_fool //cracklife_c13_a4
 
 //crack life
-SC_FAIL hldm-br/cracklife/scientist/fail
+//SC_FAIL hldm-br/cracklife/scientist/fail
 
 //miscellaneous useful scripts
 //SC_LETYOUIN scientist/letyouin //cracklife_c08_a2
@@ -1300,7 +1308,7 @@ GM_6MUMBLE hldm-br/cracklife/gman/gman_mumble6
 
 //PLAYER
 
-PL_TAUNT0 hldm-br/cracklife/taunts/taunt1
-PL_TAUNT1 hldm-br/cracklife/taunts/taunt2
-PL_TAUNT2 hldm-br/cracklife/taunts/taunt3
-PL_TAUNT3 hldm-br/cracklife/taunts/taunt4
+//PL_TAUNT0 hldm-br/cracklife/taunts/taunt1
+//PL_TAUNT1 hldm-br/cracklife/taunts/taunt2
+//PL_TAUNT2 hldm-br/cracklife/taunts/taunt3
+//PL_TAUNT3 hldm-br/cracklife/taunts/taunt4
