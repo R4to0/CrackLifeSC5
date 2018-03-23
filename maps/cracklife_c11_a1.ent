@@ -386,7 +386,7 @@
 "netname" "squad1"
 "targetname" "squad1_leader"
 "spawnflags" "160"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -498,7 +498,7 @@
 "angles" "0 0 0"
 "pose" "1"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -823,7 +823,7 @@
 "angles" "0 166 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -836,7 +836,7 @@
 "angles" "0 166 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -849,7 +849,7 @@
 "angles" "0 279 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -989,7 +989,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 287 0"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -3434,7 +3434,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 296 0"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -5430,7 +5430,7 @@
 }
 {
 "origin" "-2417 319 36"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
@@ -5451,7 +5451,7 @@
 }
 {
 "origin" "-2080 320 36"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
@@ -5997,7 +5997,7 @@
 }
 {
 "origin" "-3168 -1152 32"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
@@ -6019,7 +6019,7 @@
 }
 {
 "origin" "-3232 -1232 32"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
@@ -6546,7 +6546,7 @@
 "angles" "0 248 0"
 "targetname" "grunt_bridgerunner"
 "spawnflags" "128"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }

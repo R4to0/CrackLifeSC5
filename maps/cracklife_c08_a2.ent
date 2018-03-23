@@ -8185,7 +8185,7 @@
 "angles" "0 270 0"
 "targetname" "drag_grunt1"
 "spawnflags" "130"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8198,7 +8198,7 @@
 "angles" "0 270 0"
 "targetname" "drag_grunt2"
 "spawnflags" "130"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }

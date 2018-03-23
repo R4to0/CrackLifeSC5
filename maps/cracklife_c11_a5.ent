@@ -202,7 +202,7 @@
 {
 "origin" "-3000 -5728 -1814"
 "targetname" "pg_spawns"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "maxhullsize" "0 0 0"
@@ -221,7 +221,7 @@
 {
 "origin" "-3000 -5588 -1814"
 "targetname" "pg_spawns"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "maxhullsize" "0 0 0"
@@ -663,7 +663,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 54 0"
 "body" "3"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -3820,7 +3820,7 @@
 }
 {
 "origin" "-1292 -4972 -1424"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "of_spawns"
@@ -3838,7 +3838,7 @@
 }
 {
 "origin" "-664 -3984 -1656"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "bb_spawns"
@@ -4072,7 +4072,7 @@
 }
 {
 "origin" "-254 -4084 -1644"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "bb_spawns"
@@ -4739,7 +4739,7 @@
 "angles" "0 119 0"
 "targetname" "talking_vent_grunt"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -4752,7 +4752,7 @@
 "angles" "0 90 0"
 "targetname" "truck_grunt"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -4892,7 +4892,7 @@
 "origin" "-2154 -4776 -1520"
 "angles" "0 90 0"
 "targetname" "spawn_fighters_1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "monstercount" "1"
@@ -4932,7 +4932,7 @@
 "origin" "-2306 -4560 -1520"
 "angles" "0 34 0"
 "targetname" "spawn_fighters_1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "monstercount" "1"
@@ -5056,7 +5056,7 @@
 "targetname" "impaled_grunt"
 "weapons" "3"
 "spawnflags" "18"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -5324,7 +5324,7 @@
 }
 {
 "origin" "-1107 -6696 -1793"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "maxhullsize" "0 0 0"
@@ -5343,7 +5343,7 @@
 }
 {
 "origin" "-1065 -6696 -1793"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "maxhullsize" "0 0 0"
@@ -5513,7 +5513,7 @@
 }
 {
 "origin" "-704 -6176 -1808"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "netname" "retreating_grunt_2"
@@ -5532,7 +5532,7 @@
 }
 {
 "origin" "-1072 -6272 -1808"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "netname" "retreating_grunt_1"
@@ -5597,7 +5597,7 @@
 }
 {
 "origin" "-960 -5276 -1824"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "netname" "decoy_grunt_1"
@@ -5676,7 +5676,7 @@
 {
 "origin" "-394 -5694 -1824"
 "trigger_target" "slave_reinforcement_script_1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "of_spawns"
@@ -5697,7 +5697,7 @@
 }
 {
 "origin" "-352 -5744 -1824"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "of_spawns"
@@ -5899,7 +5899,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "targetname" "grenade_tosser"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -6317,7 +6317,7 @@
 }
 {
 "origin" "-974 -4781 -1805"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "boiler_crab_spawner"
@@ -6335,7 +6335,7 @@
 }
 {
 "origin" "-1008 -4815 -1806"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "new_model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "monstertype" "monster_human_grunt"
 "targetname" "boiler_crab_spawner"
@@ -7073,7 +7073,7 @@
 "angles" "0 90 0"
 "weapons" "5"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -7085,7 +7085,7 @@
 "angles" "0 100 0"
 "weapons" "5"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -7335,7 +7335,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "targetname" "bustguy"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }

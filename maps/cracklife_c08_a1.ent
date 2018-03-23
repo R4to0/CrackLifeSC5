@@ -1412,7 +1412,7 @@
 "angles" "0 103 0"
 "targetname" "divera"
 "spawnflags" "131"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -1425,7 +1425,7 @@
 "angles" "0 270 0"
 "targetname" "diverb"
 "spawnflags" "131"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -1736,7 +1736,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 45 0"
 "pose" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -1747,7 +1747,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 280 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -2144,7 +2144,7 @@
 "angles" "0 180 0"
 "pose" "2"
 "body" "3"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }

@@ -2532,7 +2532,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 250 0"
 "body" "3"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -3982,7 +3982,7 @@
 "angles" "0 195 0"
 "body" "2"
 "spawnflags" "4"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_hgrunt_dead"
 }
@@ -5965,7 +5965,7 @@
 "angles" "0 239 0"
 "weapons" "3"
 "spawnflags" "3"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -6564,7 +6564,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 120 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -6805,7 +6805,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 37 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8331,7 +8331,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8342,7 +8342,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8353,7 +8353,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8815,7 +8815,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 323 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
@@ -8826,7 +8826,7 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt.txt"
+"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
 "model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
 "classname" "monster_human_grunt"
 }
