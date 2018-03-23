@@ -1038,7 +1038,7 @@ SC_DIS8A hldm-br/cracklife/scientist/c1a0_sci_dis8a
 //SC_DIS13A hldm-br/cracklife/scientist/c1a0_sci_dis13a //cracklife_c01_a2
 //SC_DIS14A hldm-br/cracklife/scientist/c1a0_sci_dis14a //cracklife_c16_a4
 //SC_DIS15A hldm-br/cracklife/scientist/c1a0_sci_dis15a //cracklife_c01_a2
-SC_DIS16A hldm-br/cracklife/scientist/c1a0_sci_dis16a //cracklife_c01_a2
+//SC_DIS16A hldm-br/cracklife/scientist/c1a0_sci_dis16a //cracklife_c01_a2
 SC_DIS17A hldm-br/cracklife/scientist/c1a0_sci_dis17a
 
 //SC_GETAWAY hldm-br/cracklife/scientist/c1a0_sci_getaway // crakclife_c01_a1
