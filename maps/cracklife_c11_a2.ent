@@ -5856,7 +5856,7 @@
 "attenuation" "1"
 "entity" "barney"
 "listener" "player"
-"sentence" "!BA_HELPME"
+"sentence" "+hldm-br/cracklife/barney/c2a5_ba_helpme.wav"
 "spawnflags" "4"
 "classname" "scripted_sentence"
 }

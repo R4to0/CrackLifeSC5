@@ -1279,7 +1279,7 @@
 "radius" "512"
 "refire" "3"
 "entity" "start_gman"
-"sentence" "!GM_SUIT"
+"sentence" "+hldm-br/cracklife/gman/gman_suit.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4078,7 +4078,7 @@
 "radius" "512"
 "refire" "3"
 "entity" "warzone_gman"
-"sentence" "!GM_NASTY"
+"sentence" "+hldm-br/cracklife/gman/gman_nasty.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4153,7 +4153,7 @@
 "radius" "512"
 "refire" "3"
 "entity" "bridge_gman"
-"sentence" "!GM_POTENTIAL"
+"sentence" "+hldm-br/cracklife/gman/gman_potential.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4190,7 +4190,7 @@
 "refire" "3"
 "attenuation" "3"
 "entity" "train_gman"
-"sentence" "!GM_STEPIN"
+"sentence" "+hldm-br/cracklife/gman/gman_stepin.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4205,7 +4205,7 @@
 "refire" "3"
 "attenuation" "3"
 "entity" "train_gman"
-"sentence" "!GM_OTHERWISE"
+"sentence" "+hldm-br/cracklife/gman/gman_otherwise.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4243,7 +4243,7 @@
 "refire" "3"
 "attenuation" "3"
 "entity" "train_gman"
-"sentence" "!GM_1CHOOSE"
+"sentence" "+hldm-br/cracklife/gman/gman_choose1.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4258,7 +4258,7 @@
 "refire" "3"
 "attenuation" "1"
 "entity" "train_gman"
-"sentence" "!GM_2CHOOSE"
+"sentence" "+hldm-br/cracklife/gman/gman_choose2.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4433,7 +4433,7 @@
 "refire" "3"
 "attenuation" "3"
 "entity" "end_gman"
-"sentence" "!GM_WISE"
+"sentence" "+hldm-br/cracklife/gman/gman_wise.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4508,7 +4508,7 @@
 "refire" "3"
 "attenuation" "1"
 "entity" "train_gman"
-"sentence" "!GM_WONTWORK"
+"sentence" "+hldm-br/cracklife/gman/gman_nowork.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }
@@ -4560,7 +4560,7 @@
 "refire" "3"
 "attenuation" "3"
 "entity" "loser_gman"
-"sentence" "!GM_REGRET"
+"sentence" "+hldm-br/cracklife/gman/gman_noreg.wav"
 "spawnflags" "12"
 "classname" "scripted_sentence"
 }

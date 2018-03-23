@@ -9186,7 +9186,7 @@
 "radius" "512"
 "refire" "3"
 "targetname" "barnspeak"
-"sentence" "!BA_LATE"
+"sentence" "+hldm-br/cracklife/barney/c1a0_ba_late.wav"
 "entity" "barney1"
 "spawnflags" "5"
 "classname" "scripted_sentence"

@@ -3827,7 +3827,7 @@
 "refire" "3"
 "volume" "10"
 "entity" "talker"
-"sentence" "!sc_icky"
+"sentence" "+hldm-br/cracklife/scientist/c2a3_sci_icky.wav"
 "spawnflags" "5"
 "classname" "scripted_sentence"
 }

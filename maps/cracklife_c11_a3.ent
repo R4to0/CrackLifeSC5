@@ -2251,7 +2251,7 @@
 "attenuation" "2"
 "targetname" "sci_speak"
 "entity" "scientist"
-"sentence" "!SC_BOOBIE"
+"sentence" "+hldm-br/cracklife/scientist/c2a5_sci_boobie.wav"
 "spawnflags" "4"
 "classname" "scripted_sentence"
 }

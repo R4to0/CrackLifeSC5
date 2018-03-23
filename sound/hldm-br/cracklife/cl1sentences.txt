@@ -61,21 +61,21 @@ HG_IDLE2 hgrunt/gr_idle3
 
 //narrative
 
-HG_SNOOP1A hldm-br/cracklife/hgrunt/c2a2_hg_chat1a
-HG_SNOOP2A hldm-br/cracklife/hgrunt/c2a2_hg_chat2a
-HG_SNOOP3A hldm-br/cracklife/hgrunt/c2a2_hg_chat3a
-HG_SNOOP4A hldm-br/cracklife/hgrunt/c2a2_hg_chat4a
-HG_SNOOP5A hldm-br/cracklife/hgrunt/c2a2_hg_chat5a
+//HG_SNOOP1A hldm-br/cracklife/hgrunt/c2a2_hg_chat1a // cracklife_07_a2
+//HG_SNOOP2A hldm-br/cracklife/hgrunt/c2a2_hg_chat2a // cracklife_07_a2
+//HG_SNOOP3A hldm-br/cracklife/hgrunt/c2a2_hg_chat3a // cracklife_07_a2
+//HG_SNOOP4A hldm-br/cracklife/hgrunt/c2a2_hg_chat4a // cracklife_07_a2
+//HG_SNOOP5A hldm-br/cracklife/hgrunt/c2a2_hg_chat5a // cracklife_07_a2
 
-HG_DRAG1A hldm-br/cracklife/hgrunt/c2a3_hg_1drag
-HG_DRAG2A hldm-br/cracklife/hgrunt/c2a3_hg_2drag
-HG_DRAG3A hldm-br/cracklife/hgrunt/c2a3_hg_3drag
-HG_DRAG4A hldm-br/cracklife/hgrunt/c2a3_hg_4drag
-HG_DRAG5A hldm-br/cracklife/hgrunt/c2a3_hg_5drag
-HG_DRAG6A hldm-br/cracklife/hgrunt/c2a3_hg_laugh
+//HG_DRAG1A hldm-br/cracklife/hgrunt/c2a3_hg_1drag // cracklife_08_a2
+//HG_DRAG2A hldm-br/cracklife/hgrunt/c2a3_hg_2drag // cracklife_08_a2
+//HG_DRAG3A hldm-br/cracklife/hgrunt/c2a3_hg_3drag // cracklife_08_a2
+//HG_DRAG4A hldm-br/cracklife/hgrunt/c2a3_hg_4drag // cracklife_08_a2
+//HG_DRAG5A hldm-br/cracklife/hgrunt/c2a3_hg_5drag // cracklife_08_a2
+//HG_DRAG6A hldm-br/cracklife/hgrunt/c2a3_hg_laugh // cracklife_08_a2
 
-HG_SUCKS hgrunt/hg_sucks
-HG_CIVVIES hgrunt/hg_civvies
+//HG_SUCKS hgrunt/hg_sucks //cracklife_c04
+//HG_CIVVIES hgrunt/hg_civvies //cracklife_c07_a2
 
 // BASE COMPUTER
 // C1A0 intercom\
@@ -699,41 +699,41 @@ BA_STOP1 barney/stop2
 //scripted_sentences
 
 //c1a0 scripts
-BA_LATE hldm-br/cracklife/barney/c1a0_ba_late
-BA_HEADDOWN hldm-br/cracklife/barney/c1a0_ba_headdown
-BA_DESK hldm-br/cracklife/barney/c1a0_ba_desk
-BA_BUTTON hldm-br/cracklife/barney/c1a0_ba_button
-BA_HEVNO hldm-br/cracklife/barney/c1a0_ba_hevno
-BA_HEVYES hldm-br/cracklife/barney/c1a0_ba_hevyes
+//BA_LATE hldm-br/cracklife/barney/c1a0_ba_late //cracklife_c00
+//BA_HEADDOWN hldm-br/cracklife/barney/c1a0_ba_headdown //cracklife_c01_a1
+//BA_DESK hldm-br/cracklife/barney/c1a0_ba_desk //cracklife_c01_a1
+//BA_BUTTON hldm-br/cracklife/barney/c1a0_ba_button //cracklife_c01_a1
+//BA_HEVNO hldm-br/cracklife/barney/c1a0_ba_hevno //cracklife_c01_a1
+//BA_HEVYES hldm-br/cracklife/barney/c1a0_ba_hevyes //cracklife_c01_a1
 
 //c1a1 scripts
-BA_GLAD hldm-br/cracklife/barney/c1a1_ba_glad
+//BA_GLAD hldm-br/cracklife/barney/c1a1_ba_glad // cracklife_c02_a1
 
 //c1a2 scripts
-BA_BULLSQUID hldm-br/cracklife/barney/c1a2_ba_bullsquid
+//BA_BULLSQUID hldm-br/cracklife/barney/c1a2_ba_bullsquid // cracklife_c03
 BA_ZOMBIE2 barney/c1a2_ba_2zomb
 BA_ZOMBIE4 barney/c1a2_ba_4zomb
-BA_CLIMB hldm-br/cracklife/barney/c1a2_ba_climb
+//BA_CLIMB hldm-br/cracklife/barney/c1a2_ba_climb // cracklife_c03
 BA_SLEW barney/c1a2_ba_slew
-BA_SURFACE hldm-br/cracklife/barney/c1a2_ba_surface
+//BA_SURFACE hldm-br/cracklife/barney/c1a2_ba_surface // cracklife_c03
 BA_TOPSIDE barney/c1a2_ba_top
 
 //c1a4 scripts
-BA_WHISPER hldm-br/cracklife/barney/c1a4_ba_wisp
-BA_TENTACLE hldm-br/cracklife/barney/c1a4_ba_octo1
+//BA_WHISPER hldm-br/cracklife/barney/c1a4_ba_wisp //cracklife_c05_a2
+//BA_TENTACLE hldm-br/cracklife/barney/c1a4_ba_octo1 //cracklife_c05_a2
 
 //c2a1 scripts
-BA_HUB1A hldm-br/cracklife/barney/c2a1_ba_hub1a
-BA_HUB2A barney/c2a1_ba_hub2a
+//BA_HUB1A hldm-br/cracklife/barney/c2a1_ba_hub1a //cracklife_c06
+//BA_HUB2A barney/c2a1_ba_hub2a //cracklife_c06
 BA_AGAIN barney/c2a1_ba_again
 
 //c2a2 scripts
 
-BA_LAUNCH hldm-br/cracklife/barney/c2a2_ba_launch
+//BA_LAUNCH hldm-br/cracklife/barney/c2a2_ba_launch //cracklife_c07_a1
 
 //c2a3 scripts
 
-BA_ASSN hldm-br/cracklife/barney/c2a3_ba_assn
+//BA_ASSN hldm-br/cracklife/barney/c2a3_ba_assn //cracklife_c08_a2
 
 //c2a4 scripts
 BA_LONGNITE barney/c2a4_ba_longnite
@@ -748,19 +748,19 @@ BA_TAU1A hldm-br/cracklife/barney/c2a4_ba_1tau
 BA_TAU3A hldm-br/cracklife/barney/c2a4_ba_3tau
 BA_TAU5A hldm-br/cracklife/barney/c2a4_ba_5tau
 
-BA_ALIVE hldm-br/cracklife/barney/c2a4_ba_alive
+//BA_ALIVE hldm-br/cracklife/barney/c2a4_ba_alive //cracklife_c10
 
 //c2a5 scripts
 BA_LETMEOUT barney/c2a5_ba_letout
 BA_RPG hldm-br/cracklife/barney/c2a5_ba_rpg
-BA_HELPME hldm-br/cracklife/barney/c2a5_ba_helpme
+//BA_HELPME hldm-br/cracklife/barney/c2a5_ba_helpme //cracklife_c11_a2
 BA_SNIPED hldm-br/cracklife/barney/c2a5_ba_sniped
 
 //c3a2 scripts
-BA_SURVEY2A hldm-br/cracklife/barney/c3a2_ba_2surv
-BA_SURVEY4A hldm-br/cracklife/barney/c3a2_ba_4surv
-BA_SURVEY6A hldm-br/cracklife/barney/c3a2_ba_6surv
-BA_SURVEY8A hldm-br/cracklife/barney/c3a2_ba_8surv
+//BA_SURVEY2A hldm-br/cracklife/barney/c3a2_ba_2surv //cracklife_c13_a4
+//BA_SURVEY4A hldm-br/cracklife/barney/c3a2_ba_4surv //cracklife_c13_a4
+//BA_SURVEY6A hldm-br/cracklife/barney/c3a2_ba_6surv //cracklife_c13_a4
+//BA_SURVEY8A hldm-br/cracklife/barney/c3a2_ba_8surv //cracklife_c13_a4
 BA_PORTSTAY hldm-br/cracklife/barney/c3a2_ba_stay
 
 //crack life scripts
@@ -1008,7 +1008,7 @@ SC_POK4 hldm-br/cracklife/scientist/sci_somewhere_cl1
 
 //narrative audio
 
-SC_1MUMBLE hldm-br/cracklife/scientist/c1a0_sci_mumble
+//SC_1MUMBLE hldm-br/cracklife/scientist/c1a0_sci_mumble //cracklife_c01_a1
 
 SC_DISA hldm-br/cracklife/scientist/c1a0_sci_disa
 SC_DIS1A hldm-br/cracklife/scientist/c1a0_sci_dis1a
@@ -1033,36 +1033,36 @@ SC_DIS15A hldm-br/cracklife/scientist/c1a0_sci_dis15a
 SC_DIS16A hldm-br/cracklife/scientist/c1a0_sci_dis16a
 SC_DIS17A hldm-br/cracklife/scientist/c1a0_sci_dis17a
 
-SC_GETAWAY hldm-br/cracklife/scientist/c1a0_sci_getaway
-SC_GMORN hldm-br/cracklife/scientist/c1a0_sci_gm
-SC_BIGDAY hldm-br/cracklife/scientist/c1a0_sci_bigday
-SC_SAMPLE hldm-br/cracklife/scientist/c1a0_sci_samp
+//SC_GETAWAY hldm-br/cracklife/scientist/c1a0_sci_getaway // crakclife_c01_a1
+//SC_GMORN hldm-br/cracklife/scientist/c1a0_sci_gm // crakclife_c01_a1
+//SC_BIGDAY hldm-br/cracklife/scientist/c1a0_sci_bigday // crakclife_c01_a1
+//SC_SAMPLE hldm-br/cracklife/scientist/c1a0_sci_samp // crakclife_c01_a1
 //SC_NOTTHAT scientist/c1a0_sci_desk
 
-SC_LOCK1A hldm-br/cracklife/scientist/c1a0_sci_lock1a
-SC_LOCK2A hldm-br/cracklife/scientist/c1a0_sci_lock2a
-SC_LOCK3A hldm-br/cracklife/scientist/c1a0_sci_lock3a
-SC_LOCK4A hldm-br/cracklife/scientist/c1a0_sci_lock4a
-SC_LOCK5A hldm-br/cracklife/scientist/c1a0_sci_lock5a
-SC_LOCK6A hldm-br/cracklife/scientist/c1a0_sci_lock6a
-SC_LOCK7A hldm-br/cracklife/scientist/c1a0_sci_lock7a
-SC_LOCK8A hldm-br/cracklife/scientist/c1a0_sci_lock8a
+//SC_LOCK1A hldm-br/cracklife/scientist/c1a0_sci_lock1a // crakclife_c01_a2
+//SC_LOCK2A hldm-br/cracklife/scientist/c1a0_sci_lock2a // crakclife_c01_a2
+//SC_LOCK3A hldm-br/cracklife/scientist/c1a0_sci_lock3a // crakclife_c01_a2
+//SC_LOCK4A hldm-br/cracklife/scientist/c1a0_sci_lock4a // crakclife_c01_a2
+//SC_LOCK5A hldm-br/cracklife/scientist/c1a0_sci_lock5a // crakclife_c01_a2
+//SC_LOCK6A hldm-br/cracklife/scientist/c1a0_sci_lock6a // crakclife_c01_a2
+//SC_LOCK7A hldm-br/cracklife/scientist/c1a0_sci_lock7a // crakclife_c01_a2
+//SC_LOCK8A hldm-br/cracklife/scientist/c1a0_sci_lock8a // crakclife_c01_a2
 //SC_LOCK9A scientist/c1a0_sci_lock9a
 
-SC_CRIT1A hldm-br/cracklife/scientist/c1a0_sci_crit1a
-SC_CRIT2A hldm-br/cracklife/scientist/c1a0_sci_crit2a
-SC_CRIT3A hldm-br/cracklife/scientist/c1a0_sci_crit3a
+//SC_CRIT1A hldm-br/cracklife/scientist/c1a0_sci_crit1a // crakclife_c01_a1
+//SC_CRIT2A hldm-br/cracklife/scientist/c1a0_sci_crit2a // crakclife_c01_a1
+//SC_CRIT3A hldm-br/cracklife/scientist/c1a0_sci_crit3a // crakclife_c01_a1
 
-SC_CTRL1A hldm-br/cracklife/scientist/c1a0_sci_ctrl1a
-SC_CTRL2A hldm-br/cracklife/scientist/c1a0_sci_ctrl2a
-SC_CTRL3A hldm-br/cracklife/scientist/c1a0_sci_ctrl3a
-SC_CTRL4A hldm-br/cracklife/scientist/c1a0_sci_ctrl4a
+//SC_CTRL1A hldm-br/cracklife/scientist/c1a0_sci_ctrl1a // crakclife_c01_a1
+//SC_CTRL2A hldm-br/cracklife/scientist/c1a0_sci_ctrl2a // crakclife_c01_a1
+//SC_CTRL3A hldm-br/cracklife/scientist/c1a0_sci_ctrl3a // crakclife_c01_a1
+//SC_CTRL4A hldm-br/cracklife/scientist/c1a0_sci_ctrl4a // crakclife_c01_a1
 
-SC_CONSOLE1A hldm-br/cracklife/scientist/c1a1_sci_1scan
-SC_CONSOLE2A hldm-br/cracklife/scientist/c1a1_sci_2scan
-SC_CONSOLE3A hldm-br/cracklife/scientist/c1a1_sci_3scan
-SC_CONSOLE4A hldm-br/cracklife/scientist/c1a1_sci_4scan
-SC_CONSOLE5A hldm-br/cracklife/scientist/c1a1_sci_5scan
+//SC_CONSOLE1A hldm-br/cracklife/scientist/c1a1_sci_1scan // crakclife_c02_a1
+//SC_CONSOLE2A hldm-br/cracklife/scientist/c1a1_sci_2scan // crakclife_c02_a1
+//SC_CONSOLE3A hldm-br/cracklife/scientist/c1a1_sci_3scan // crakclife_c02_a1
+//SC_CONSOLE4A hldm-br/cracklife/scientist/c1a1_sci_4scan // crakclife_c02_a1
+//SC_CONSOLE5A hldm-br/cracklife/scientist/c1a1_sci_5scan // crakclife_c02_a1
 //SC_CONSOLERPT scientist/c1a1_sci_scanrpt
 
 //c1a2scripts
@@ -1072,34 +1072,34 @@ SC_ZOMBIE3A scientist/c1a2_sci_3zomb
 SC_ZOMBIE5A scientist/c1a2_sci_5zomb
 SC_ZOMBIE6A scientist/c1a2_sci_6zomb
 
-SC_DANGLING hldm-br/cracklife/scientist/c1a2_sci_dangling
-SC_DARKROOM scientist/c1a2_sci_darkroom
+//SC_DANGLING hldm-br/cracklife/scientist/c1a2_sci_dangling // cracklife_c03
+//SC_DARKROOM scientist/c1a2_sci_darkroom // cracklife_c03
 SC_ELEVATOR scientist/c1a2_sci_elevator
-SC_LOUNGE hldm-br/cracklife/scientist/c1a2_sci_lounge
-SC_TRANSMISSION hldm-br/cracklife/scientist/c1a2_sci_transm
+//SC_LOUNGE hldm-br/cracklife/scientist/c1a2_sci_lounge // cracklife_c03
+//SC_TRANSMISSION hldm-br/cracklife/scientist/c1a2_sci_transm // cracklife_c03
 
 //c1a3 scripts
-SC_1MAN hldm-br/cracklife/scientist/c1a3_sci_1man
+//SC_1MAN hldm-br/cracklife/scientist/c1a3_sci_1man //cracklife_c04
 SC_ATLAST scientist/c1a3_sci_atlast
-SC_RESCUED hldm-br/cracklife/scientist/c1a3_sci_rescued
-SC_SILO1A hldm-br/cracklife/scientist/c1a3_sci_silo1a
-SC_SILO2A hldm-br/cracklife/scientist/c1a3_sci_silo2a
-SC_TEAM hldm-br/cracklife/scientist/c1a3_sci_team
+//SC_RESCUED hldm-br/cracklife/scientist/c1a3_sci_rescued
+//SC_SILO1A hldm-br/cracklife/scientist/c1a3_sci_silo1a //cracklife_c04
+//SC_SILO2A hldm-br/cracklife/scientist/c1a3_sci_silo2a //cracklife_c04
+//SC_TEAM hldm-br/cracklife/scientist/c1a3_sci_team //cracklife_c04
 SC_THANKGOD hldm-br/cracklife/scientist/c1a3_sci_thankgod
 
 //c1a4 scripts
 SC_TRAINEND scientist/c1a4_sci_trainend
 SC_ROCKET hldm-br/cracklife/scientist/c1a4_sci_rocket
 SC_BLIND scientist/c1a4_sci_blind
-SC_POWEROFF hldm-br/cracklife/scientist/c1a4_sci_pwroff
-SC_POWERON hldm-br/cracklife/scientist/c1a4_sci_pwr
-SC_GENER hldm-br/cracklife/scientist/c1a4_sci_gener
-SC_TRUST hldm-br/cracklife/scientist/c1a4_sci_trust
+//SC_POWEROFF hldm-br/cracklife/scientist/c1a4_sci_pwroff //cracklife_c05_a2
+//SC_POWERON hldm-br/cracklife/scientist/c1a4_sci_pwr //cracklife_c05_a2
+//SC_GENER hldm-br/cracklife/scientist/c1a4_sci_gener //cracklife_c05_a2
+//SC_TRUST hldm-br/cracklife/scientist/c1a4_sci_trust //cracklife_c04
 SC_TENT hldm-br/cracklife/scientist/c1a4_sci_tent
 
 //c2a3 scripts
-SC_ICKY hldm-br/cracklife/scientist/c2a3_sci_icky
-SC_TRACK hldm-br/cracklife/scientist/c2a3_sci_track
+//SC_ICKY hldm-br/cracklife/scientist/c2a3_sci_icky //cracklife_c08_a1
+//SC_TRACK hldm-br/cracklife/scientist/c2a3_sci_track //cracklife_c08_a2
 
 //c2a4 scripts
 SC_ARG1A scientist/c2a4_sci_arg2a
@@ -1108,40 +1108,40 @@ SC_ARG2A scientist/c2a4_sci_arg4a
 SC_TAU2A hldm-br/cracklife/scientist/c2a4_sci_2tau
 SC_TAU4A hldm-br/cracklife/scientist/c2a4_sci_4tau
 
-SC_1PSURG hldm-br/cracklife/scientist/c2a4_sci_scanner
-SC_2PSURG hldm-br/cracklife/scientist/c2a4_sci_sugicaloff
-SC_3PSURG hldm-br/cracklife/scientist/c2a4_sci_surgury
+//SC_1PSURG hldm-br/cracklife/scientist/c2a4_sci_scanner //cracklife_c10
+//SC_2PSURG hldm-br/cracklife/scientist/c2a4_sci_sugicaloff //cracklife_c10
+//SC_3PSURG hldm-br/cracklife/scientist/c2a4_sci_surgury //cracklife_c10
 SC_ALLDIE scientist/c2a4_sci_alldie
-SC_LETOUT hldm-br/cracklife/scientist/c2a4_sci_letout
+//SC_LETOUT hldm-br/cracklife/scientist/c2a4_sci_letout //cracklife_c10
 
 //c2a5 scripts
-SC_BOOBIE hldm-br/cracklife/scientist/c2a5_sci_boobie
+//SC_BOOBIE hldm-br/cracklife/scientist/c2a5_sci_boobie //cracklife_c11_a3
 SC_LEBUZ hldm-br/cracklife/scientist/c2a5_sci_lebuz
 
 //c3a2 scripts
 
-SC_STRAWS scientist/c3a2_sci_straws
-SC_GLUON2A hldm-br/cracklife/scientist/c3a2_sci_2glu
-SC_FLOOD scientist/c3a2_sci_flood
-SC_LINGER scientist/c3a2_sci_linger
-SC_SURVEY1A hldm-br/cracklife/scientist/c3a2_sci_1surv
-SC_SURVEY3A hldm-br/cracklife/scientist/c3a2_sci_3surv
-SC_SURVEY5A hldm-br/cracklife/scientist/c3a2_sci_5surv
-SC_SURVEY7A hldm-br/cracklife/scientist/c3a2_sci_7surv
-SC_LJUMP hldm-br/cracklife/scientist/c3a2_sci_ljump
-SC_UPHERE hldm-br/cracklife/scientist/c3a2_sci_uphere
-SC_PORTAL hldm-br/cracklife/scientist/c3a2_sci_portal
-SC_PORTOPEN hldm-br/cracklife/scientist/c3a2_sci_portopen
-SC_POSITION hldm-br/cracklife/scientist/c3a2_sci_position
-SC_FOREVER hldm-br/cracklife/scientist/c3a2_sci_forever
-SC_NOTYET hldm-br/cracklife/scientist/c3a2_sci_notyet
-SC_FOOL hldm-br/cracklife/scientist/c3a2_sci_fool
+//SC_STRAWS scientist/c3a2_sci_straws //cracklife_c13_a1
+//SC_GLUON2A hldm-br/cracklife/scientist/c3a2_sci_2glu //cracklife_c13_a1
+//SC_FLOOD scientist/c3a2_sci_flood //cracklife_c13_a2
+//SC_LINGER scientist/c3a2_sci_linger //cracklife_c13_a2
+//SC_SURVEY1A hldm-br/cracklife/scientist/c3a2_sci_1surv //cracklife_c13_a4
+//SC_SURVEY3A hldm-br/cracklife/scientist/c3a2_sci_3surv //cracklife_c13_a4
+//SC_SURVEY5A hldm-br/cracklife/scientist/c3a2_sci_5surv //cracklife_c13_a4
+//SC_SURVEY7A hldm-br/cracklife/scientist/c3a2_sci_7surv //cracklife_c13_a4
+//SC_LJUMP hldm-br/cracklife/scientist/c3a2_sci_ljump //cracklife_c13_a4
+//SC_UPHERE hldm-br/cracklife/scientist/c3a2_sci_uphere //cracklife_c13_a4
+//SC_PORTAL hldm-br/cracklife/scientist/c3a2_sci_portal //cracklife_c13_a4
+//SC_PORTOPEN hldm-br/cracklife/scientist/c3a2_sci_portopen //cracklife_c13_a4
+//SC_POSITION hldm-br/cracklife/scientist/c3a2_sci_position //cracklife_c13_a4
+//SC_FOREVER hldm-br/cracklife/scientist/c3a2_sci_forever //cracklife_c13_a4
+//SC_NOTYET hldm-br/cracklife/scientist/c3a2_sci_notyet //cracklife_c13_a4
+//SC_FOOL hldm-br/cracklife/scientist/c3a2_sci_fool //cracklife_c13_a4
 
 //crack life
 SC_FAIL hldm-br/cracklife/scientist/fail
 
 //miscellaneous useful scripts
-SC_LETYOUIN scientist/letyouin
+//SC_LETYOUIN scientist/letyouin //cracklife_c08_a2
 SC_OVERHERE scientist/overhere
 
 // outdoor
@@ -1276,27 +1276,27 @@ HOLO_USETRAIN holo/tr_holo_usetrain
 //GMAN
 
 //c1a0 narrative
-GM_1MUMBLE hldm-br/cracklife/gman/gman_mumble1
+//GM_1MUMBLE hldm-br/cracklife/gman/gman_mumble1 //cracklife_c01_a1
 GM_2MUMBLE hldm-br/cracklife/gman/gman_mumble2
 GM_3MUMBLE hldm-br/cracklife/gman/gman_mumble3
-GM_4MUMBLE hldm-br/cracklife/gman/gman_mumble4
-GM_5MUMBLE hldm-br/cracklife/gman/gman_mumble5
+//GM_4MUMBLE hldm-br/cracklife/gman/gman_mumble4 //cracklife_c01_a1
+//GM_5MUMBLE hldm-br/cracklife/gman/gman_mumble5 //cracklife_c01_a1
 GM_6MUMBLE hldm-br/cracklife/gman/gman_mumble6
 
 //c5 narrative
 //GM_OFFER gman/gman_offer [long version: what follows is chopped into sections]
 
 
-GM_SUIT hldm-br/cracklife/gman/gman_suit
-GM_NASTY hldm-br/cracklife/gman/gman_nasty
-GM_POTENTIAL hldm-br/cracklife/gman/gman_potential
-GM_STEPIN hldm-br/cracklife/gman/gman_stepin
-GM_OTHERWISE hldm-br/cracklife/gman/gman_otherwise
-GM_1CHOOSE hldm-br/cracklife/gman/gman_choose1
-GM_2CHOOSE hldm-br/cracklife/gman/gman_choose2
-GM_WISE hldm-br/cracklife/gman/gman_wise
-GM_REGRET hldm-br/cracklife/gman/gman_noreg
-GM_WONTWORK hldm-br/cracklife/gman/gman_nowork
+//GM_SUIT hldm-br/cracklife/gman/gman_suit //cracklife_c18
+//GM_NASTY hldm-br/cracklife/gman/gman_nasty //cracklife_c18
+//GM_POTENTIAL hldm-br/cracklife/gman/gman_potential //cracklife_c18
+//GM_STEPIN hldm-br/cracklife/gman/gman_stepin //cracklife_c18
+//GM_OTHERWISE hldm-br/cracklife/gman/gman_otherwise //cracklife_c18
+//GM_1CHOOSE hldm-br/cracklife/gman/gman_choose1 //cracklife_c18
+//GM_2CHOOSE hldm-br/cracklife/gman/gman_choose2 //cracklife_c18
+//GM_WISE hldm-br/cracklife/gman/gman_wise //cracklife_c18
+//GM_REGRET hldm-br/cracklife/gman/gman_noreg //cracklife_c18
+//GM_WONTWORK hldm-br/cracklife/gman/gman_nowork //cracklife_c18
 
 //PLAYER
 

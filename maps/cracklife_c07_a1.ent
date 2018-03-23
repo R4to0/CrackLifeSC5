@@ -369,7 +369,7 @@
 "refire" "29"
 "volume" "10"
 "attenuation" "1"
-"sentence" "!BA_LAUNCH"
+"sentence" "+hldm-br/cracklife/barney/c2a2_ba_launch.wav"
 "listener" "player"
 "spawnflags" "5"
 "classname" "scripted_sentence"
