@@ -8,5 +8,5 @@
 "hgrunt/gr_pain5.wav"   "hldm-br/cracklife/hgrunt/gr_pain5.wav"
 "hgrunt/gr_reload1.wav" "hldm-br/cracklife/hgrunt/gr_reload1.wav"
 "weapons/glauncher.wav" "hldm-br/cracklife/weapons/glauncher.wav"
-"weapons/sbarrel1.wav"  "hldm-br/cracklife/weapons/sbarrel1.wav"
+"weapons/sbarrel1.wav"  "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"
 "zombie/claw_miss2.wav" "hldm-br/cracklife/zombie/claw_miss2.wav"
