@@ -6350,7 +6350,7 @@
 "health" "10"
 "pitch" "50"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/weapons/sbarrel1.wav"
+"message" "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
