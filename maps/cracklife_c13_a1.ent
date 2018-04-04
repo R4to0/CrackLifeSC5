@@ -1373,7 +1373,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/doors/doormove8.wav"
+"message" "hldm-br/cracklife/debris/bustceiling.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -1465,7 +1465,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 36 0"
 "pose" "1"
-"model" "models/hldm-br/cracklife/scientist.mdl"
+"model" "models/hldm-br/cracklife/scientist_v2.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -1589,7 +1589,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 94 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -2834,7 +2834,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/techamb1.wav"
+"message" "hldm-br/cracklife/ambience/computalk1.wav"
 "health" "3"
 "pitch" "100"
 "pitchstart" "100"
@@ -3118,7 +3118,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound04a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -3131,7 +3131,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound04b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -3216,7 +3216,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -3229,7 +3229,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -3300,7 +3300,7 @@
 "body" "3"
 "targetname" "c3a2_gluonguy"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/scientist.mdl"
+"model" "models/hldm-br/cracklife/scientist_v2.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -3330,7 +3330,7 @@
 "TriggerTarget" "c3a2_restart"
 "TriggerCondition" "2"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/scientist.mdl"
+"model" "models/hldm-br/cracklife/scientist_v2.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -3582,7 +3582,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 274 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3616,7 +3616,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "door"
-"message" "hldm-br/cracklife/doors/doormove8.wav"
+"message" "hldm-br/cracklife/debris/bustceiling.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"

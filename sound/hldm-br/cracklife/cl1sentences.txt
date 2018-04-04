@@ -544,7 +544,7 @@ BA_OK0 hldm-br/cracklife/barney/ba_iwish
 BA_OK1 barney/hellonicesuit
 BA_OK2 barney/imwithyou
 BA_OK3 hldm-br/cracklife/barney/ba_stepoff
-BA_OK4 hldm-br/cracklife/barney/ba_watchit
+BA_OK4 hldm-br/cracklife/barney/ba_endline
 BA_OK5 hldm-br/cracklife/barney/fuckyou
 BA_OK6 hldm-br/cracklife/barney/fuckyou
 
@@ -553,8 +553,8 @@ BA_WAIT0 hldm-br/cracklife/taunts/taunt1
 BA_WAIT1 hldm-br/cracklife/agrunt/ag_alert2
 BA_WAIT2 hldm-br/cracklife/plats/elevmove2
 BA_WAIT3 hldm-br/cracklife/ambience/alienflyby1
-BA_WAIT4 hldm-br/cracklife/player/pl_slosh1
-BA_WAIT5 hldm-br/cracklife/player/pl_ladder1
+BA_WAIT4 hldm-br/cracklife/debris/beamstart1
+BA_WAIT5 hldm-br/cracklife/debris/bustglass1
 
 // Barney - First seen player
 BA_HELLO0 barney/hellonicesuit
@@ -660,15 +660,15 @@ BA_MORTAL0 barney/imdead
 // Barney - If you shoot Barney:
 BA_SHOT0 hldm-br/cracklife/barney/ba_whoathere
 BA_SHOT1 hldm-br/cracklife/barney/ba_dotoyou
-BA_SHOT2 hldm-br/cracklife/barney/ba_watchit
-BA_SHOT3 hldm-br/cracklife/barney/ba_whatyou
+BA_SHOT2 hldm-br/cracklife/barney/ba_endline
+BA_SHOT3 hldm-br/cracklife/barney/ba_tomb
 BA_SHOT4 hldm-br/cracklife/barney/ba_friends
-BA_SHOT5 hldm-br/cracklife/barney/ba_pissme
+BA_SHOT5 hldm-br/cracklife/barney/ba_iwish
 
 // Barney - When Barney’s really pissed at you:
 BA_MAD0 hldm-br/cracklife/barney/ba_stepoff
 BA_MAD1 hldm-br/cracklife/barney/ba_iwish
-BA_MAD2 hldm-br/cracklife/barney/ba_uwish
+BA_MAD2 hldm-br/cracklife/barney/ba_somuch
 BA_MAD3 hldm-br/cracklife/barney/ba_somuch
 BA_MAD4 hldm-br/cracklife/barney/ba_endline
 BA_MAD5 hldm-br/cracklife/barney/ba_dontmake
@@ -762,7 +762,7 @@ BA_ARG3A barney/c2a4_ba_arg5a
 BA_LETMEOUT barney/c2a5_ba_letout
 BA_RPG hldm-br/cracklife/barney/c2a5_ba_rpg
 //BA_HELPME hldm-br/cracklife/barney/c2a5_ba_helpme //cracklife_c11_a2
-BA_SNIPED hldm-br/cracklife/barney/c2a5_ba_sniped
+BA_SNIPED hldm-br/cracklife/barney/c2a5_ba_helpme
 
 //c3a2 scripts
 //BA_SURVEY2A hldm-br/cracklife/barney/c3a2_ba_2surv //cracklife_c13_a4
@@ -1009,10 +1009,10 @@ SC_NEXTSTATION holo/tr_sci_nextstation
 //If you use Scientists before the disaster
 
 SC_POK0 hldm-br/cracklife/scientist/sci_alone_cl1
-SC_POK1 hldm-br/cracklife/scientist/sci_bother_cl1
-SC_POK2 hldm-br/cracklife/scientist/sci_busy_cl1
+SC_POK1 hldm-br/cracklife/scientist/sci_alone_cl1
+SC_POK2 hldm-br/cracklife/scientist/sci_alone_cl1
 SC_POK3 hldm-br/cracklife/scientist/sci_aftertest_cl1
-SC_POK4 hldm-br/cracklife/scientist/sci_somewhere_cl1
+SC_POK4 hldm-br/cracklife/scientist/sci_alone_cl1
 
 //narrative audio
 
@@ -1030,7 +1030,7 @@ SC_DIS4A hldm-br/cracklife/scientist/c1a0_sci_dis4a
 //SC_DIS5A hldm-br/cracklife/scientist/c1a0_sci_dis5a //cracklife_c01_a2
 //SC_DIS6A hldm-br/cracklife/scientist/c1a0_sci_dis6a //cracklife_c01_a2
 //SC_DIS7A hldm-br/cracklife/scientist/c1a0_sci_dis7a //cracklife_c01_a2
-SC_DIS8A hldm-br/cracklife/scientist/c1a0_sci_dis8a
+SC_DIS8A common/null
 //SC_DIS9A hldm-br/cracklife/scientist/c1a0_sci_dis9a //cracklife_c01_a2
 //SC_DIS10A hldm-br/cracklife/scientist/c1a0_sci_dis10a //cracklife_c01_a2
 //SC_DIS11A hldm-br/cracklife/scientist/c1a0_sci_dis11a //cracklife_c01_a2
@@ -1183,41 +1183,41 @@ ROCKET6 ambience/rocket_groan4
 FAR_WAR0 ambience/(v50) distantmortar1
 FAR_WAR1 ambience/(v60) distantmortar2
 FAR_WAR2 ambience/(v50) distantmortar3
-FAR_WAR3 hldm-br/cracklife/ambience/(v15) biggun3
-FAR_WAR4 hldm-br/cracklife/ambience/(v20) rifle2
+FAR_WAR3 hldm-br/cracklife/ambience/(v15) biggun1
+FAR_WAR4 hldm-br/cracklife/ambience/(v20) rifle1
 FAR_WAR5 hldm-br/cracklife/ambience/(v10 p120) jetflyby1
-FAR_WAR6 hldm-br/cracklife/ambience/(v10) mgun_burst4
+FAR_WAR6 hldm-br/cracklife/ambience/(v10) mgun_burst1
 FAR_WAR7 ambience/(v30) distantmortar1 distantmortar3 distantmortar2
-FAR_WAR8 hldm-br/cracklife/ambience/(v10) biggun2 biggun2 biggun2
+FAR_WAR8 hldm-br/cracklife/ambience/(v10) biggun1 biggun1 biggun1
 FAR_WAR9 hldm-br/cracklife/ambience/(v15) mgun_burst1
-FAR_WAR10 hldm-br/cracklife/ambience/(v20) biggun1 rifle2
+FAR_WAR10 hldm-br/cracklife/ambience/(v20) biggun1 rifle1
 FAR_WAR11 ambience/(v60) distantmortar1 distantmortar1, distantmortar2, distantmortar1
 FAR_WAR12 ambience/(v30) distantmortar2, distantmortar2 distantmortar2 distantmortar2, distantmortar3 distantmortar1
-FAR_WAR13 hldm-br/cracklife/ambience/(v10) mgun_burst2
-FAR_WAR14 hldm-br/cracklife/ambience/(v15) mgun_burst3 mgun_burst3
+FAR_WAR13 hldm-br/cracklife/ambience/(v10) mgun_burst1
+FAR_WAR14 hldm-br/cracklife/ambience/(v15) mgun_burst1 mgun_burst1
 FAR_WAR15 hldm-br/cracklife/ambience/(v10) rifle1 rifle1
-FAR_WAR16 hldm-br/cracklife/ambience/(v10) biggun2, biggun2 biggun2
+FAR_WAR16 hldm-br/cracklife/ambience/(v10) biggun1, biggun1 biggun1
 
 // near war zone
-NEAR_WAR0 hldm-br/cracklife/ambience/(v60) mgun_burst3 mgun_burst3 mgun_burst3(v50)
-NEAR_WAR1 hldm-br/cracklife/ambience/(v60) rifle1 rifle2 rifle2 rifle1 rifle1
+NEAR_WAR0 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 mgun_burst1(v50)
+NEAR_WAR1 hldm-br/cracklife/ambience/(v60) rifle1 rifle1 rifle1 rifle1 rifle1
 NEAR_WAR2 hldm-br/cracklife/ambience/(v60) alienflyby1
-NEAR_WAR3 hldm-br/cracklife/ambience/(v60) biggun3 biggun3 biggun3
-NEAR_WAR4 hldm-br/cracklife/ambience/(v60) mgun_burst4 mgun_burst3 rifle1 mgun_burst4
+NEAR_WAR3 hldm-br/cracklife/ambience/(v60) biggun1 biggun1 biggun1
+NEAR_WAR4 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 rifle1 mgun_burst1
 NEAR_WAR5 hldm-br/cracklife/ambience/(v60) jetflyby1
-NEAR_WAR6 hldm-br/cracklife/ambience/(v60) mgun_burst4 mgun_burst3
+NEAR_WAR6 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1
 NEAR_WAR7 ambience/distantmortar1 distantmortar3 distantmortar2
-NEAR_WAR8 hldm-br/cracklife/ambience/(v60) biggun2 biggun2 biggun2 biggun2(v30)
-NEAR_WAR9 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 rifle2 mgun_burst3
-NEAR_WAR10 hldm-br/cracklife/agrunt/(v40) ag_fire1 ag_fire2 ag_fire2 ag_fire1
+NEAR_WAR8 hldm-br/cracklife/ambience/(v60) biggun1 biggun1 biggun1 biggun1(v30)
+NEAR_WAR9 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 rifle1 mgun_burst1
+NEAR_WAR10 hldm-br/cracklife/agrunt/(v40) ag_fire1 ag_fire1 ag_fire1 ag_fire1
 NEAR_WAR11 ambience/distantmortar1 distantmortar1, distantmortar2
-NEAR_WAR12 hldm-br/cracklife/ambience/(v60) mgun_burst2 mgun_burst2 mgun_burst3 mgun_burst2
+NEAR_WAR12 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 mgun_burst1 mgun_burst1
 
 
 
 // alien slave
 SLV_IDLE0 hldm-br/cracklife/aslave/slv_word1 
-SLV_IDLE1 hldm-br/cracklife/aslave/slv_word2
+SLV_IDLE1 hldm-br/cracklife/aslave/slv_word1
 SLV_IDLE2 hldm-br/cracklife/aslave/slv_word3
 SLV_IDLE3 hldm-br/cracklife/aslave/slv_word4
 SLV_IDLE4 hldm-br/cracklife/aslave/slv_word6

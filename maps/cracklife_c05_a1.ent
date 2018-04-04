@@ -327,7 +327,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 336 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -411,7 +411,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 315 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -429,7 +429,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 211 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -620,7 +620,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 336 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -2389,7 +2389,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/warn3.wav"
+"message" "hldm-br/cracklife/ambience/the_horror1.wav"
 "targetname" "gatesmash"
 "health" "4"
 "pitch" "100"
@@ -2921,7 +2921,7 @@
 "angles" "0 180 0"
 "spawnflags" "4"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3068,7 +3068,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 87 0"
 "targetname" "burst_door_zombie2"
-"model" "models/hldm-br/cracklife/zombie.mdl"
+"model" "models/hldm-br/cracklife/zombie_v2.mdl"
 "soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
 "classname" "monster_zombie"
 }
@@ -3178,7 +3178,7 @@
 "angles" "0 11 0"
 "spawnflags" "4"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3541,7 +3541,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 152 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3587,7 +3587,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 152 0"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid.mdl"
+"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3618,7 +3618,7 @@
 "angles" "0 180 0"
 "targetname" "spawn_squid"
 "soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"new_model" "models/hldm-br/cracklife/bullsquid.mdl"
+"new_model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
 "monstertype" "monster_bullchicken"
 "monstercount" "1"
 "delay" "1"

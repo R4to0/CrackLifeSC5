@@ -36,7 +36,7 @@ namespace CLSHOTGUN
 	const string S_DBA = "hldm-br/cracklife/weapons/dbarrel1_cl1.wav"; // Double shot
 	const string S_COCK = "hldm-br/cracklife/weapons/scock1_cl1.wav"; // cock gun
 	const string S_RE1 = "hldm-br/cracklife/weapons/reload1.wav";
-	const string S_RE3 = "hldm-br/cracklife/weapons/reload3.wav";
+	const string S_RE3 = "hldm-br/cracklife/weapons/reload1.wav";
 	const string S_EMPTY = "hldm-br/cracklife/weapons/357_cock1.wav"; // gun empty sound
 
 	// Weapon Info

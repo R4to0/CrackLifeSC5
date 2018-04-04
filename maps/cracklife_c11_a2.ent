@@ -615,7 +615,7 @@
 "netname" "bunker_grunts"
 "weapons" "3"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -627,7 +627,7 @@
 "angles" "0 219 0"
 "netname" "bunker_grunts"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -639,7 +639,7 @@
 "angles" "0 321 0"
 "netname" "bunker_grunts"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -652,7 +652,7 @@
 "netname" "bunker_grunts"
 "spawnflags" "32"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -1003,7 +1003,7 @@
 "angles" "0 44 0"
 "weapons" "3"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -1078,7 +1078,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/biggun3.wav"
+"message" "hldm-br/cracklife/ambience/biggun1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -1094,7 +1094,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 204 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -1453,7 +1453,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 172 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -1464,7 +1464,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 156 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2314,7 +2314,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 357 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2325,7 +2325,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 357 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2336,7 +2336,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 345 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2360,7 +2360,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 194 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2669,7 +2669,7 @@
 "weapons" "8"
 "spawnflags" "3"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -2684,7 +2684,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 270 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -4086,7 +4086,7 @@
 "angles" "0 252 0"
 "targetname" "barney"
 "soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney.mdl"
+"model" "models/hldm-br/cracklife/barney_v2.mdl"
 "classname" "monster_barney"
 }
 {
@@ -4293,7 +4293,7 @@
 "delay" "1"
 "m_imaxlivechildren" "1"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"new_model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"new_model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "monstertype" "monster_alien_slave"
 "classname" "squadmaker"
 }
@@ -5381,7 +5381,7 @@
 "TriggerCondition" "10"
 "body" "-1"
 "spawnflags" "18"
-"model" "models/hldm-br/cracklife/scientist.mdl"
+"model" "models/hldm-br/cracklife/scientist_v2.mdl"
 "classname" "monster_scientist"
 }
 {

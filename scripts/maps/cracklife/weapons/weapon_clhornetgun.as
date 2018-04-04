@@ -27,8 +27,8 @@ namespace CLHORNETGUN
 
 	// Sounds
 	const string S_FIRE1 = "hldm-br/cracklife/agrunt/ag_fire1.wav";
-	const string S_FIRE2 = "hldm-br/cracklife/agrunt/ag_fire2.wav";
-	const string S_FIRE3 = "hldm-br/cracklife/agrunt/ag_fire3.wav";
+	const string S_FIRE2 = "hldm-br/cracklife/agrunt/ag_fire1.wav"; //ag_fire2.wav
+	const string S_FIRE3 = "hldm-br/cracklife/agrunt/ag_fire1.wav"; //ag_fire3.wav
 
 	// Weapon Info
 	const uint DEFAULT_AMMO	= 8;

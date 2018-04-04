@@ -24,7 +24,7 @@ namespace CLGLOCK
 	const string W_MDL = "models/hldm-br/cracklife/w_9mmhandgun.mdl";
 
 	// Sounds
-	const string S_FIRE = "hldm-br/cracklife/weapons/pl_gun3.wav"; //PINGLES!
+	const string S_FIRE = "hldm-br/cracklife/debris/beamstart1.wav"; //PINGLES!
 	const string S_EMPTY = "hldm-br/cracklife/weapons/357_cock1.wav"; //NO!
 
 	// Weapon Info

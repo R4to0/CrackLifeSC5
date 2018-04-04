@@ -1871,7 +1871,7 @@
 "angles" "0 267 0"
 "pose" "2"
 "soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney.mdl"
+"model" "models/hldm-br/cracklife/barney_v2.mdl"
 "classname" "monster_barney_dead"
 }
 {
@@ -1958,7 +1958,7 @@
 "angles" "0 269 0"
 "body" "1"
 "pose" "2"
-"model" "models/hldm-br/cracklife/scientist.mdl"
+"model" "models/hldm-br/cracklife/scientist_v2.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -2335,7 +2335,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/techamb1.wav"
+"message" "hldm-br/cracklife/ambience/computalk1.wav"
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
@@ -2347,7 +2347,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/techamb1.wav"
+"message" "hldm-br/cracklife/ambience/computalk1.wav"
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"

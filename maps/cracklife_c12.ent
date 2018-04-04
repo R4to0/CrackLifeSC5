@@ -1975,7 +1975,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "classname" "monster_alien_slave"
 }
 {
@@ -2533,7 +2533,7 @@
 "angles" "0 250 0"
 "body" "3"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -2548,7 +2548,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 56 0"
 "soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney.mdl"
+"model" "models/hldm-br/cracklife/barney_v2.mdl"
 "classname" "monster_barney_dead"
 }
 {
@@ -2739,7 +2739,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "classname" "monster_alien_slave"
 }
 {
@@ -3222,7 +3222,7 @@
 "angles" "0 64 0"
 "spawnflags" "4"
 "soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney.mdl"
+"model" "models/hldm-br/cracklife/barney_v2.mdl"
 "classname" "monster_barney"
 }
 {
@@ -3232,7 +3232,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 79 0"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "classname" "monster_alien_slave"
 }
 {
@@ -3284,7 +3284,7 @@
 "TriggerCondition" "4"
 "TriggerTarget" "baywarprelay2"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "classname" "monster_alien_slave"
 }
 {
@@ -3983,7 +3983,7 @@
 "body" "2"
 "spawnflags" "4"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -4062,7 +4062,7 @@
 "angles" "0 190 0"
 "targetname" "1_smtele_spawner01"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"new_model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"new_model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "monstertype" "monster_alien_slave"
 "monstercount" "3"
 "delay" "4"
@@ -4077,7 +4077,7 @@
 "angles" "0 0 0"
 "targetname" "1_smtele_sound01a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4090,7 +4090,7 @@
 "angles" "0 0 0"
 "targetname" "1_smtele_sound01b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4172,7 +4172,7 @@
 "angles" "0 0 0"
 "targetname" "1_smtele_sound02a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4185,7 +4185,7 @@
 "angles" "0 0 0"
 "targetname" "1_smtele_sound02b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4296,7 +4296,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4309,7 +4309,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -4533,7 +4533,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/concrete1.wav"
+"message" "hldm-br/cracklife/debris/bustflesh2.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -4546,7 +4546,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/concrete2.wav"
+"message" "hldm-br/cracklife/debris/bustglass1.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -4664,7 +4664,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/concrete1.wav"
+"message" "hldm-br/cracklife/debris/bustflesh2.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -4677,7 +4677,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/concrete2.wav"
+"message" "hldm-br/cracklife/debris/bustglass1.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -5966,7 +5966,7 @@
 "weapons" "3"
 "spawnflags" "3"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -6565,7 +6565,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 120 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -6806,7 +6806,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 37 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -7326,7 +7326,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/biggun3.wav"
+"message" "hldm-br/cracklife/ambience/biggun1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -8332,7 +8332,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -8343,7 +8343,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -8354,7 +8354,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 25 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -8766,7 +8766,7 @@
 "angles" "0 38 0"
 "pose" "2"
 "soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney.mdl"
+"model" "models/hldm-br/cracklife/barney_v2.mdl"
 "classname" "monster_barney_dead"
 }
 {
@@ -8781,7 +8781,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/warn3.wav"
+"message" "hldm-br/cracklife/ambience/the_horror1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -8816,7 +8816,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 323 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -8827,7 +8827,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1.mdl"
+"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -9016,7 +9016,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/techamb1.wav"
+"message" "hldm-br/cracklife/ambience/computalk1.wav"
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
@@ -9157,7 +9157,7 @@
 "angles" "0 90 0"
 "targetname" "smtele_spawner03"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"new_model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"new_model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "monstertype" "monster_alien_slave"
 "monstercount" "2"
 "delay" "1"
@@ -9172,7 +9172,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -9185,7 +9185,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound03b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10005,7 +10005,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound02a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10018,7 +10018,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound02b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10085,7 +10085,7 @@
 "angles" "0 90 0"
 "targetname" "smtele_spawner05"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"new_model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"new_model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "monstertype" "monster_alien_slave"
 "monstercount" "1"
 "delay" "1"
@@ -10100,7 +10100,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound05a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10113,7 +10113,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound05b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10180,7 +10180,7 @@
 "angles" "0 90 0"
 "targetname" "smtele_spawner01"
 "soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"new_model" "models/hldm-br/cracklife/islave_cl1.mdl"
+"new_model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
 "monstertype" "monster_alien_slave"
 "monstercount" "1"
 "delay" "1"
@@ -10195,7 +10195,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound01a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10208,7 +10208,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound01b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10290,7 +10290,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound04a"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart2.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10303,7 +10303,7 @@
 "angles" "0 0 0"
 "targetname" "smtele_sound04b"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart7.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "52"
@@ -10522,7 +10522,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/debris/beamstart4.wav"
+"message" "hldm-br/cracklife/debris/beamstart1.wav"
 "targetname" "alien_turret_2_sound"
 "health" "10"
 "pitch" "130"

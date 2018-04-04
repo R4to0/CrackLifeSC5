@@ -3128,7 +3128,7 @@
 "angles" "0 0 0"
 "targetname" "zap_1"
 "health" "10"
-"message" "hldm-br/cracklife/debris/beamstart10.wav"
+"message" "hldm-br/cracklife/debris/beamstart6.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "53"

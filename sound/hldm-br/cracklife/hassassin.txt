@@ -4,4 +4,4 @@
 "player/pl_step3.wav"   "hldm-br/cracklife/player/pl_step3.wav"   
 "player/pl_step4.wav"   "hldm-br/cracklife/player/pl_step4.wav"   
 "weapons/pl_gun1.wav"   "hldm-br/cracklife/weapons/pl_gun1.wav"   
-"weapons/pl_gun2.wav"   "hldm-br/cracklife/weapons/pl_gun2.wav"   
+"weapons/pl_gun2.wav"   "hldm-br/cracklife/weapons/pl_gun1.wav"   
