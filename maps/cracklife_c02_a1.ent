@@ -1392,7 +1392,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "health" "10"
-"message" "hldm-br/cracklife/ambience/alien_builder.wav"
+"message" "hldm-br/cracklife/ambience/alien_minddrill.wav"
 "targetname" "clutter_noise"
 "pitch" "100"
 "pitchstart" "100"
