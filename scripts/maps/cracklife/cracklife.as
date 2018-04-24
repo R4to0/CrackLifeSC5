@@ -9,6 +9,9 @@
 // HLSP Stuff
 #include "hlsp/trigger_suitcheck"
 
+// Crack-Life mode
+const bool g_bCrackLifeMode = true;
+
 // inb4 mapping for unused weapons
 array<ItemMapping@> g_ItemMappings =
 {

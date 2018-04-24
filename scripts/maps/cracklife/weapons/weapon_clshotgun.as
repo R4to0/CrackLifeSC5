@@ -39,6 +39,9 @@ namespace CLSHOTGUN
 	const string S_RE3 = "hldm-br/cracklife/weapons/reload1.wav";
 	const string S_EMPTY = "hldm-br/cracklife/weapons/357_cock1.wav"; // gun empty sound
 
+	// Sprites
+	const string sstrExploSpr = "sprites/zerogxplode.spr";
+
 	// Weapon Info
 	const uint DEFAULT_AMMO	= 12;
 	const uint MAX_CARRY	= 125;
@@ -92,6 +95,10 @@ namespace CLSHOTGUN
 			g_SoundSystem.PrecacheSound( S_RE3 );	// shotgun reload
 			g_SoundSystem.PrecacheSound( S_EMPTY ); // gun empty sound
 			g_SoundSystem.PrecacheSound( S_COCK );	// cock gun
+
+			// Sprites
+			if( g_bCrackLifeMode )
+				g_Game.PrecacheModel( sstrExploSpr );
 		}
 
 		bool AddToPlayer( CBasePlayer@ pPlayer )
@@ -186,7 +193,25 @@ namespace CLSHOTGUN
 						CBaseEntity@ pHit = g_EntityFuncs.Instance( tr.pHit );
 
 						if( pHit is null || pHit.IsBSPModel() )
+						{
+							// Decal
 							g_WeaponFuncs.DecalGunshot( tr, BULLET_PLAYER_BUCKSHOT );
+
+							if( g_bCrackLifeMode )
+							{
+								// Explosion
+								NetworkMessage decexpl( MSG_BROADCAST, NetworkMessages::SVC_TEMPENTITY, null );
+									decexpl.WriteByte( TE_EXPLOSION );
+									decexpl.WriteCoord( tr.vecEndPos.x );
+									decexpl.WriteCoord( tr.vecEndPos.y );
+									decexpl.WriteCoord( tr.vecEndPos.z );
+									decexpl.WriteShort( g_EngineFuncs.ModelIndex( sstrExploSpr ) );
+									decexpl.WriteByte( 10 ); // scale * 10
+									decexpl.WriteByte( 15 ); // framerate
+									decexpl.WriteByte( TE_EXPLFLAG_NOSOUND );
+								decexpl.End();
+							}
+						}
 					}
 				}
 			}
@@ -307,27 +332,6 @@ namespace CLSHOTGUN
 		
 			CreatePelletDecals( vecSrc, vecAiming, VECTOR_CONE_DM_DOUBLESHOTGUN, SHOTGUN_DOUBLE_PELLETCOUNT );
 		}
-
-		// TODO
-		/*void ExplodeThink()
-		{
-			TraceResult tr;
-			float x, y;
-			g_Utility.GetCircularGaussianSpread( x, y );
-			Vector vecDir = vecAiming + x * VECTOR_CONE_DM_SHOTGUN.x * g_Engine.v_right + y * VECTOR_CONE_DM_SHOTGUN.y * g_Engine.v_up;
-			Vector vecEnd	= vecSrc + vecDir * 4096;
-			g_Utility.TraceLine( vecSrc, vecEnd, dont_ignore_monsters, m_pPlayer.edict(), tr );
-			NetworkMessage exp_msg( MSG_PVS, NetworkMessages::SVC_TEMPENTITY, null );
-			exp_msg.WriteByte( TE_EXPLOSION ); //MSG type enum
-			exp_msg.WriteCoord( tr.vecEndPos.x ); //pos
-			exp_msg.WriteCoord( tr.vecEndPos.y ); //pos
-			exp_msg.WriteCoord( tr.vecEndPos.z ); //pos
-			exp_msg.WriteShort( g_EngineFuncs.ModelIndex( "sprites/zerogxplode.spr" ) );
-			exp_msg.WriteByte( 5 ); //scale
-			exp_msg.WriteByte( 15 ); //framerate
-			exp_msg.WriteByte( TE_EXPLFLAG_NOSOUND ); //flag
-			exp_msg.End();
-		}*/
 
 		void Reload()
 		{
