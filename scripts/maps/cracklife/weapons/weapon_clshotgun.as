@@ -1,6 +1,8 @@
 /* 
 * The original Half-Life version of the shotgun
-* Modified for the Crack-Life shotgun weapon
+* Modified for the Crack-Life Sven Co-op conversion
+*
+* Original Crack-Life mod by: Siemka321
 */
 
 enum ShotgunAnimation
@@ -21,39 +23,39 @@ enum ShotgunAnimation
 namespace CLSHOTGUN
 {
 
-	// special deathmatch shotgun spreads
-	const Vector VECTOR_CONE_DM_SHOTGUN( 0.08716, 0.04362, 0.00  );		// 10 degrees by 5 degrees
-	const Vector VECTOR_CONE_DM_DOUBLESHOTGUN( 0.17365, 0.04362, 0.00 ); 	// 20 degrees by 5 degrees
+// special deathmatch shotgun spreads
+const Vector VECTOR_CONE_DM_SHOTGUN( 0.08716, 0.04362, 0.00  );		// 10 degrees by 5 degrees
+const Vector VECTOR_CONE_DM_DOUBLESHOTGUN( 0.17365, 0.04362, 0.00 ); 	// 20 degrees by 5 degrees
 
-	// Models
-	const string P_MDL = "models/hldm-br/cracklife/p_shotgun_cl1.mdl"; // Thanks Tayklor <3
-	const string V_MDL = "models/hldm-br/cracklife/v_shotgun_cl1.mdl";
-	const string W_MDL = "models/hldm-br/cracklife/w_shotgun_cl1.mdl"; // Thanks Tayklor <3
-	const string S_MDL = "models/shotgunshell.mdl"; // shotgun shell
+// Models
+const string strPeeMdl		= "models/hldm-br/cracklife/p_shotgun_cl1.mdl"; // Thanks Tayklor <3
+const string strVeeMdl		= "models/hldm-br/cracklife/v_shotgun_cl1.mdl";
+const string strWeeMdl		= "models/hldm-br/cracklife/w_shotgun_cl1.mdl"; // Thanks Tayklor <3
+const string strSShellMdl	= "models/shotgunshell.mdl"; // shotgun shell
 	
-	// Sounds
-	const string S_SBA = "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"; // Single shot
-	const string S_DBA = "hldm-br/cracklife/weapons/dbarrel1_cl1.wav"; // Double shot
-	const string S_COCK = "hldm-br/cracklife/weapons/scock1_cl1.wav"; // cock gun
-	const string S_RE1 = "hldm-br/cracklife/weapons/reload1.wav";
-	const string S_RE3 = "hldm-br/cracklife/weapons/reload1.wav";
-	const string S_EMPTY = "hldm-br/cracklife/weapons/357_cock1.wav"; // gun empty sound
+// Sounds
+const string strSngShotSnd	= "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"; // Single shot
+const string strDblShotSnd	= "hldm-br/cracklife/weapons/dbarrel1_cl1.wav"; // Double shot
+const string strCockSnd		= "hldm-br/cracklife/weapons/scock1_cl1.wav"; // cock gun
+const string strRel1Snd		= "hldm-br/cracklife/weapons/reload1.wav";
+const string strRel2Snd		= "hldm-br/cracklife/weapons/reload1.wav";
+const string strEmptySnd	= "hldm-br/cracklife/weapons/357_cock1.wav"; // gun empty sound
 
-	// Sprites
-	const string sstrExploSpr = "sprites/zerogxplode.spr";
+// Sprites
+const string strExploSpr = "sprites/zerogxplode.spr";
 
-	// Weapon Info
-	const uint DEFAULT_AMMO	= 12;
-	const uint MAX_CARRY	= 125;
-	const uint MAX_CLIP	= 8;
-	const uint WEIGHT	= 15;
+// Weapon Info
+const uint DEFAULT_AMMO	= 12;
+const uint MAX_CARRY	= 125;
+const uint MAX_CLIP	= 8;
+const uint WEIGHT	= 15;
 
-	// Weapon HUD
-	const uint SLOT = 2;
-	const uint POSITION = 5;
+// Weapon HUD
+const uint SLOT = 2;
+const uint POSITION = 5;
 
-	const uint SHOTGUN_SINGLE_PELLETCOUNT = 4;
-	const uint SHOTGUN_DOUBLE_PELLETCOUNT = SHOTGUN_SINGLE_PELLETCOUNT * 2;
+const uint SHOTGUN_SINGLE_PELLETCOUNT = 4;
+const uint SHOTGUN_DOUBLE_PELLETCOUNT = SHOTGUN_SINGLE_PELLETCOUNT * 2;
 
 	class weapon_clshotgun : ScriptBasePlayerWeaponEntity
 	{
@@ -63,16 +65,16 @@ namespace CLSHOTGUN
 			set       	{ self.m_hPlayer = EHandle( @value ); }
 		}
 
-		float m_flNextReload;
-		int m_iShell;
-		float m_flPumpTime;
-		bool m_fPlayPumpSound;
-		bool m_fShotgunReload;
+		private float m_flNextReload;
+		private uint m_iShell;
+		private float m_flPumpTime;
+		private bool m_bPlayPumpSound;
+		private bool m_bShotgunReload;
 
 		void Spawn()
 		{
 			Precache();
-			g_EntityFuncs.SetModel( self, W_MDL );
+			g_EntityFuncs.SetModel( self, strWeeMdl );
 
 			self.m_iDefaultAmmo = DEFAULT_AMMO;
 
@@ -83,22 +85,22 @@ namespace CLSHOTGUN
 		{
 			// Models
 			self.PrecacheCustomModels();
-			g_Game.PrecacheModel( V_MDL );
-			g_Game.PrecacheModel( W_MDL );
-			g_Game.PrecacheModel( P_MDL );
-			m_iShell = g_Game.PrecacheModel( S_MDL );
+			g_Game.PrecacheModel( strVeeMdl );
+			g_Game.PrecacheModel( strWeeMdl );
+			g_Game.PrecacheModel( strPeeMdl );
+			m_iShell = g_Game.PrecacheModel( strSShellMdl );
 
 			// Sounds     
-			g_SoundSystem.PrecacheSound( S_DBA );	//shotgun
-			g_SoundSystem.PrecacheSound( S_SBA );	//shotgun
-			g_SoundSystem.PrecacheSound( S_RE1 );	// shotgun reload
-			g_SoundSystem.PrecacheSound( S_RE3 );	// shotgun reload
-			g_SoundSystem.PrecacheSound( S_EMPTY ); // gun empty sound
-			g_SoundSystem.PrecacheSound( S_COCK );	// cock gun
+			g_SoundSystem.PrecacheSound( strDblShotSnd );	//shotgun
+			g_SoundSystem.PrecacheSound( strSngShotSnd );	//shotgun
+			g_SoundSystem.PrecacheSound( strRel1Snd );	// shotgun reload
+			g_SoundSystem.PrecacheSound( strRel2Snd );	// shotgun reload
+			g_SoundSystem.PrecacheSound( strEmptySnd ); // gun empty sound
+			g_SoundSystem.PrecacheSound( strCockSnd );	// cock gun
 
 			// Sprites
 			if( g_bCrackLifeMode )
-				g_Game.PrecacheModel( sstrExploSpr );
+				g_Game.PrecacheModel( strExploSpr );
 		}
 
 		bool AddToPlayer( CBasePlayer@ pPlayer )
@@ -121,7 +123,7 @@ namespace CLSHOTGUN
 			{
 				self.m_bPlayEmptySound = false;
 
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, S_EMPTY, 0.8, ATTN_NORM, 0, PITCH_NORM );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strEmptySnd, 0.8, ATTN_NORM, 0, PITCH_NORM );
 			}
 
 			return false;
@@ -142,7 +144,7 @@ namespace CLSHOTGUN
 
 		bool Deploy()
 		{
-			return self.DefaultDeploy( self.GetV_Model( V_MDL ), self.GetP_Model( P_MDL ), SHOTGUN_DRAW, "shotgun" );
+			return self.DefaultDeploy( self.GetV_Model( strVeeMdl ), self.GetP_Model( strPeeMdl ), SHOTGUN_DRAW, "shotgun" );
 		}
 
 		float WeaponTimeBase()
@@ -152,19 +154,19 @@ namespace CLSHOTGUN
 
 		void Holster( int skipLocal = 0 )
 		{
-			m_fShotgunReload = false;
+			m_bShotgunReload = false;
 
 			BaseClass.Holster( skipLocal );
 		}
 
 		void ItemPostFrame()
 		{
-			if( m_flPumpTime != 0 && m_flPumpTime < g_Engine.time && m_fPlayPumpSound )
+			if( m_flPumpTime != 0 && m_flPumpTime < g_Engine.time && m_bPlayPumpSound )
 			{
 				// play pumping sound
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, S_COCK, 1, ATTN_NORM, 0, 95 + Math.RandomLong( 0,0x1f ) );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, strCockSnd, 1, ATTN_NORM, 0, 95 + Math.RandomLong( 0,0x1f ) );
 
-				m_fPlayPumpSound = false;
+				m_bPlayPumpSound = false;
 			}
 
 		BaseClass.ItemPostFrame();
@@ -196,21 +198,21 @@ namespace CLSHOTGUN
 						{
 							// Decal
 							g_WeaponFuncs.DecalGunshot( tr, BULLET_PLAYER_BUCKSHOT );
+						}
 
-							if( g_bCrackLifeMode )
-							{
+						if( g_bCrackLifeMode )
+						{
 								// Explosion
 								NetworkMessage decexpl( MSG_BROADCAST, NetworkMessages::SVC_TEMPENTITY, null );
 									decexpl.WriteByte( TE_EXPLOSION );
 									decexpl.WriteCoord( tr.vecEndPos.x );
 									decexpl.WriteCoord( tr.vecEndPos.y );
 									decexpl.WriteCoord( tr.vecEndPos.z );
-									decexpl.WriteShort( g_EngineFuncs.ModelIndex( sstrExploSpr ) );
-									decexpl.WriteByte( 10 ); // scale * 10
+									decexpl.WriteShort( g_EngineFuncs.ModelIndex( strExploSpr ) );
+									decexpl.WriteByte( 5 ); // scale * 10
 									decexpl.WriteByte( 15 ); // framerate
 									decexpl.WriteByte( TE_EXPLFLAG_NOSOUND );
 								decexpl.End();
-							}
 						}
 					}
 				}
@@ -237,7 +239,7 @@ namespace CLSHOTGUN
 
 			self.SendWeaponAnim( SHOTGUN_FIRE, 0, 0 );
 
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, S_SBA, Math.RandomFloat( 0.95, 1.0 ), ATTN_NORM, 0, 93 + Math.RandomLong( 0, 0x1f ) );
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strSngShotSnd, Math.RandomFloat( 0.95, 1.0 ), ATTN_NORM, 0, 93 + Math.RandomLong( 0, 0x1f ) );
 
 			m_pPlayer.m_iWeaponVolume = LOUD_GUN_VOLUME;
 			m_pPlayer.m_iWeaponFlash = NORMAL_GUN_FLASH;
@@ -269,8 +271,8 @@ namespace CLSHOTGUN
 			else
 				self.m_flNextPrimaryAttack = self.m_flTimeWeaponIdle = g_Engine.time + 0.75;
 
-			m_fShotgunReload = false;
-			m_fPlayPumpSound = true;
+			m_bShotgunReload = false;
+			m_bPlayPumpSound = true;
 
 			CreatePelletDecals( vecSrc, vecAiming, VECTOR_CONE_DM_SHOTGUN, SHOTGUN_SINGLE_PELLETCOUNT );
 
@@ -295,7 +297,7 @@ namespace CLSHOTGUN
 		
 			self.SendWeaponAnim( SHOTGUN_FIRE2, 0, 0 );
 
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, S_DBA, Math.RandomFloat( 0.98, 1.0 ), ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) );
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strDblShotSnd, Math.RandomFloat( 0.98, 1.0 ), ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) );
 
 			m_pPlayer.m_iWeaponVolume = LOUD_GUN_VOLUME;
 			m_pPlayer.m_iWeaponFlash = NORMAL_GUN_FLASH;
@@ -327,8 +329,8 @@ namespace CLSHOTGUN
 			
 			m_pPlayer.pev.punchangle.x = -10.0;
 
-			m_fShotgunReload = false;
-			m_fPlayPumpSound = true;
+			m_bShotgunReload = false;
+			m_bPlayPumpSound = true;
 		
 			CreatePelletDecals( vecSrc, vecAiming, VECTOR_CONE_DM_DOUBLESHOTGUN, SHOTGUN_DOUBLE_PELLETCOUNT );
 		}
@@ -342,28 +344,28 @@ namespace CLSHOTGUN
 				return;
 
 			// don't reload until recoil is done
-			if( self.m_flNextPrimaryAttack > g_Engine.time && !m_fShotgunReload )
+			if( self.m_flNextPrimaryAttack > g_Engine.time && !m_bShotgunReload )
 				return;
 
 			// check to see if we're ready to reload
-			if( !m_fShotgunReload )
+			if( !m_bShotgunReload )
 			{
 				self.SendWeaponAnim( SHOTGUN_START_RELOAD, 0, 0 );
 				m_pPlayer.m_flNextAttack 	= 0.6;	//Always uses a relative time due to prediction
 				self.m_flTimeWeaponIdle			= g_Engine.time + 0.6;
 				self.m_flNextPrimaryAttack 		= g_Engine.time + 1.0;
 				self.m_flNextSecondaryAttack	= g_Engine.time + 1.0;
-				m_fShotgunReload = true;
+				m_bShotgunReload = true;
 				return;
 			}
-			else if( m_fShotgunReload )
+			else if( m_bShotgunReload )
 			{
 				if( self.m_flTimeWeaponIdle > g_Engine.time )
 					return;
 
 				if( self.m_iClip == MAX_CLIP )
 				{
-					m_fShotgunReload = false;
+					m_bShotgunReload = false;
 					return;
 				}
 
@@ -379,8 +381,8 @@ namespace CLSHOTGUN
 			
 				switch( Math.RandomLong( 0, 1 ) )
 				{
-					case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, S_RE1, 1, ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) ); break;
-					case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, S_RE3, 1, ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) ); break;
+					case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, strRel1Snd, 1, ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) ); break;
+					case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, strRel2Snd, 1, ATTN_NORM, 0, 85 + Math.RandomLong( 0, 0x1f ) ); break;
 				}
 			}
 
@@ -396,11 +398,11 @@ namespace CLSHOTGUN
 
 			if( self.m_flTimeWeaponIdle < g_Engine.time )
 			{
-				if( self.m_iClip == 0 && !m_fShotgunReload && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) != 0 )
+				if( self.m_iClip == 0 && !m_bShotgunReload && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) != 0 )
 				{
 					self.Reload();
 				}
-				else if( m_fShotgunReload )
+				else if( m_bShotgunReload )
 				{
 					if( self.m_iClip != MAX_CLIP && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) > 0 )
 					{
@@ -411,8 +413,8 @@ namespace CLSHOTGUN
 						// reload debounce has timed out
 						self.SendWeaponAnim( SHOTGUN_PUMP, 0, 0 );
 
-						g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, S_COCK, 1, ATTN_NORM, 0, 95 + Math.RandomLong( 0,0x1f ) );
-						m_fShotgunReload = false;
+						g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM, strCockSnd, 1, ATTN_NORM, 0, 95 + Math.RandomLong( 0,0x1f ) );
+						m_bShotgunReload = false;
 						self.m_flTimeWeaponIdle = g_Engine.time + 1.5;
 					}
 				}

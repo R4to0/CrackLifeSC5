@@ -5,6 +5,7 @@
 #include "weapons/weapon_clshotgun"
 #include "weapons/weapon_clpython"
 #include "weapons/weapon_clhornetgun"
+#include "weapons/weapon_clgauss"
 
 // HLSP Stuff
 #include "hlsp/trigger_suitcheck"
@@ -21,7 +22,7 @@ array<ItemMapping@> g_ItemMappings =
 	ItemMapping( "weapon_crowbar",		GetCLCrowbarName() ),
 	ItemMapping( "weapon_displacer",	"weapon_rpg" ),
 	ItemMapping( "weapon_eagle",		CLPYTHON::GetName() ),
-	//ItemMapping( "weapon_gauss",		CLGAUSS::GetName() ),
+	ItemMapping( "weapon_gauss",		CLGAUSS::GetName() ),
 	ItemMapping( "weapon_glock",		CLGLOCK::GetName() ),
 	ItemMapping( "weapon_grapple",		GetCLCrowbarName() ),
 	ItemMapping( "weapon_hornetgun",	CLHORNETGUN::GetName() ),
@@ -51,6 +52,7 @@ void MapInit() {
 	CLSHOTGUN::Register(); // shotgun
 	CLPYTHON::Register(); // POW! 357
 	CLHORNETGUN::Register(); // JOJ
+	CLGAUSS::Register(); // walk in the dinosaur
 
 	// Initialize classic mode (item mapping only)
 	g_ClassicMode.SetItemMappings( @g_ItemMappings );

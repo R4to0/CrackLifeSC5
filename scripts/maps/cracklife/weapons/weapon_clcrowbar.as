@@ -14,12 +14,14 @@ enum crowbar_e
 	CROWBAR_ATTACK2HIT,
 	CROWBAR_ATTACK3MISS,
 	CROWBAR_ATTACK3HIT,
-	CROWBAR_TAUNT
+	CROWBAR_TAUNT,
+	CROWBAR_IDLE2,
+	CROWBAR_IDLE3
 	
 };
 
 const string CLPUNCHPMDL = "models/hldm-br/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
-const string CLPUNCHVMDL = "models/hldm-br/cracklife/v_crowbar.mdl";
+const string CLPUNCHVMDL = "models/hldm-br/cracklife/v_crowbar_v2.mdl"; // Tayklor fix <3
 const string CLPUNCHWMDL = "models/hldm-br/cracklife/w_crowbar.mdl";
 
 const string CLPUNCHHIT1 = "hldm-br/cracklife/weapons/cbar_hit1.wav";
