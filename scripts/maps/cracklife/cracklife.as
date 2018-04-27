@@ -6,6 +6,7 @@
 #include "weapons/weapon_clpython"
 #include "weapons/weapon_clhornetgun"
 #include "weapons/weapon_clgauss"
+#include "logo"
 
 // HLSP Stuff
 #include "hlsp/trigger_suitcheck"
@@ -39,8 +40,8 @@ array<ItemMapping@> g_ItemMappings =
 	ItemMapping( "weapon_uziakimbo",	CLMP5::GetName() )
 };
 
-void MapInit() {
-
+void MapInit()
+{
 	// HLSP Stuff
 	RegisterTriggerSuitcheckEntity();
 	g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
@@ -57,5 +58,4 @@ void MapInit() {
 	// Initialize classic mode (item mapping only)
 	g_ClassicMode.SetItemMappings( @g_ItemMappings );
 	g_ClassicMode.ForceItemRemap( true );
-
 }
