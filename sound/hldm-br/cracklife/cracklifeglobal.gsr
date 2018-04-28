@@ -109,9 +109,9 @@
 "squeek/sqk_hunt2.wav"       "hldm-br/cracklife/squeek/sqk_deploy1.wav"
 "squeek/sqk_hunt3.wav"       "hldm-br/cracklife/squeek/sqk_deploy1.wav"
 
-"weapons/egon_off1.wav"      "hldm-br/cracklife/weapons/egon_off1_cl1.wav"
-"weapons/egon_run3.wav"      "hldm-br/cracklife/weapons/egon_run3_cl1.wav"
-"weapons/egon_windup2.wav"   "hldm-br/cracklife/weapons/egon_windup2_cl1.wav"
+"weapons/egon_off1.wav"      "hldm-br/cracklife/weapons/egon_off1_cl1_v2.wav"
+"weapons/egon_run3.wav"      "hldm-br/cracklife/weapons/egon_run3_cl1_v2.wav"
+"weapons/egon_windup2.wav"   "hldm-br/cracklife/weapons/egon_windup2_cl1_v2.wav"
 "weapons/explode3.wav"       "hldm-br/cracklife/weapons/explode3.wav"
 "weapons/explode4.wav"       "hldm-br/cracklife/weapons/explode4.wav"
 "weapons/explode5.wav"       "hldm-br/cracklife/weapons/explode5.wav"
