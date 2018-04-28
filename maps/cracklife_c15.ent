@@ -3849,19 +3849,19 @@
 }
 {
 "model" "*110"
-"target" "mapstart_mm"
+"target" "mapstart_mm_disabled"
 "classname" "trigger_once"
 }
 {
 "origin" "2701 -83 0"
-"sackmusic" "0.2"
+"sackmusic" "0.2#1"
 "angles" "0 0 0"
 "trigger_auto" "0.2"
 "spawn1_force" "0.2"
 "fadein" "0.2"
 "spawn0" "0.1#2"
 "spawn1" "0#1"
-"chaptertitle" "3.5"
+"chapter_title" "3.5"
 "targetname" "mapstart_mm"
 "classname" "multi_manager"
 }

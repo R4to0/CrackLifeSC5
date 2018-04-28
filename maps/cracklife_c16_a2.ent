@@ -804,7 +804,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
@@ -812,7 +811,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 45 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
@@ -820,7 +818,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 135 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
@@ -828,7 +825,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 270 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
@@ -836,7 +832,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 235 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
@@ -1246,7 +1241,6 @@
 "rendercolor" "0 0 0"
 "angles" "0 247 0"
 "TriggerCondition" "0"
-"model" "models/hldm-br/cracklife/tree.mdl"
 "classname" "xen_tree"
 }
 {
