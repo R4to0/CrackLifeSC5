@@ -11842,7 +11842,16 @@
 }
 {
 "origin" "0 0 0"
+"angles" "0 0 0"
 "targetname" "game_playerspawn"
+"delay" "0"
+"target" "mm_r4to0_preintro"
+"spawnflags" "1"
+"classname" "trigger_relay"
+}
+{
+"origin" "0 0 0"
+"targetname" "mm_r4to0_preintro"
 "r4to0_30sectxt" "10"
 "r4to0_20sectxt" "20"
 "r4to0_10sectxt" "30"
