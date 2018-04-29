@@ -1825,7 +1825,7 @@
 "origin" "1608 -744 -208"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"classname" "weapon_gauss"
+"classname" "weapon_clgauss"
 }
 {
 "origin" "1688 -600 -256"

@@ -1,6 +1,9 @@
 /* 
-* The original Half-Life version of the crowbar
-* Modified for Crack-Life Campaign Mode conversion
+* The original Half-Life version of the Crowbar
+* Modified for the Crack-Life Sven Co-op conversion
+*
+* Original Crack-Life mod by: Siemka321
+* Sven Co-op Re-conversion: Rafael "R4to0" Alves
 */
 
 enum crowbar_e
@@ -17,35 +20,43 @@ enum crowbar_e
 	CROWBAR_TAUNT,
 	CROWBAR_IDLE2,
 	CROWBAR_IDLE3
-	
 };
 
-const string CLPUNCHPMDL = "models/hldm-br/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
-const string CLPUNCHVMDL = "models/hldm-br/cracklife/v_crowbar_v2.mdl"; // Tayklor fix <3
-const string CLPUNCHWMDL = "models/hldm-br/cracklife/w_crowbar.mdl";
+namespace CLCROWBAR
+{
 
-const string CLPUNCHHIT1 = "hldm-br/cracklife/weapons/cbar_hit1.wav";
-const string CLPUNCHHIT2 = "hldm-br/cracklife/weapons/cbar_hit2.wav";
-const string CLPUNCHTAUNT1SND = "hldm-br/cracklife/taunts/taunt1.wav";
-const string CLPUNCHTAUNT2SND = "hldm-br/cracklife/taunts/taunt2.wav";
-const string CLPUNCHTAUNT3SND = "hldm-br/cracklife/taunts/taunt3.wav";
-const string CLPUNCHTAUNT4SND = "hldm-br/cracklife/taunts/taunt4.wav";
+const string strPeeMdl		= "models/hldm-br/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
+const string strVeeMdl		= "models/hldm-br/cracklife/v_crowbar_v2.mdl"; // Tayklor fix <3
+const string strWeeMdl		= "models/hldm-br/cracklife/w_crowbar.mdl";
+
+const string strHit1Snd		= "hldm-br/cracklife/weapons/cbar_hit1.wav";
+const string strHit2Snd		= "hldm-br/cracklife/weapons/cbar_hit2.wav";
+const string strMiss1Snd	= "weapons/cbar_miss1.wav";
+const string strHitBod1Snd	= "weapons/cbar_hitbod1.wav";
+const string strHitBod2Snd	= "weapons/cbar_hitbod2.wav";
+const string strHitBod3Snd	= "weapons/cbar_hitbod3.wav";
+const string strTaunt1Snd	= "hldm-br/cracklife/taunts/taunt1.wav";
+const string strTaunt2Snd	= "hldm-br/cracklife/taunts/taunt2.wav";
+const string strTaunt3Snd	= "hldm-br/cracklife/taunts/taunt3.wav";
+const string strTaunt4Snd	= "hldm-br/cracklife/taunts/taunt4.wav";
+
+const float flDamage = g_EngineFuncs.CVarGetFloat( "sk_plr_crowbar" );
 
 class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 {
 	private CBasePlayer@ m_pPlayer
-		{
-			get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
-			set       	{ self.m_hPlayer = EHandle( @value ); }
-		}
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 	
-	int m_iSwing;
+	uint m_iSwing;
 	TraceResult m_trHit;
 	
 	void Spawn()
 	{
 		self.Precache();
-		g_EntityFuncs.SetModel( self, self.GetW_Model( CLPUNCHWMDL ) );
+		g_EntityFuncs.SetModel( self, self.GetW_Model( strWeeMdl ) );
 		self.m_iClip			= -1;
 		self.m_flCustomDmg		= self.pev.dmg;
 
@@ -56,21 +67,21 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 	{
 		self.PrecacheCustomModels();
 
-		g_Game.PrecacheModel( CLPUNCHVMDL );
-		g_Game.PrecacheModel( CLPUNCHWMDL );
-		g_Game.PrecacheModel( CLPUNCHPMDL );
+		g_Game.PrecacheModel( strVeeMdl );
+		g_Game.PrecacheModel( strWeeMdl );
+		g_Game.PrecacheModel( strPeeMdl );
 
-		g_SoundSystem.PrecacheSound( CLPUNCHHIT1 );
-		g_SoundSystem.PrecacheSound( CLPUNCHHIT2 );
-		g_SoundSystem.PrecacheSound( "weapons/cbar_hitbod1.wav" );
-		g_SoundSystem.PrecacheSound( "weapons/cbar_hitbod2.wav" );
-		g_SoundSystem.PrecacheSound( "weapons/cbar_hitbod3.wav" );
-		g_SoundSystem.PrecacheSound( "weapons/cbar_miss1.wav" );
+		g_SoundSystem.PrecacheSound( strHit1Snd );
+		g_SoundSystem.PrecacheSound( strHit2Snd );
+		g_SoundSystem.PrecacheSound( strHitBod1Snd );
+		g_SoundSystem.PrecacheSound( strHitBod2Snd );
+		g_SoundSystem.PrecacheSound( strHitBod3Snd );
+		g_SoundSystem.PrecacheSound( strMiss1Snd );
 
-		g_SoundSystem.PrecacheSound( CLPUNCHTAUNT1SND );
-		g_SoundSystem.PrecacheSound( CLPUNCHTAUNT2SND );
-		g_SoundSystem.PrecacheSound( CLPUNCHTAUNT3SND );
-		g_SoundSystem.PrecacheSound( CLPUNCHTAUNT4SND );
+		g_SoundSystem.PrecacheSound( strTaunt1Snd );
+		g_SoundSystem.PrecacheSound( strTaunt2Snd );
+		g_SoundSystem.PrecacheSound( strTaunt3Snd );
+		g_SoundSystem.PrecacheSound( strTaunt4Snd );
 	}
 
 	bool GetItemInfo( ItemInfo& out info )
@@ -101,7 +112,7 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 
 	bool Deploy()
 	{
-		return self.DefaultDeploy( self.GetV_Model( CLPUNCHVMDL ), self.GetP_Model( CLPUNCHPMDL ), CROWBAR_DRAW, "crowbar" );
+		return self.DefaultDeploy( self.GetV_Model( strVeeMdl ), self.GetP_Model( strPeeMdl ), CROWBAR_DRAW, "crowbar" );
 	}
 
 	void Holster( int skiplocal /* = 0 */ )
@@ -127,11 +138,11 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 		// The "taunt" animation
 		float flTauntDelay;
 		self.SendWeaponAnim( CROWBAR_TAUNT, 0, 0 );
-		switch (Math.RandomLong(0,3)) {
-			case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHTAUNT1SND, 1, ATTN_NORM, 0, PITCH_NORM); flTauntDelay = 1.985f; break;
-			case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHTAUNT2SND, 1, ATTN_NORM, 0, PITCH_NORM); flTauntDelay = 1.512f; break;
-			case 2: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHTAUNT3SND, 1, ATTN_NORM, 0, PITCH_NORM); flTauntDelay = 1.512f; break;
-			case 3: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHTAUNT4SND, 1, ATTN_NORM, 0, PITCH_NORM); flTauntDelay = 1.512f; break;
+		switch( Math.RandomLong( 0,3 ) ) {
+			case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strTaunt1Snd, 1, ATTN_NORM, 0, PITCH_NORM ); flTauntDelay = 1.985f; break;
+			case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strTaunt2Snd, 1, ATTN_NORM, 0, PITCH_NORM ); flTauntDelay = 1.512f; break;
+			case 2: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strTaunt3Snd, 1, ATTN_NORM, 0, PITCH_NORM ); flTauntDelay = 1.512f; break;
+			case 3: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strTaunt4Snd, 1, ATTN_NORM, 0, PITCH_NORM ); flTauntDelay = 1.512f; break;
 		}
 		self.m_flNextSecondaryAttack = self.m_flNextPrimaryAttack = WeaponTimeBase() + flTauntDelay;
 		self.m_flNextPrimaryAttack = g_Engine.time + flTauntDelay;
@@ -160,37 +171,37 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 
 		g_Utility.TraceLine( vecSrc, vecEnd, dont_ignore_monsters, m_pPlayer.edict(), tr );
 
-		if ( tr.flFraction >= 1.0 )
+		if( tr.flFraction >= 1.0 )
 		{
 			g_Utility.TraceHull( vecSrc, vecEnd, dont_ignore_monsters, head_hull, m_pPlayer.edict(), tr );
-			if ( tr.flFraction < 1.0 )
+			if( tr.flFraction < 1.0 )
 			{
 				// Calculate the point of intersection of the line (or hull) and the object we hit
 				// This is and approximation of the "best" intersection
 				CBaseEntity@ pHit = g_EntityFuncs.Instance( tr.pHit );
-				if ( pHit is null || pHit.IsBSPModel() )
+				if( pHit is null || pHit.IsBSPModel() )
 					g_Utility.FindHullIntersection( vecSrc, tr, tr, VEC_DUCK_HULL_MIN, VEC_DUCK_HULL_MAX, m_pPlayer.edict() );
 				vecEnd = tr.vecEndPos;	// This is the point on the actual surface (the hull could have hit space)
 			}
 		}
 
-		if ( tr.flFraction >= 1.0 )
+		if( tr.flFraction >= 1.0 )
 		{
 			if( fFirst != 0 )
 			{
 				// miss
 				switch( ( m_iSwing++ ) % 3 )
 				{
-				case 0:
-					self.SendWeaponAnim( CROWBAR_ATTACK1MISS ); break;
-				case 1:
-					self.SendWeaponAnim( CROWBAR_ATTACK2MISS ); break;
-				case 2:
-					self.SendWeaponAnim( CROWBAR_ATTACK3MISS ); break;
+					case 0:
+						self.SendWeaponAnim( CROWBAR_ATTACK1MISS ); break;
+					case 1:
+						self.SendWeaponAnim( CROWBAR_ATTACK2MISS ); break;
+					case 2:
+						self.SendWeaponAnim( CROWBAR_ATTACK3MISS ); break;
 				}
 				self.m_flNextPrimaryAttack = g_Engine.time + 0.5;
 				// play wiff or swish sound
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "weapons/cbar_miss1.wav", 1, ATTN_NORM, 0, 94 + Math.RandomLong( 0,0xF ) );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strMiss1Snd, 1, ATTN_NORM, 0, 94 + Math.RandomLong( 0, 0xF ) );
 
 				// player "shoot" animation
 				m_pPlayer.SetAnimation( PLAYER_ATTACK1 ); 
@@ -205,21 +216,21 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 
 			switch( ( ( m_iSwing++ ) % 2 ) + 1 )
 			{
-			case 0:
-				self.SendWeaponAnim( CROWBAR_ATTACK1HIT ); break;
-			case 1:
-				self.SendWeaponAnim( CROWBAR_ATTACK2HIT ); break;
-			case 2:
-				self.SendWeaponAnim( CROWBAR_ATTACK3HIT ); break;
+				case 0:
+					self.SendWeaponAnim( CROWBAR_ATTACK1HIT ); break;
+				case 1:
+					self.SendWeaponAnim( CROWBAR_ATTACK2HIT ); break;
+				case 2:
+					self.SendWeaponAnim( CROWBAR_ATTACK3HIT ); break;
 			}
 
 			// player "shoot" animation
 			m_pPlayer.SetAnimation( PLAYER_ATTACK1 ); 
 
 			// AdamR: Custom damage option
-			float flDamage = 10;
-			if ( self.m_flCustomDmg > 0 )
-				flDamage = self.m_flCustomDmg;
+			//float flDamage = 10;
+			//if ( self.m_flCustomDmg > 0 )
+				//flDamage = self.m_flCustomDmg;
 			// AdamR: End
 
 			g_WeaponFuncs.ClearMultiDamage();
@@ -257,11 +268,11 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 					switch( Math.RandomLong( 0, 2 ) )
 					{
 					case 0:
-						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, "weapons/cbar_hitbod1.wav", 1, ATTN_NORM ); break;
+						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strHitBod1Snd, 1, ATTN_NORM ); break;
 					case 1:
-						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, "weapons/cbar_hitbod2.wav", 1, ATTN_NORM ); break;
+						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strHitBod2Snd, 1, ATTN_NORM ); break;
 					case 2:
-						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, "weapons/cbar_hitbod3.wav", 1, ATTN_NORM ); break;
+						g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strHitBod3Snd, 1, ATTN_NORM ); break;
 					}
 					m_pPlayer.m_iWeaponVolume = 128; 
 					if( !pEntity.IsAlive() )
@@ -291,10 +302,10 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 				switch( Math.RandomLong( 0, 1 ) )
 				{
 				case 0:
-					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHHIT1, fvolbar, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); 
+					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strHit1Snd, fvolbar, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); 
 					break;
 				case 1:
-					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, CLPUNCHHIT2, fvolbar, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); 
+					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strHit2Snd, fvolbar, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); 
 					break;
 				}
 			}
@@ -310,13 +321,15 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 	}
 }
 
-string GetCLCrowbarName()
+string GetName()
 {
 	return "weapon_clcrowbar";
 }
 
-void RegisterCLCrowbar()
+void Register()
 {
-	g_CustomEntityFuncs.RegisterCustomEntity( "weapon_clcrowbar", GetCLCrowbarName() );
-	g_ItemRegistry.RegisterWeapon( GetCLCrowbarName(), "hldm-br/cracklife" );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLCROWBAR::weapon_clcrowbar", GetName() );
+	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife" );
 }
+
+} // End of namespace

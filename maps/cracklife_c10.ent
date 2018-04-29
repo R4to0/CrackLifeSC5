@@ -9515,7 +9515,7 @@
 "m_flCustomRespawnTime" "0.0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"classname" "weapon_gauss"
+"classname" "weapon_clgauss"
 }
 {
 "origin" "-1000 512 512"
@@ -11098,7 +11098,7 @@
 }
 {
 "origin" "-1152 384 480"
-"weapon_gauss" "1"
+"weapon_clgauss" "1"
 "master" "equip_gauss_ms"
 "inventorymode" "1"
 "spawnflags" "8"
