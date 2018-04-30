@@ -17,8 +17,13 @@
 // HLSP Stuff
 #include "hlsp/trigger_suitcheck"
 
-// Crack-Life mode
+// Crack-Life mode.
+// True: Original
+// False: Campaign Mode
 const bool g_bCrackLifeMode = true;
+
+// Subtitle system
+const bool g_bSubtitles = true;
 
 array<ItemMapping@> g_ItemMappings =
 { 

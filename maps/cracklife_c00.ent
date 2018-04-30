@@ -837,7 +837,7 @@
 "origin" "2844 3797 594"
 "angles" "0 0 0"
 "targetname" "game_playerspawn"
-"delay" "40"
+"delay" "60"
 "target" "walker1mm"
 "spawnflags" "1"
 "classname" "trigger_relay"
@@ -1055,7 +1055,7 @@
 "origin" "-2124 -400 529"
 "angles" "0 0 0"
 "targetname" "game_playerspawn"
-"delay" "40"
+"delay" "60"
 "target" "room2_walker1mm"
 "triggerstate" "1"
 "spawnflags" "1"
@@ -1754,7 +1754,7 @@
 "angles" "0 0 0"
 "targetname" "game_playerspawn"
 "target" "audiomm1"
-"delay" "41"
+"delay" "61"
 "triggerstate" "1"
 "spawnflags" "1"
 "classname" "trigger_relay"
@@ -1887,7 +1887,7 @@
 "angles" "0 0 0"
 "targetname" "game_playerspawn"
 "target" "start_titles1"
-"delay" "40.3"
+"delay" "60.3"
 "triggerstate" "1"
 "spawnflags" "1"
 "classname" "trigger_relay"
@@ -11935,7 +11935,7 @@
 "targetname" "r4to0_gamestart"
 "angles" "0 0 0"
 "spawnflags" "3"
-"message" "for Sven Co-op"
+"message" "re-conversion for Sven Co-op"
 "x" "-1"
 "y" "0.55"
 "effect" "2"
@@ -11955,5 +11955,85 @@
 "delay" "0"
 "targetname" "r4to0_gamestart"
 "m_iszScriptFunctionName" "ShowCrackLogo"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav1"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_gmorn"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav2"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_time"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav3"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_dest"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav4"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_noeat"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav5"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_emerg"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav6"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_tourn"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav7"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_jobs"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav8"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_haz"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav9"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_arrive"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "wav10"
+"m_iszScriptFunctionName" "SUBTITLES::c0a0_tr_exit"
 }
  
