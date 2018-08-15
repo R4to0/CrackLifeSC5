@@ -128,7 +128,8 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 
 	void Holster( int skipLocal = 0 )
 	{
-		m_pPlayer.m_flNextAttack = WeaponTimeBase() + 0.5;
+		SetThink( null );
+		BaseClass.Holster( skipLocal );
 
 		self.SendWeaponAnim( HGUN_DOWN );
 

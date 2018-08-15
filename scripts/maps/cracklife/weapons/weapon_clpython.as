@@ -125,7 +125,8 @@ class weapon_clpython : ScriptBasePlayerWeaponEntity
 			m_pPlayer.pev.fov = m_pPlayer.m_iFOV = 0;
 		}
 
-		m_pPlayer.m_flNextAttack = 1.0;
+		SetThink( null );
+		BaseClass.Holster( skipLocal );
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 

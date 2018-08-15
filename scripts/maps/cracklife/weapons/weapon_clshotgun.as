@@ -158,7 +158,7 @@ class weapon_clshotgun : ScriptBasePlayerWeaponEntity
 	void Holster( int skipLocal = 0 )
 	{
 		m_bShotgunReload = false;
-
+		SetThink( null );
 		BaseClass.Holster( skipLocal );
 	}
 

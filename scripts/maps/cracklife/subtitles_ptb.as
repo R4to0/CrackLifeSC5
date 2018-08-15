@@ -2,11 +2,13 @@
 // Author: Rafael "R4to0" Alves
 
 // Map: Crack-Life
-// Language: ENGLISH
+// Language: PORTUGUESE BRAZIL
 // Subtitle Author(s):
+// Akira
+
+// Revision:
 // R4to0
-// DNIO071
-// KernCore
+// Tayklor
 
 namespace SUBTITLES
 {
@@ -14,70 +16,70 @@ namespace SUBTITLES
 array<array<string>> SubtitleData =
 {
 	{ // c0a0_tr_gmorn.wav
-		"Good morning fagget and welcome to Black Mesa,\na place in the middle of fucking nowhere",
-		"and nobody in here is a normal person\n except me."
+		"Bom dia bichinha e bem-vindo a Black Mesa,\num lugar que fica na puta que pariu",
+		"e ninguem aqui e uma pessoa normal, exceto eu."
 	},
 
 	{ // c0a0_tr_time.wav
-		"Seriously, everybody is a fucking retard and a freak.",
-		"I can't believe you want to work here,\nyou really are a suicidal faggot, are you?"
+		"Serio, todo mundo e um retardado mental\ne come a propria bunda.",
+		"Eu nao acredito que quer trabalhar aqui,\nvoce realmente e uma bichinha suicida, ne?"
 	},
 
 	{ // c0a0_tr_dest.wav
-		"Most people here have a thing called Clearance Level.",
-		"If you do not have one, the security guards\nwill have the right to shoot you",
-		"and dump your body into someone's closet.",
-		"So I hope you have one, because I don't want\nmy facility smelling like rotting shit."
+		"A maioria do pessoal aqui tem algo chamado Nivel de Liberacao.",
+		"se voce nao tem um, os segurancas\nirao ter o direito de atirar em voce",
+		"e jogar seu corpo no armario de alguem.",
+		"Entao espero que tenha um, porque eu nao quero\nminha instalacao fedendo a bosta encardida."
 	},
 
 	{ // c0a0_tr_noeat.wav
-		"Since barfing in the train causes people to yell\nat you and get mad, we have made a strict rule:",
-		"No eating.",
-		"And don't even think about smoking, or drinking.",
+		"Ja que vomitar no trem faz as pessoas gritarem\nem voce e ficarem bravas, nos criamos uma regra rigorosa:",
+		"Sem comer.",
+		"E nem pense em fumar, ou beber.",
 	},
 
 	{ // c0a0_tr_emerg.wav
-		"Anyway, since people working here are a bunch of\nretarded niggers, we had to make a rule stating:",
-		"No peeking out of the window.",
-		"Nineteen people a year die by doing that,\nand we're still counting."
+		"De qualquer forma, ja que quem trabalha aqui e um\nbando debando de pretos retardados, nos fizemos uma regra que diz:",
+		"Nao va para fora da janela.",
+		"Dezenove pessoas por ano morrem fazendo isso,\ne ainda estamos contando."
 	},
 
 	{ // c0a0_tr_tourn.wav
-		"So anyway, you all suck a huge dick, and I am the boss.",
-		"I don't fucking know what to say now since I gave out a\nabunch of shitty information that nobody cares about."
+		"Mas de qualquer forma, voces todos\nchupam uma rola grande, e eu sou o chefe.",
+		"Eu nao sei mais o que dizer ja que eu falei\num monte de informacao bosta que ninguem se importa."
 	},
 
 	{ // c0a0_tr_jobs.wav
-		"Here at Black Mesa we make sure all employees\nget the same treatment as others,",
-		"which means they can go fuck themselves.",
-		"If you have any friends, relatives or sexy sisters,",
-		"please bring them over so we can slowly burn them\nin acid to test our new hazard suits.",
-		"Yes, the one you're going to wear.",
-		"[Laughing]"
+		"Aqui na Black Mesa nos fazemos certeza que tratamos\ntodos os empregados da mesma forma que outros,",
+		"o que significa que podem ir tomar no meio do cu.",
+		"Se voce tem amigos, parentes ou irmas gostosas,",
+		"por favor traga eles aqui para que possamos lentamente\nqueima-los no acido para testar nossos trajes de protecao.",
+		"Sim, o mesmo que voce ira vestir.",
+		"[Risos]"
 	},
 
 	{ // c0a0_tr_haz.wav
-		"Oh I have an idea.",
-		"Why not having fun by jumping into that green strange goo,\nit's not radioactive and dangerous to your health at all.",
-		"I am serious,",
-		"we have parties in there and we drink it all day,\nsince it's clean and healthy for human life,",
-		"if, however, something makes you feel sick,",
-		"you are handled with this gun and only one bullet,\nnot even a disabled faggot will miss it.",
-		"Yes, I am talking about becoming a hero."
+		"Ah eu tenho uma ideia.",
+		"Por que nao vai se divertir pulando naquela gosma verde estranha,\nela claramente nao e radioativa e perigosa para a sua saude.",
+		"E serio,",
+		"nos fazemos festas la e bebemos aquilo todo dia,\nja que e limpo e saudavel para a vida humana,",
+		"se, por acaso, algo lhe faca se sentir doente,",
+		"lhe daremos essa arma com apenas uma bala,\nnem mesmo um viado com deficiencia vai errar.",
+		"Sim, estou falando sobre tornar-se um heroi."
 	},
 
 	{ // c0a0_tr_arrive.wav
-		"Next stop: Faggot Land.",
+		"Proxima parada: Terra dos Viadinhos.",
 		"soi soi",
-		"Or, as the faggots at the HQ call it:\nSector C.",
-		"The C stands for cancer."
+		"Ou, como os idiotas no QG chamam:\nSetor C.",
+		"O C significa cancer."
 	},
 
 	{ // c0a0_tr_exit.wav
-		"Now wait a few hours for that fat spetsnaz soldier to arrive.",
-		"Just keep in mind that he doesn't speak English,\nso avoid any contact with him.",
-		"Ah. Fucking finally.",
-		"Now I don't have to look at your ugly face."
+		"Agora espere algumas horas ate esse\nsoldado russo gordo chegar.",
+		"Apenas tome em mente que ele nao fala Ingles,\nentao nao faca contato com ele.",
+		"Ah. Caralho, finalmente.",
+		"Agora eu nao tenho que olhar pra essa sua cara feia."
 	}
 	
 };

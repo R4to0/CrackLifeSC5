@@ -77,7 +77,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 	float GetFullChargeTime()
 	{
-		return ( ( bIsMultiplayer ) ? 1.5f : 4.0f );
+		return ( ( bIsMultiplayer ) ? 1.5f : 4.0f ); // 3.0f in Sven Co-op!
 	}
 
 	void Spawn()
@@ -144,7 +144,8 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 	void Holster( int skipLocal = 0 )
 	{
 		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, strSpinSnd );
-		self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + 0.5f;
+		SetThink( null );
+		BaseClass.Holster( skiplocal );
 		self.SendWeaponAnim( GAUSS_HOLSTER );
 		m_iInAttack = iNotAttacking;
 	}

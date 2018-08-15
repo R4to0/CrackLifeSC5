@@ -115,13 +115,11 @@ class weapon_clcrowbar : ScriptBasePlayerWeaponEntity
 		return self.DefaultDeploy( self.GetV_Model( strVeeMdl ), self.GetP_Model( strPeeMdl ), CROWBAR_DRAW, "crowbar" );
 	}
 
-	void Holster( int skiplocal /* = 0 */ )
+	void Holster( int skiplocal )
 	{
 		self.m_fInReload = false;// cancel any reload in progress.
-
-		m_pPlayer.m_flNextAttack = g_WeaponFuncs.WeaponTimeBase() + 0.5; 
-
-		//m_pPlayer.pev.viewmodel = 0;
+		SetThink( null );
+		BaseClass.Holster( skiplocal );
 	}
 	
 	void PrimaryAttack()

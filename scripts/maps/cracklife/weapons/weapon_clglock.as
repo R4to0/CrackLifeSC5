@@ -107,7 +107,8 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 	void Holster( int skipLocal = 0 )
 	{
 		self.m_fInReload = false; // cancel any reload in progress.
-		m_pPlayer.m_flNextAttack = 1.0;
+		SetThink( null );
+		BaseClass.Holster( skipLocal );
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 
