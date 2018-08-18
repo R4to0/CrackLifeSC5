@@ -19,7 +19,7 @@
 "agrunt/ag_idle3.wav"   "hldm-br/cracklife/agrunt/ag_idle3.wav"
 "agrunt/ag_idle4.wav"   "hldm-br/cracklife/agrunt/ag_idle4.wav"
 "agrunt/ag_idle5.wav"   "hldm-br/cracklife/agrunt/ag_idle5.wav"
-"agrunt/ag_pain1.wav"   "hldm-br/cracklife/agrunt/ag_alert4.wav"
+"agrunt/ag_pain1.wav"   "hldm-br/cracklife/agrunt/ag_alert1.wav"
 "agrunt/ag_pain2.wav"   "hldm-br/cracklife/agrunt/ag_pain2.wav"
 "agrunt/ag_pain3.wav"   "hldm-br/cracklife/agrunt/ag_pain3.wav"
 "agrunt/ag_pain4.wav"   "hldm-br/cracklife/agrunt/ag_pain4.wav"

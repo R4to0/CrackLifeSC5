@@ -8713,7 +8713,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "spawnflags" "112"
 "classname" "ambient_generic"
 }
@@ -8908,7 +8908,7 @@
 "angles" "0 0 0"
 "pitchstart" "100"
 "pitch" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "health" "10"
 "targetname" "zap_1"
 "spawnflags" "53"
@@ -8921,7 +8921,7 @@
 "angles" "0 0 0"
 "pitchstart" "100"
 "pitch" "100"
-"message" "hldm-br/cracklife/ambience/port_suckout1.wav"
+"message" "hldm-br/cracklife/ambience/particle_suck2.wav"
 "health" "10"
 "targetname" "zap_2"
 "spawnflags" "53"
@@ -9025,7 +9025,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "spawnflags" "52"
 "classname" "ambient_generic"
 }
@@ -9038,7 +9038,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "spawnflags" "52"
 "classname" "ambient_generic"
 }
@@ -9154,7 +9154,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "spawnflags" "112"
 "classname" "ambient_generic"
 }
@@ -12203,7 +12203,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/debris/beamstart6.wav"
+"message" "hldm-br/cracklife/debris/beamstart3.wav"
 "spawnflags" "112"
 "classname" "ambient_generic"
 }

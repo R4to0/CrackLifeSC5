@@ -1,4 +1,4 @@
-"barney/ba_die1.wav" "hldm-br/cracklife/barney/ba_die1.wav"
-"barney/ba_die2.wav" "hldm-br/cracklife/barney/ba_die2.wav"
+"barney/ba_die1.wav" "barnacle/bcl_die3.wav"
+"barney/ba_die2.wav" "turret/tu_die3.wav"
 "barney/ba_pain1.wav" "hldm-br/cracklife/barney/ba_pain1.wav"
 "barney/ba_pain3.wav" "hldm-br/cracklife/barney/ba_pain3.wav"

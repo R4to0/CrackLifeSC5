@@ -194,7 +194,7 @@
 "targetname" "launch_controlroomblastdoors"
 "lip" "16"
 "wait" "-1"
-"noise2" "hldm-br/cracklife/doors/doorstop6.wav"
+"noise2" "hldm-br/cracklife/ambience/biggun1.wav"
 "speed" "30"
 "rendercolor" "255 255 255"
 "spawnflags" "33"

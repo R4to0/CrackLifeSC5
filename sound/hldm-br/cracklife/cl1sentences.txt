@@ -1217,7 +1217,7 @@ NEAR_WAR12 hldm-br/cracklife/ambience/(v60) mgun_burst1 mgun_burst1 mgun_burst1 
 
 // alien slave
 SLV_IDLE0 hldm-br/cracklife/aslave/slv_word1 
-SLV_IDLE1 hldm-br/cracklife/aslave/slv_word1
+SLV_IDLE1 hldm-br/cracklife/aslave/slv_word2
 SLV_IDLE2 hldm-br/cracklife/aslave/slv_word3
 SLV_IDLE3 hldm-br/cracklife/aslave/slv_word4
 SLV_IDLE4 hldm-br/cracklife/aslave/slv_word6

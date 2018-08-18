@@ -7781,7 +7781,7 @@
 "locked_sound" "12"
 "wait" "4"
 "noise2" "hldm-br/cracklife/doors/doorstop5.wav"
-"noise1" "hldm-br/cracklife/doors/doormove7.wav"
+"noise1" "hldm-br/cracklife/ambience/alienvalve2.wav"
 "speed" "50"
 "rendercolor" "255 255 255"
 "spawnflags" "1024"
@@ -7800,7 +7800,7 @@
 "targetname" "baydoor2"
 "locked_sound" "12"
 "noise2" "hldm-br/cracklife/doors/doorstop5.wav"
-"noise1" "hldm-br/cracklife/doors/doormove7.wav"
+"noise1" "hldm-br/cracklife/ambience/alienvalve2.wav"
 "speed" "50"
 "classname" "func_door"
 }
