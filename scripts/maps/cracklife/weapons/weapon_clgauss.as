@@ -145,7 +145,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 	{
 		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, strSpinSnd );
 		SetThink( null );
-		BaseClass.Holster( skiplocal );
+		BaseClass.Holster( skipLocal );
 		self.SendWeaponAnim( GAUSS_HOLSTER );
 		m_iInAttack = iNotAttacking;
 	}

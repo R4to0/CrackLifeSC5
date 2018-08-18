@@ -35,7 +35,7 @@ array<array<string>> SubtitleData =
 	{ // c0a0_tr_noeat.wav
 		"Ja que vomitar no trem faz as pessoas gritarem\nem voce e ficarem bravas, nos criamos uma regra rigorosa:",
 		"Sem comer.",
-		"E nem pense em fumar, ou beber.",
+		"E nem pense em fumar, ou beber."
 	},
 
 	{ // c0a0_tr_emerg.wav

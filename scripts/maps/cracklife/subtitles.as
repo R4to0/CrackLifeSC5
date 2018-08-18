@@ -33,7 +33,7 @@ array<array<string>> SubtitleData =
 	{ // c0a0_tr_noeat.wav
 		"Since barfing in the train causes people to yell\nat you and get mad, we have made a strict rule:",
 		"No eating.",
-		"And don't even think about smoking, or drinking.",
+		"And don't even think about smoking, or drinking."
 	},
 
 	{ // c0a0_tr_emerg.wav

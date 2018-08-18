@@ -11803,17 +11803,9 @@
 "classname" "env_sprite"
 }
 {
-"origin" "-504 -2168 -3256"
-"angles" "0 0 0"
-"m_iszScriptFunctionName" "StartClassicModeVote"
-"targetname" "vote_classicmode"
-"m_iMode" "1"
-"classname" "trigger_script"
-}
-{
 "model" "*311"
 "angles" "0 0 0"
-"target" "vote_classicmode_disabled"
+"target" ""
 "classname" "trigger_once"
 }
 {
@@ -11852,10 +11844,10 @@
 {
 "origin" "0 0 0"
 "targetname" "mm_r4to0_preintro"
-"r4to0_30sectxt" "10"
-"r4to0_20sectxt" "20"
-"r4to0_10sectxt" "30"
-"r4to0_gamestart" "40.3"
+"r4to0_30sectxt" "30"
+"r4to0_20sectxt" "40"
+"r4to0_10sectxt" "50"
+"r4to0_gamestart" "60.3"
 "classname" "multi_manager"
 }
 {

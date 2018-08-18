@@ -456,7 +456,7 @@
 "model" "*43"
 "angles" "0 0 0"
 "delay" "1"
-"target" "brkr_2"
+"target" ""
 "spawnflags" "1"
 "classname" "trigger_once"
 }

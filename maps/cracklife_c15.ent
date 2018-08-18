@@ -656,7 +656,7 @@
 "target" "goose1b"
 "targetname" "goose1"
 "radius" "64"
-"reachdelay" "8"
+"reachdelay" "15"
 "classname" "info_bigmomma"
 }
 {
@@ -3940,7 +3940,7 @@
 {
 "model" "*116"
 "angles" "0 0 0"
-"delay" "8"
+"delay" "15"
 "target" "mapstart_mm"
 "classname" "trigger_once"
 }
