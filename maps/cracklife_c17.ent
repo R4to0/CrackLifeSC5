@@ -5703,7 +5703,7 @@
 "model" "*84"
 "angles" "0 0 0"
 "target" "startmap_mm"
-"delay" "8"
+"delay" "20"
 "classname" "trigger_once"
 }
 {

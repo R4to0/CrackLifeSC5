@@ -1250,7 +1250,7 @@
 "triggerstate" "1"
 "targetname" "triigger_auto"
 "target" "start_gman_mm"
-"delay" "1"
+"delay" "20"
 "spawnflags" "1"
 "classname" "trigger_relay"
 }

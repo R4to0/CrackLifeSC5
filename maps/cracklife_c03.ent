@@ -17697,7 +17697,7 @@
 {
 "model" "*712"
 "angles" "0 0 0"
-"delay" "8"
+"delay" "20"
 "target" "elestartrly"
 "classname" "trigger_once"
 }
