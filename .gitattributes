@@ -1,3 +1,14 @@
+# Text files
+*.as text
+*.cfg text
+*.ent text
+*.gmr text
+*.gsr text
+*.txt text
+
+
+
+# Binary files for LFS (non-text files)
 *.bsp filter=lfs diff=lfs merge=lfs -text
 *.mdl filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
