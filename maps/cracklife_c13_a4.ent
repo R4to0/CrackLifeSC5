@@ -4936,7 +4936,7 @@
 "angles" "0 0 0"
 "keep_inventory" "1"
 "targetname" "restart"
-"map" "hl_c13_a4"
+"map" "cracklife_c13_a4"
 "spawnflags" "2"
 "classname" "trigger_changelevel"
 }
