@@ -928,7 +928,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/computalk1.wav"
+"message" "cracklife/ambience/computalk1.wav"
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
@@ -953,7 +953,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/computalk1.wav"
+"message" "cracklife/ambience/computalk1.wav"
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
@@ -966,7 +966,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "health" "10"
-"message" "hldm-br/cracklife/tentacle/te_move1.wav"
+"message" "cracklife/tentacle/te_move1.wav"
 "targetname" "tentacle_roar1"
 "pitch" "100"
 "pitchstart" "100"
@@ -1004,7 +1004,7 @@
 "angles" "0 0 0"
 "linearmax" "5"
 "linearmin" "2"
-"message" "hldm-br/cracklife/ambience/burning1.wav"
+"message" "cracklife/ambience/burning1.wav"
 "targetname" "rocket_off_burning1"
 "health" "3"
 "pitch" "75"
@@ -1017,7 +1017,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/tentacle/te_death2.wav"
+"message" "cracklife/tentacle/te_death2.wav"
 "targetname" "tentacle_die_scream"
 "health" "10"
 "pitch" "100"
@@ -1043,7 +1043,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/bigwarning.wav"
+"message" "cracklife/ambience/bigwarning.wav"
 "targetname" "rocket_warn1"
 "health" "2"
 "pitch" "100"
@@ -1056,7 +1056,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/biggun1.wav"
+"message" "cracklife/ambience/biggun1.wav"
 "targetname" "rocket_start_fireon1"
 "health" "10"
 "pitch" "30"
@@ -1108,7 +1108,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/biggun1.wav"
+"message" "cracklife/ambience/biggun1.wav"
 "targetname" "rocket_start_fireoff1"
 "health" "10"
 "pitch" "40"
@@ -1123,7 +1123,7 @@
 "pitchstart" "100"
 "pitch" "100"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/waterfall1.wav"
+"message" "cracklife/ambience/waterfall1.wav"
 "health" "5"
 "spawnflags" "2"
 "classname" "ambient_generic"
@@ -1757,8 +1757,8 @@
 "angles" "0 270 0"
 "targetname" "tent_barney2"
 "spawnflags" "4"
-"soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney_v2.mdl"
+"soundlist" "../cracklife/barney/barney.txt"
+"model" "models/cracklife/barney.mdl"
 "classname" "monster_barney"
 }
 {
@@ -1768,8 +1768,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 358 0"
 "targetname" "haulbarney"
-"soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney_v2.mdl"
+"soundlist" "../cracklife/barney/barney.txt"
+"model" "models/cracklife/barney.mdl"
 "classname" "monster_barney"
 }
 {
@@ -1780,8 +1780,8 @@
 "angles" "0 302 0"
 "targetname" "tent_barney1"
 "spawnflags" "6"
-"soundlist" "../hldm-br/cracklife/barney/barney.txt"
-"model" "models/hldm-br/cracklife/barney_v2.mdl"
+"soundlist" "../cracklife/barney/barney.txt"
+"model" "models/cracklife/barney.mdl"
 "classname" "monster_barney"
 }
 {
@@ -1794,7 +1794,7 @@
 "targetname" "runme"
 "body" "3"
 "spawnflags" "131"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -1805,7 +1805,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "targetname" "haulscientist"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -1819,7 +1819,7 @@
 "_cone" "50"
 "targetname" "c1a4i_scientist"
 "spawnflags" "146"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -1830,7 +1830,7 @@
 "sweeparc" "130"
 "angles" "0 320 0"
 "targetname" "tent3"
-"soundlist" "../hldm-br/cracklife/tentacle/tentacle.txt"
+"soundlist" "../cracklife/tentacle/tentacle.txt"
 "classname" "monster_tentacle"
 }
 {
@@ -1841,7 +1841,7 @@
 "sweeparc" "130"
 "angles" "0 60 0"
 "targetname" "tent2"
-"soundlist" "../hldm-br/cracklife/tentacle/tentacle.txt"
+"soundlist" "../cracklife/tentacle/tentacle.txt"
 "classname" "monster_tentacle"
 }
 {
@@ -1852,7 +1852,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "targetname" "tent1"
-"soundlist" "../hldm-br/cracklife/tentacle/tentacle.txt"
+"soundlist" "../cracklife/tentacle/tentacle.txt"
 "classname" "monster_tentacle"
 }
 {
@@ -1862,8 +1862,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "targetname" "haulzombie"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -1872,8 +1872,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -1994,7 +1994,7 @@
 "radius" "512"
 "refire" "3"
 "volume" "10"
-"sentence" "+hldm-br/cracklife/barney/c1a4_ba_octo1.wav"
+"sentence" "+cracklife/barney/c1a4_ba_octo1.wav"
 "listener" "player"
 "spawnflags" "5"
 "classname" "scripted_sentence"
@@ -2008,7 +2008,7 @@
 "radius" "512"
 "refire" "3"
 "volume" "10"
-"sentence" "+hldm-br/cracklife/barney/c1a4_ba_wisp.wav"
+"sentence" "+cracklife/barney/c1a4_ba_wisp.wav"
 "listener" "player"
 "spawnflags" "5"
 "classname" "scripted_sentence"
@@ -3478,7 +3478,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3491,7 +3491,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3504,7 +3504,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3557,7 +3557,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3570,7 +3570,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3583,7 +3583,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3596,7 +3596,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3609,7 +3609,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3622,7 +3622,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3635,7 +3635,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3648,7 +3648,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3661,7 +3661,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3674,7 +3674,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3687,7 +3687,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -3700,7 +3700,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/buttons/button4.wav"
+"message" "cracklife/buttons/button4.wav"
 "spawnflags" "24"
 "classname" "ambient_generic"
 }
@@ -4093,7 +4093,7 @@
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "classname" "ambient_generic"
 }
 {
@@ -4270,7 +4270,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "targetname" "gen"
 "health" "5"
 "pitch" "100"
@@ -4667,7 +4667,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/debris/zap1.wav"
+"message" "cracklife/debris/zap1.wav"
 "targetname" "ele_halt_zaps1"
 "health" "10"
 "pitch" "100"
@@ -4810,7 +4810,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/mechwhine.wav"
+"message" "cracklife/ambience/mechwhine.wav"
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
@@ -4827,7 +4827,7 @@
 "targetname" "gear_scientist"
 "body" "1"
 "spawnflags" "4"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -4837,7 +4837,7 @@
 "entity" "gear_scientist"
 "duration" "6"
 "listener" "player"
-"sentence" "+hldm-br/cracklife/scientist/c1a4_sci_pwroff.wav"
+"sentence" "+cracklife/scientist/c1a4_sci_pwroff.wav"
 "volume" "10"
 "radius" "512"
 "refire" "3"
@@ -4857,7 +4857,7 @@
 "entity" "gear_scientist"
 "duration" "6"
 "listener" "player"
-"sentence" "+hldm-br/cracklife/scientist/c1a4_sci_pwr.wav"
+"sentence" "+cracklife/scientist/c1a4_sci_pwr.wav"
 "volume" "10"
 "radius" "512"
 "refire" "3"
@@ -4905,7 +4905,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 225 0"
 "pose" "2"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -4950,8 +4950,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 315 0"
 "targetname" "alien_squid"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -4987,8 +4987,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -5013,8 +5013,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -5025,7 +5025,7 @@
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "classname" "ambient_generic"
 }
 {
@@ -5046,7 +5046,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "targetname" "dials"
 "health" "5"
 "pitch" "100"
@@ -5062,7 +5062,7 @@
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "classname" "ambient_generic"
 }
 {
@@ -5177,7 +5177,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "6"
 "pitch" "100"
 "pitchstart" "100"
@@ -5190,7 +5190,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "health" "5"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "pitch" "100"
 "pitchstart" "100"
 "spawnflags" "4"
@@ -5206,7 +5206,7 @@
 "angles" "0 0 0"
 "targetname" "rocketcrawl_sci"
 "spawnflags" "16"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist"
 }
 {
@@ -5222,7 +5222,7 @@
 {
 "origin" "-151 4521 -3086"
 "angles" "0 0 0"
-"sentence" "+hldm-br/cracklife/scientist/c1a4_sci_gener.wav"
+"sentence" "+cracklife/scientist/c1a4_sci_gener.wav"
 "targetname" "rocket_sci_sentence"
 "entity" "rocketcrawl_sci"
 "duration" "6"
@@ -5918,7 +5918,7 @@
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "classname" "ambient_generic"
 }
 {
@@ -5928,8 +5928,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -5939,8 +5939,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -5951,7 +5951,7 @@
 "health" "1"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "classname" "ambient_generic"
 }
 {
@@ -5972,7 +5972,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "targetname" "dials"
 "health" "5"
 "pitch" "100"
@@ -5985,7 +5985,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/breather.wav"
+"message" "cracklife/ambience/breather.wav"
 "targetname" "dials"
 "health" "5"
 "pitch" "100"
@@ -6002,7 +6002,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/dronemachine1.wav"
+"message" "cracklife/ambience/dronemachine1.wav"
 "targetname" "dials"
 "health" "5"
 "pitch" "100"
@@ -6017,7 +6017,7 @@
 "pitchstart" "100"
 "pitch" "100"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/waterfall1.wav"
+"message" "cracklife/ambience/waterfall1.wav"
 "health" "5"
 "spawnflags" "2"
 "classname" "ambient_generic"
@@ -6082,8 +6082,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 292 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -6092,8 +6092,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 331 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -6103,8 +6103,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 206 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6135,8 +6135,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -6154,8 +6154,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 208 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6179,8 +6179,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 217 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6217,8 +6217,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 310 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -6317,8 +6317,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 217 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6328,7 +6328,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 135 0"
 "pose" "2"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -6367,8 +6367,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 90 0"
 "targetname" "eating_squid"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -6503,8 +6503,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6568,7 +6568,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 135 0"
 "pose" "1"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -6578,8 +6578,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 90 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -6591,7 +6591,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "8"
 "pitch" "100"
 "pitchstart" "100"
@@ -6603,7 +6603,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "8"
 "pitch" "100"
 "pitchstart" "100"
@@ -6615,7 +6615,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "8"
 "pitch" "100"
 "pitchstart" "100"
@@ -6961,8 +6961,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 233 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -7435,7 +7435,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -7468,7 +7468,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -7523,8 +7523,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 270 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -7646,7 +7646,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "health" "2"
 "pitch" "100"
 "pitchstart" "100"
@@ -7658,7 +7658,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "health" "2"
 "pitch" "100"
 "pitchstart" "100"
@@ -7754,7 +7754,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "health" "1"
 "preset" "4"
 "targetname" "fuellight1"
@@ -7781,7 +7781,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/waterfall1.wav"
+"message" "cracklife/ambience/waterfall1.wav"
 "health" "2"
 "preset" "14"
 "targetname" "fuellight1"
@@ -7795,7 +7795,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/waterfall1.wav"
+"message" "cracklife/ambience/waterfall1.wav"
 "health" "2"
 "preset" "14"
 "targetname" "oxylight1"
@@ -7813,7 +7813,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/buttons/button5.wav"
+"message" "cracklife/buttons/button5.wav"
 "targetname" "oxysound1"
 "health" "3"
 "pitch" "100"
@@ -7836,7 +7836,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/buttons/button5.wav"
+"message" "cracklife/buttons/button5.wav"
 "targetname" "fuelsound1"
 "health" "3"
 "pitch" "100"
@@ -7936,8 +7936,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 53 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -7947,8 +7947,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 127 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -7973,8 +7973,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 90 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -8028,8 +8028,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 245 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -8039,8 +8039,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -8058,8 +8058,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 263 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -8069,8 +8069,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 128 0"
 "spawnflags" "2"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -8660,7 +8660,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "2"
 "pitch" "100"
 "pitchstart" "100"
@@ -8672,7 +8672,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "3"
 "pitch" "100"
 "pitchstart" "100"
@@ -8818,8 +8818,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 262 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -8868,8 +8868,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 90 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -8980,7 +8980,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "4"
 "preset" "4"
 "pitch" "100"
@@ -8994,7 +8994,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "5"
 "preset" "4"
 "pitch" "100"
@@ -9021,8 +9021,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 86 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -9059,8 +9059,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 270 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -9148,8 +9148,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 270 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -9157,7 +9157,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "5"
 "preset" "4"
 "pitch" "80"
@@ -9281,7 +9281,7 @@
 "pitchstart" "100"
 "pitch" "100"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/computalk1.wav"
+"message" "cracklife/ambience/computalk1.wav"
 "health" "3"
 "classname" "ambient_generic"
 }
@@ -9290,7 +9290,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/drips.wav"
+"message" "cracklife/ambience/drips.wav"
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
@@ -9526,8 +9526,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -9606,7 +9606,7 @@
 "pitchstart" "100"
 "pitch" "100"
 "health" "10"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "spawnflags" "2"
 "classname" "ambient_generic"
 }

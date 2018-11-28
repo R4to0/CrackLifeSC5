@@ -326,8 +326,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 336 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -410,8 +410,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 315 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -428,8 +428,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 211 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -606,7 +606,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/pumper.wav"
+"message" "cracklife/ambience/pumper.wav"
 "health" "6"
 "pitch" "100"
 "pitchstart" "100"
@@ -619,8 +619,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 336 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -840,7 +840,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
@@ -865,7 +865,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/drips.wav"
+"message" "cracklife/ambience/drips.wav"
 "health" "4"
 "pitch" "100"
 "pitchstart" "100"
@@ -960,7 +960,7 @@
 "angles" "0 0 0"
 "linearmax" "5"
 "linearmin" "2"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "8"
 "pitch" "100"
 "pitchstart" "100"
@@ -1187,7 +1187,7 @@
 "angles" "0 90 0"
 "lip" "2"
 "wait" "-1"
-"noise2" "hldm-br/cracklife/doors/doorstop3.wav"
+"noise2" "cracklife/doors/doorstop3.wav"
 "noise1" "common/null.wav"
 "speed" "50"
 "targetname" "liftdoors2"
@@ -2389,7 +2389,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/the_horror1.wav"
+"message" "cracklife/ambience/the_horror1.wav"
 "targetname" "gatesmash"
 "health" "4"
 "pitch" "100"
@@ -2453,7 +2453,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "spawnflags" "4"
 "classname" "ambient_generic"
 }
@@ -2465,7 +2465,7 @@
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "spawnflags" "4"
 "classname" "ambient_generic"
 }
@@ -2768,7 +2768,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "4"
 "pitch" "100"
 "pitchstart" "100"
@@ -2780,7 +2780,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "4"
 "pitch" "100"
 "pitchstart" "100"
@@ -2899,8 +2899,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 280 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -2909,8 +2909,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 246 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -2920,8 +2920,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 180 0"
 "spawnflags" "4"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -2942,7 +2942,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/bigwarning.wav"
+"message" "cracklife/ambience/bigwarning.wav"
 "targetname" "lift_warn_sound"
 "health" "8"
 "preset" "15"
@@ -3019,8 +3019,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 164 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -3028,7 +3028,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/mechwhine.wav"
+"message" "cracklife/ambience/mechwhine.wav"
 "health" "1"
 "preset" "13"
 "pitch" "100"
@@ -3068,8 +3068,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 87 0"
 "targetname" "burst_door_zombie2"
-"model" "models/hldm-br/cracklife/zombie_v2.mdl"
-"soundlist" "../hldm-br/cracklife/zombie/zombie_cl1.txt"
+"model" "models/cracklife/zombie.mdl"
+"soundlist" "../cracklife/zombie/zombie.txt"
 "classname" "monster_zombie"
 }
 {
@@ -3101,7 +3101,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/wind1_cl1.wav"
+"message" "cracklife/ambience/wind1.wav"
 "health" "5"
 "pitch" "100"
 "pitchstart" "100"
@@ -3177,8 +3177,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 11 0"
 "spawnflags" "4"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3187,8 +3187,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 94 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -3345,8 +3345,8 @@
 "angles" "0 144 0"
 "targetname" "runhound_away"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -3386,8 +3386,8 @@
 "angles" "0 90 0"
 "targetname" "runhoundb"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -3408,8 +3408,8 @@
 "angles" "0 90 0"
 "targetname" "runhoundc"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -3430,8 +3430,8 @@
 "angles" "0 90 0"
 "targetname" "runhoundd"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -3453,8 +3453,8 @@
 "angles" "0 90 0"
 "targetname" "runhounda"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {
@@ -3540,8 +3540,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 152 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3550,8 +3550,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 71 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -3560,8 +3560,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 71 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -3570,8 +3570,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 12 0"
-"model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "classname" "monster_headcrab"
 }
 {
@@ -3586,8 +3586,8 @@
 "minhullsize" "0 0 0"
 "rendercolor" "0 0 0"
 "angles" "0 152 0"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"model" "models/cracklife/bullsquid.mdl"
 "classname" "monster_bullchicken"
 }
 {
@@ -3617,8 +3617,8 @@
 "origin" "508 -2966 -1800"
 "angles" "0 180 0"
 "targetname" "spawn_squid"
-"soundlist" "../hldm-br/cracklife/bullchicken/bullchicken.txt"
-"new_model" "models/hldm-br/cracklife/bullsquid_v2.mdl"
+"soundlist" "../cracklife/bullchicken/bullchicken.txt"
+"new_model" "models/cracklife/bullsquid.mdl"
 "monstertype" "monster_bullchicken"
 "monstercount" "1"
 "delay" "1"

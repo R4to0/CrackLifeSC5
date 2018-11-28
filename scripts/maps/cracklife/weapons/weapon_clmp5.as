@@ -38,7 +38,7 @@ const string strSecAmmoType		= "cl_ARgrenades"; //Default: ARgrenades
 
 // Models
 const string strPeeMdl			= "models/hlclassic/p_9mmAR.mdl"; // SC HL1 "classic mode" model
-const string strVeeMdl			= "models/hldm-br/cracklife/v_9mmar_v2.mdl"; // v2: Edited reload events
+const string strVeeMdl			= "models/cracklife/v_9mmar.mdl"; // v2: Edited reload events
 const string strWeeMdl			= "models/hlclassic/w_9mmAR.mdl"; // SC HL1 "classic mode" model
 const string strShellMdl		= "models/shell.mdl"; // Shell
 const string strGrenadeMdl		= "models/grenade.mdl"; // Grenade
@@ -53,7 +53,7 @@ const string strFire2Snd		= "hlclassic/weapons/hks2.wav";
 const string strFire3Snd		= "hlclassic/weapons/hks3.wav";
 const string strGL1Snd			= "hlclassic/weapons/glauncher.wav";
 const string strGL2Snd			= "hlclassic/weapons/glauncher2.wav";
-const string strEmptySnd		= "hldm-br/cracklife/weapons/357_cock1.wav";
+const string strEmptySnd		= "cracklife/weapons/357_cock1.wav";
 const string strAmmoSnd			= "items/9mmclip1.wav";
 
 class weapon_clmp5 : ScriptBasePlayerWeaponEntity
@@ -395,7 +395,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::weapon_clmp5", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", strPriAmmoType, strSecAmmoType );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", strPriAmmoType, strSecAmmoType );
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoClip", GetAmmoName() );
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoGrenade", GetSecAmmoName() );
 }

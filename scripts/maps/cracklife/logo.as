@@ -4,7 +4,7 @@ void ShowCrackLogo( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useT
 	
 	params.channel = 4;
 	params.flags = HUD_ELEM_SCR_CENTER_X;
-	params.spritename = "hldm-br/cracklife/logo.spr";
+	params.spritename = "cracklife/logo.spr";
 	params.x = 0;
 	params.y = 0.48;
 	params.frame = 0;

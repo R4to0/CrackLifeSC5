@@ -19,13 +19,13 @@ namespace CLPYTHON
 
 // Models
 const string strPeeMdl		= "models/p_357.mdl";
-const string strVeeMdl		= "models/hldm-br/cracklife/v_357.mdl";
+const string strVeeMdl		= "models/cracklife/v_357.mdl";
 const string strWeeMdl		= "models/w_357.mdl";
 
 // Sounds
-const string strFire1Snd	= "hldm-br/cracklife/weapons/357_shot1.wav"; //POW
-//const string strFire2Snd		= "hldm-br/cracklife/weapons/357_shot2.wav";
-const string strEmptySnd	= "hldm-br/cracklife/weapons/357_cock1.wav"; //NO!
+const string strFire1Snd	= "cracklife/weapons/357_shot1.wav"; //POW
+//const string strFire2Snd		= "cracklife/weapons/357_shot2.wav";
+const string strEmptySnd	= "cracklife/weapons/357_cock1.wav"; //NO!
 
 // Weapon Info
 const uint iMaxCarry		= 36;
@@ -248,7 +248,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLPYTHON::weapon_clpython", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", "357" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "357" );
 }
 
 } // End of namespace

@@ -1,0 +1,7 @@
+"debris/beamstart1.wav" "cracklife/debris/beamstart1.wav" 
+"player/pl_step1.wav"   "cracklife/player/pl_step1.wav"   
+"player/pl_step2.wav"   "cracklife/player/pl_step2.wav"   
+"player/pl_step3.wav"   "cracklife/player/pl_step3.wav"   
+"player/pl_step4.wav"   "cracklife/player/pl_step4.wav"   
+"weapons/pl_gun1.wav"   "cracklife/weapons/pl_gun1.wav"   
+"weapons/pl_gun2.wav"   "cracklife/weapons/pl_gun1.wav"   

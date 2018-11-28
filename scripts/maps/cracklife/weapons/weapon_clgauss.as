@@ -23,16 +23,16 @@ namespace CLGAUSS
 {
 
 // Models
-const string strPeeMdl			= "models/hldm-br/cracklife/p_gauss.mdl";
-const string strVeeMdl			= "models/hldm-br/cracklife/v_gauss.mdl";
-const string strWeeMdl			= "models/hldm-br/cracklife/w_gauss.mdl";
+const string strPeeMdl			= "models/cracklife/p_gauss.mdl";
+const string strVeeMdl			= "models/cracklife/v_gauss.mdl";
+const string strWeeMdl			= "models/cracklife/w_gauss.mdl";
 
 // Sounds
 const string strDisch1Snd		= "weapons/electro4.wav";
 const string strDisch2Snd		= "weapons/electro5.wav";
 const string strDisch3Snd		= "weapons/electro6.wav";
-const string strSpinSnd			= "hldm-br/cracklife/ambience/pulsemachine.wav";
-const string strShootSnd		= "hldm-br/cracklife/weapons/gauss2.wav";
+const string strSpinSnd			= "cracklife/ambience/pulsemachine.wav";
+const string strShootSnd		= "cracklife/weapons/gauss2.wav";
 
 // Sprites
 const string strGlowSpr			= "sprites/hotglow.spr";
@@ -701,7 +701,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLGAUSS::weapon_clgauss", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", "uranium" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "uranium" );
 }
 
 } // End of namespace

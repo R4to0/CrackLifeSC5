@@ -351,7 +351,7 @@
 "target" "ap1"
 "globalname" "apache1"
 "spawnflags" "72"
-"soundlist" "../hldm-br/cracklife/apache/apache.txt"
+"soundlist" "../cracklife/apache/apache.txt"
 "classname" "monster_apache"
 }
 {
@@ -386,8 +386,8 @@
 "netname" "squad1"
 "targetname" "squad1_leader"
 "spawnflags" "160"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -498,8 +498,8 @@
 "angles" "0 0 0"
 "pose" "1"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -823,8 +823,8 @@
 "angles" "0 166 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -836,8 +836,8 @@
 "angles" "0 166 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -849,8 +849,8 @@
 "angles" "0 279 0"
 "netname" "squad1"
 "spawnflags" "1"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -883,8 +883,8 @@
 }
 {
 "origin" "1824 -2376 -1104"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "maxhullsize" "0 0 0"
 "minhullsize" "0 0 0"
@@ -901,8 +901,8 @@
 }
 {
 "origin" "1864 -2520 -1104"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "maxhullsize" "0 0 0"
 "minhullsize" "0 0 0"
@@ -919,8 +919,8 @@
 }
 {
 "origin" "1824 -2664 -1104"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "maxhullsize" "0 0 0"
 "minhullsize" "0 0 0"
@@ -989,8 +989,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 287 0"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -1923,7 +1923,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine1_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2065,7 +2065,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine2_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2207,7 +2207,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine3_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2349,7 +2349,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine4_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2491,7 +2491,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine5_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2633,7 +2633,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine6_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2775,7 +2775,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine7_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -2917,7 +2917,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine8_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -3059,7 +3059,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine9_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -3201,7 +3201,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine0_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -3363,7 +3363,7 @@
 "linearmin" "2"
 "angles" "0 0 0"
 "targetname" "mine_expl"
-"message" "hldm-br/cracklife/weapons/explode3.wav"
+"message" "cracklife/weapons/explode3.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -3394,8 +3394,8 @@
 "origin" "2191 -1412 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_1"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3425,7 +3425,7 @@
 "sound" "1"
 "targetname" "tentacle"
 "spawnflags" "128"
-"soundlist" "../hldm-br/cracklife/tentacle/tentacle.txt"
+"soundlist" "../cracklife/tentacle/tentacle.txt"
 "classname" "monster_tentacle"
 }
 {
@@ -3434,8 +3434,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 296 0"
 "body" "2"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_hgrunt_dead"
 }
 {
@@ -3479,8 +3479,8 @@
 "origin" "2084 -1735 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_2"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3513,8 +3513,8 @@
 "origin" "2415 -1012 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_3"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3547,8 +3547,8 @@
 "origin" "2831 -2212 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_4"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3581,8 +3581,8 @@
 "origin" "2756 -999 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_5"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3615,8 +3615,8 @@
 "origin" "4100 -2135 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_6"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3649,8 +3649,8 @@
 "origin" "4308 -2455 -472"
 "angles" "0 323 0"
 "targetname" "crabpop_crab_7"
-"new_model" "models/hldm-br/cracklife/headcrab.mdl"
-"soundlist" "../hldm-br/cracklife/headcrab/headcrab.txt"
+"new_model" "models/cracklife/headcrab.mdl"
+"soundlist" "../cracklife/headcrab/headcrab.txt"
 "monstertype" "monster_headcrab"
 "monstercount" "1"
 "delay" "1"
@@ -3740,7 +3740,7 @@
 "rendercolor" "255 255 255"
 "wait" "-1"
 "noise2" "common/null.wav"
-"noise1" "hldm-br/cracklife/doors/doormove5.wav"
+"noise1" "cracklife/doors/doormove5.wav"
 "speed" "1000"
 "targetname" "turbines"
 "spawnflags" "32"
@@ -5221,7 +5221,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 147 0"
 "spawnflags" "4"
-"model" "models/hldm-br/cracklife/icky.mdl"
+"model" "models/cracklife/icky.mdl"
 "classname" "monster_ichthyosaur"
 }
 {
@@ -5279,7 +5279,7 @@
 "body" "1"
 "pose" "1"
 "angles" "-8 90 0"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -5411,7 +5411,7 @@
 "target" "ap1_1"
 "targetname" "apache"
 "spawnflags" "6"
-"soundlist" "../hldm-br/cracklife/apache/apache.txt"
+"soundlist" "../cracklife/apache/apache.txt"
 "classname" "monster_apache"
 }
 {
@@ -5430,8 +5430,8 @@
 }
 {
 "origin" "-2417 319 36"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"new_model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"new_model" "models/cracklife/hgrunt.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
 "targetname" "sm_spawns1"
@@ -5451,8 +5451,8 @@
 }
 {
 "origin" "-2080 320 36"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"new_model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"new_model" "models/cracklife/hgrunt.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
 "targetname" "sm_spawns1"
@@ -5997,8 +5997,8 @@
 }
 {
 "origin" "-3168 -1152 32"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"new_model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"new_model" "models/cracklife/hgrunt.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
 "targetname" "sm_spawns1"
@@ -6019,8 +6019,8 @@
 }
 {
 "origin" "-3232 -1232 32"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"new_model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"new_model" "models/cracklife/hgrunt.mdl"
 "monstertype" "monster_human_grunt"
 "squadname" "gruntsquad_fueldepot"
 "targetname" "sm_spawns1"
@@ -6250,7 +6250,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/weapons/mortar.wav"
+"message" "cracklife/weapons/mortar.wav"
 "health" "10"
 "pitch" "180"
 "pitchstart" "100"
@@ -6316,7 +6316,7 @@
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/weapons/mortar.wav"
+"message" "cracklife/weapons/mortar.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -6350,7 +6350,7 @@
 "health" "10"
 "pitch" "50"
 "pitchstart" "100"
-"message" "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"
+"message" "cracklife/weapons/sbarrel1.wav"
 "spawnflags" "49"
 "classname" "ambient_generic"
 }
@@ -6546,8 +6546,8 @@
 "angles" "0 248 0"
 "targetname" "grunt_bridgerunner"
 "spawnflags" "128"
-"soundlist" "../hldm-br/cracklife/hgrunt/hgrunt_cl1.txt"
-"model" "models/hldm-br/cracklife/hgrunt_cl1_v2.mdl"
+"soundlist" "../cracklife/hgrunt/hgrunt.txt"
+"model" "models/cracklife/hgrunt.mdl"
 "classname" "monster_human_grunt"
 }
 {
@@ -6558,8 +6558,8 @@
 "angles" "0 248 0"
 "targetname" "slave_bridgerunner"
 "spawnflags" "128"
-"soundlist" "../hldm-br/cracklife/aslave/islave_cl1.txt"
-"model" "models/hldm-br/cracklife/islave_cl1_v2.mdl"
+"soundlist" "../cracklife/aslave/islave.txt"
+"model" "models/cracklife/islave.mdl"
 "classname" "monster_alien_slave"
 }
 {
@@ -6696,7 +6696,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/ambience/industrial1.wav"
+"message" "cracklife/ambience/industrial1.wav"
 "health" "8"
 "pitch" "100"
 "pitchstart" "100"
@@ -6709,7 +6709,7 @@
 "linearmax" "5"
 "linearmin" "2"
 "angles" "0 0 0"
-"message" "hldm-br/cracklife/plats/bigstop1.wav"
+"message" "cracklife/plats/bigstop1.wav"
 "health" "10"
 "pitch" "100"
 "pitchstart" "100"
@@ -7105,7 +7105,7 @@
 "angles" "0 176 0"
 "body" "1"
 "pose" "2"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -7115,7 +7115,7 @@
 "angles" "0 345 0"
 "body" "3"
 "pose" "1"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -7124,7 +7124,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 49 0"
 "body" "-1"
-"model" "models/hldm-br/cracklife/scientist_v2.mdl"
+"model" "models/cracklife/scientist.mdl"
 "classname" "monster_scientist_dead"
 }
 {
@@ -7602,8 +7602,8 @@
 "rendercolor" "0 0 0"
 "angles" "0 247 0"
 "spawnflags" "1"
-"model" "models/hldm-br/cracklife/houndeye.mdl"
-"soundlist" "../hldm-br/cracklife/houndeye/houndeye.txt"
+"model" "models/cracklife/houndeye.mdl"
+"soundlist" "../cracklife/houndeye/houndeye.txt"
 "classname" "monster_houndeye"
 }
 {

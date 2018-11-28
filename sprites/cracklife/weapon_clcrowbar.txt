@@ -1,0 +1,3 @@
+2
+weapon			640 cracklife/640hud1	0	0	170	45
+weapon_s		640 cracklife/640hud4	0	0	170	45

@@ -19,13 +19,13 @@ namespace CLGLOCK
 {
 
 // Models
-const string strPeeMdl		= "models/hldm-br/cracklife/p_9mmhandgun_v2.mdl"; //Thanks Tayklor
-const string strVeeMdl		= "models/hldm-br/cracklife/v_9mmhandgun.mdl";
-const string strWeeMdl		= "models/hldm-br/cracklife/w_9mmhandgun.mdl";
+const string strPeeMdl		= "models/cracklife/p_9mmhandgun.mdl"; //Thanks Tayklor
+const string strVeeMdl		= "models/cracklife/v_9mmhandgun.mdl";
+const string strWeeMdl		= "models/cracklife/w_9mmhandgun.mdl";
 
 // Sounds
-const string strFireSnd		= "hldm-br/cracklife/debris/beamstart1.wav"; //PINGLES!
-const string strEmptySnd	= "hldm-br/cracklife/weapons/357_cock1.wav"; //NO!
+const string strFireSnd		= "cracklife/debris/beamstart1.wav"; //PINGLES!
+const string strEmptySnd	= "cracklife/weapons/357_cock1.wav"; //NO!
 
 // Weapon Info
 const uint iMaxCarry		= 999;
@@ -206,7 +206,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLGLOCK::weapon_clglock", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", "9mm" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "9mm" );
 }
 
 } // End of namespace

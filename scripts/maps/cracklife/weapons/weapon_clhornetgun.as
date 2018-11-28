@@ -23,14 +23,14 @@ namespace CLHORNETGUN
 {
 
 // Models
-const string strPeeMdl		= "models/hldm-br/cracklife/p_hgun_cl1.mdl";
-const string strVeeMdl		= "models/hldm-br/cracklife/v_hgun_cl1.mdl";
-const string strWeeMdl		= "models/hldm-br/cracklife/w_hgun_cl1.mdl";
+const string strPeeMdl		= "models/cracklife/p_hgun.mdl";
+const string strVeeMdl		= "models/cracklife/v_hgun.mdl";
+const string strWeeMdl		= "models/cracklife/w_hgun.mdl";
 
 // Sounds
-const string strFire1Snd	= "hldm-br/cracklife/agrunt/ag_fire1.wav";
-const string strFire2Snd	= "hldm-br/cracklife/agrunt/ag_fire1.wav"; //ag_fire2.wav
-const string strFire3Snd	= "hldm-br/cracklife/agrunt/ag_fire1.wav"; //ag_fire3.wav
+const string strFire1Snd	= "cracklife/agrunt/ag_fire1.wav";
+const string strFire2Snd	= "cracklife/agrunt/ag_fire1.wav"; //ag_fire2.wav
+const string strFire3Snd	= "cracklife/agrunt/ag_fire1.wav"; //ag_fire3.wav
 
 // Weapon Info
 const uint iDefaultGive		= 8;
@@ -302,7 +302,7 @@ void Register()
 {
 	CLHORNET::Register();
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLHORNETGUN::weapon_clhornetgun", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", "Hornet" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "Hornet" );
 }
 
 } // End of namespace

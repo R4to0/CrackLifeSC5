@@ -1,0 +1,8 @@
+"apache/ap_rotor1.wav"  "cracklife/apache/ap_rotor1.wav"
+"apache/ap_rotor2.wav"  "cracklife/apache/ap_rotor1.wav"
+"apache/ap_rotor3.wav"  "cracklife/apache/ap_rotor1.wav"
+"apache/ap_rotor4.wav"  "cracklife/apache/ap_rotor1.wav"
+"apache/ap_whine1.wav"  "cracklife/apache/ap_rotor1.wav"
+"weapons/mortarhit.wav" "cracklife/weapons/mortarhit.wav"
+"turret/tu_fire1.wav"   "cracklife/turret/tu_fire1.wav"
+"weapons/rocket1.wav"   "cracklife/weapons/mortar.wav"

@@ -8,7 +8,7 @@
 namespace CLHORNET
 {
 	// Models
-	const string HORNET_MDL = "models/hldm-br/cracklife/hornet.mdl";
+	const string HORNET_MDL = "models/cracklife/hornet.mdl";
 	const string S_BUZZ1 = "hornet/ag_buzz1.wav";
 	const string S_BUZZ2 = "hornet/ag_buzz2.wav";
 	const string S_BUZZ3 = "hornet/ag_buzz3.wav";

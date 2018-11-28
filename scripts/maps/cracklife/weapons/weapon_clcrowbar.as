@@ -25,20 +25,20 @@ enum crowbar_e
 namespace CLCROWBAR
 {
 
-const string strPeeMdl		= "models/hldm-br/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
-const string strVeeMdl		= "models/hldm-br/cracklife/v_crowbar_v2.mdl"; // Tayklor fix <3
-const string strWeeMdl		= "models/hldm-br/cracklife/w_crowbar.mdl";
+const string strPeeMdl		= "models/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
+const string strVeeMdl		= "models/cracklife/v_crowbar.mdl"; // Tayklor fix <3
+const string strWeeMdl		= "models/cracklife/w_crowbar.mdl";
 
-const string strHit1Snd		= "hldm-br/cracklife/weapons/cbar_hit1.wav";
-const string strHit2Snd		= "hldm-br/cracklife/weapons/cbar_hit2.wav";
+const string strHit1Snd		= "cracklife/weapons/cbar_hit1.wav";
+const string strHit2Snd		= "cracklife/weapons/cbar_hit2.wav";
 const string strMiss1Snd	= "weapons/cbar_miss1.wav";
 const string strHitBod1Snd	= "weapons/cbar_hitbod1.wav";
 const string strHitBod2Snd	= "weapons/cbar_hitbod2.wav";
 const string strHitBod3Snd	= "weapons/cbar_hitbod3.wav";
-const string strTaunt1Snd	= "hldm-br/cracklife/taunts/taunt1.wav";
-const string strTaunt2Snd	= "hldm-br/cracklife/taunts/taunt2.wav";
-const string strTaunt3Snd	= "hldm-br/cracklife/taunts/taunt3.wav";
-const string strTaunt4Snd	= "hldm-br/cracklife/taunts/taunt4.wav";
+const string strTaunt1Snd	= "cracklife/taunts/taunt1.wav";
+const string strTaunt2Snd	= "cracklife/taunts/taunt2.wav";
+const string strTaunt3Snd	= "cracklife/taunts/taunt3.wav";
+const string strTaunt4Snd	= "cracklife/taunts/taunt4.wav";
 
 const float flDamage = g_EngineFuncs.CVarGetFloat( "sk_plr_crowbar" );
 
@@ -327,7 +327,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLCROWBAR::weapon_clcrowbar", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife" );
 }
 
 } // End of namespace

@@ -29,18 +29,18 @@ const Vector VECTOR_CONE_DM_SHOTGUN( 0.08716, 0.04362, 0.00  );		// 10 degrees b
 const Vector VECTOR_CONE_DM_DOUBLESHOTGUN( 0.17365, 0.04362, 0.00 ); 	// 20 degrees by 5 degrees
 
 // Models
-const string strPeeMdl		= "models/hldm-br/cracklife/p_shotgun_cl1.mdl"; // Thanks Tayklor <3
-const string strVeeMdl		= "models/hldm-br/cracklife/v_shotgun_cl1.mdl";
-const string strWeeMdl		= "models/hldm-br/cracklife/w_shotgun_cl1.mdl"; // Thanks Tayklor <3
+const string strPeeMdl		= "models/cracklife/p_shotgun.mdl"; // Thanks Tayklor <3
+const string strVeeMdl		= "models/cracklife/v_shotgun.mdl";
+const string strWeeMdl		= "models/cracklife/w_shotgun.mdl"; // Thanks Tayklor <3
 const string strSShellMdl	= "models/shotgunshell.mdl"; // shotgun shell
 	
 // Sounds
-const string strSngShotSnd	= "hldm-br/cracklife/weapons/sbarrel1_cl1.wav"; // Single shot
-const string strDblShotSnd	= "hldm-br/cracklife/weapons/dbarrel1_cl1.wav"; // Double shot
-const string strCockSnd		= "hldm-br/cracklife/weapons/scock1_cl1.wav"; // cock gun
-const string strRel1Snd		= "hldm-br/cracklife/weapons/reload1.wav";
-const string strRel2Snd		= "hldm-br/cracklife/weapons/reload1.wav";
-const string strEmptySnd	= "hldm-br/cracklife/weapons/357_cock1.wav"; // gun empty sound
+const string strSngShotSnd	= "cracklife/weapons/sbarrel1.wav"; // Single shot
+const string strDblShotSnd	= "cracklife/weapons/dbarrel1.wav"; // Double shot
+const string strCockSnd		= "cracklife/weapons/scock1.wav"; // cock gun
+const string strRel1Snd		= "cracklife/weapons/reload1.wav";
+const string strRel2Snd		= "cracklife/weapons/reload1.wav";
+const string strEmptySnd	= "cracklife/weapons/357_cock1.wav"; // gun empty sound
 
 // Sprites
 const string strExploSpr	= "sprites/zerogxplode.spr";
@@ -471,7 +471,7 @@ string GetName()
 void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLSHOTGUN::weapon_clshotgun", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "hldm-br/cracklife", "buckshot" );
+	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "buckshot" );
 }
 
 } // End of namespace
