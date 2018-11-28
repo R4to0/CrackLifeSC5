@@ -29,6 +29,8 @@ const uint iMaxClip				= 999; // this
 const uint iWeight				= 5;
 const uint iMP5Dmg				= int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mmAR_bullet" ) );
 const uint iAmmoGrenadesGive	= 200; // default: 2
+const float flPriFireDelay		= 0.0;
+const float flSecFireDelay		= 0.1;
 
 // Weapon Info
 const uint iSlot				= 2;
@@ -202,9 +204,9 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		m_pPlayer.pev.punchangle.x = Math.RandomLong( -2, 2 );
 
-		self.m_flNextPrimaryAttack = self.m_flNextPrimaryAttack + 0.01; // changed here
+		self.m_flNextPrimaryAttack = self.m_flNextPrimaryAttack + flPriFireDelay; // changed here
 		if( self.m_flNextPrimaryAttack < WeaponTimeBase() )
-			self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.01; // changed here
+			self.m_flNextPrimaryAttack = WeaponTimeBase() + flPriFireDelay; // changed here
 
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 
@@ -281,8 +283,8 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 			g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5 + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
 		}
 
-		self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.1; // changed here
-		self.m_flNextSecondaryAttack = WeaponTimeBase() + 0.1; // changed here
+		self.m_flNextPrimaryAttack = WeaponTimeBase() + flSecFireDelay; // changed here
+		self.m_flNextSecondaryAttack = WeaponTimeBase() + flSecFireDelay; // changed here
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + 5;// idle pretty soon after shooting.
 
 		if( m_pPlayer.m_rgAmmo(self.m_iSecondaryAmmoType) <= 0 )
