@@ -78,7 +78,43 @@ array<array<string>> SubtitleData =
 		"Just keep in mind that he doesn't speak English,\nso avoid any contact with him.",
 		"Ah. Fucking finally.",
 		"Now I don't have to look at your ugly face."
-	}
+	},
+
+    // Test Chamber (Thanks w00tguy for confirming)
+    { // c1a0_sci_lock1a.wav
+        "Scientist 2: I'm afraid we will have to have\ngay sex right now, Gordon."
+    },
+
+    { // c1a0_sci_lock2a.wav
+        "Scientist 1: He's wearing a hazard suit, you obviously\ncan't penetrate his metal ass."
+    },
+
+    { // c1a0_sci_lock3a.wav
+        "Scientist 2: Wanna bet I can?"
+    },
+
+    { // c1a0_sci_lock4a.wav
+        "Scientist 1: Are you fucking insane?\nThis is a fucking hazard suit."
+    },
+
+    { // c1a0_sci_lock5a.wav
+        "Scientist 2: Shut up you nazi, I know you're\ngonna start a nazi apocalypse",
+        "because I heard your secret evil plan and\nI heard that you speak nazi language."
+    },
+
+    { // c1a0_sci_lock6a.wav
+        "Scientist 1: I'm not a nazi, shut the fuck up,",
+        "and there is not going to be any nazi apocalypse.\nDo you get that?"
+    },
+
+    { // c1a0_sci_lock7a.wav
+        "Scientist 2: Yeah whatever, as long as I'm getting\npaid enough it should be okay."
+    },
+
+    { // c1a0_sci_lock8a.wav
+        "Scientist 1: [Laughing]",
+        "You will open the door without your free will."
+    }
 	
 };
 
@@ -95,7 +131,17 @@ array<array<float>> StartAt =
 	{ 0.0f, 4.870, 7.539f, 10.834f, 16.301f, 18.610f }, // c0a0_tr_jobs.wav
 	{ 0.0f, 1.764f, 9.112f, 10.424f, 15.828f, 18.667f, 24.081f }, // c0a0_tr_haz.wav
 	{ 0.0f, 1.909f, 2.879f, 7.303f }, // c0a0_tr_arrive.wav
-	{ 0.0f, 4.148f, 9.545f, 11.619f } // c0a0_tr_exit.wav
+	{ 0.0f, 4.148f, 9.545f, 11.619f }, // c0a0_tr_exit.wav
+
+    // Test chamber
+    { 0.128f }, // c1a0_sci_lock1a.wav
+    { 0.109f }, // c1a0_sci_lock2a.wav
+    { 0.160f }, // c1a0_sci_lock3a.wav
+    { 0.209f }, // c1a0_sci_lock4a.wav
+    { 0.228f, 5.209f }, // c1a0_sci_lock5a.wav
+    { 0.0f, 2.455f }, // c1a0_sci_lock6a.wav
+    { 0.520 }, // c1a0_sci_lock7a.wav
+    { 0.0f, 1.334f } // c1a0_sci_lock8a.wav
 };
 
 array<array<float>> Duration =
@@ -109,7 +155,17 @@ array<array<float>> Duration =
 	{ 4.820f, 2.489f, 3.208f, 5.302f, 2.173f, 3.086f }, // c0a0_tr_jobs.wav
 	{ 1.538f, 7.258f, 1.198f, 5.336f, 2.759f, 5.223f , 3.075f }, // c0a0_tr_haz.wav
 	{ 1.855f, 0.900f, 4.292f, 1.979f }, // c0a0_tr_arrive.wav
-	{ 4.039f, 5.264f, 1.916f, 2.887f } // c0a0_tr_exit.wav
+	{ 4.039f, 5.264f, 1.916f, 2.887f }, // c0a0_tr_exit.wav
+
+    // Test chamber
+    { 4.367f }, // c1a0_sci_lock1a.wav
+    { 5.835f }, // c1a0_sci_lock2a.wav
+    { 2.003f }, // c1a0_sci_lock3a.wav
+    { 4.587f }, // c1a0_sci_lock4a.wav
+    { 4.980f, 5.279f }, // c1a0_sci_lock5a.wav
+    { 2.454f, 4.025f }, // c1a0_sci_lock6a.wav
+    { 4.617f }, // c1a0_sci_lock7a.wav
+    { 1.334f, 3.086f } // c1a0_sci_lock8a.wav
 };
 
 /**
@@ -212,6 +268,39 @@ void c0a0_tr_arrive( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE use
 void c0a0_tr_exit( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
 {
 	SelMessages( 9 );
+}
+
+void c1a0_sci_lock1a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 10 );
+}
+void c1a0_sci_lock2a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 11 );
+}
+void c1a0_sci_lock3a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 12 );
+}
+void c1a0_sci_lock4a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 13 );
+}
+void c1a0_sci_lock5a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 14 );
+}
+void c1a0_sci_lock6a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 15 );
+}
+void c1a0_sci_lock7a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 16 );
+}
+void c1a0_sci_lock8a( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
+{
+	SelMessages( 17 );
 }
 
 } // End of namespace
