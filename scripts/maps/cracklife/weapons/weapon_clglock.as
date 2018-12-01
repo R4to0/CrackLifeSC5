@@ -179,6 +179,9 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 
 	void Reload()
 	{
+        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == iMaxClip )
+			return;
+
 		self.DefaultReload( iMaxClip, CLGLRELOAD, 2.6, 0 );
 		BaseClass.Reload();
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed, 10, 15 );

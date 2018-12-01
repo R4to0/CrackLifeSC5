@@ -294,6 +294,9 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 	void Reload()
 	{
+        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == iMaxClip )
+            return;
+
 		self.DefaultReload( iMaxClip, MP5_RELOAD, 1.5, 0 );
 
 		//Set 3rd person reloading animation -Sniper
