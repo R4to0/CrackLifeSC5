@@ -214,6 +214,9 @@ class weapon_clpython : ScriptBasePlayerWeaponEntity
 
 	void Reload()
 	{
+        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == iMaxClip )
+			return;
+
 		// Undo zoom before reloading
 		if( self.m_fInZoom == true )
 		{
