@@ -161,9 +161,9 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		switch ( Math.RandomLong ( 0 , 2 ) )
 		{
-			case 0:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 1:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 2:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
 		}
 
 		// player "shoot" animation
@@ -240,9 +240,9 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		switch ( Math.RandomLong ( 0 , 2 ) )
 		{
-			case 0:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 1:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 2:	g_SoundSystem.EmitSoundDyn( self.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
 		}
 
 		// player "shoot" animation
