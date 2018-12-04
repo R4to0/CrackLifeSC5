@@ -7,7 +7,6 @@
 #include "weapons/weapon_clhornetgun"
 #include "weapons/weapon_clgauss"
 #include "logo"
-#include "subtitles"
 
 // HLSP Stuff
 #include "hlsp/trigger_suitcheck"
@@ -16,9 +15,6 @@
 // True: Original
 // False: Campaign Mode
 const bool g_bCrackLifeMode = true;
-
-// Subtitle system
-const bool g_bSubtitles = true;
 
 // inb4 mapping for unused weapons
 array<ItemMapping@> g_ItemMappings =
