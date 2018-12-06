@@ -25,7 +25,7 @@ enum crowbar_e
 namespace CLCROWBAR
 {
 
-const string strPeeMdl		= "models/cracklife/p_crowbar.mdl"; // rng p_fists.mdl
+const string strPeeMdl		= "models/cracklife/null.mdl"; /// Tayklor fix <3
 const string strVeeMdl		= "models/cracklife/v_crowbar.mdl"; // Tayklor fix <3
 const string strWeeMdl		= "models/cracklife/w_crowbar.mdl";
 

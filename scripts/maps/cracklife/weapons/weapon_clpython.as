@@ -18,7 +18,7 @@ namespace CLPYTHON
 {
 
 // Models
-const string strPeeMdl		= "models/p_357.mdl";
+const string strPeeMdl		= "models/cracklife/null.mdl"; // Tayklor fix <3
 const string strVeeMdl		= "models/cracklife/v_357.mdl";
 const string strWeeMdl		= "models/w_357.mdl";
 
