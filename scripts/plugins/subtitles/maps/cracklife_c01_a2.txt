@@ -5,23 +5,23 @@
 # w00tguy
 
 # Format:
-# filepath|starttime|duration|sentence
+# targetname|starttime|duration|sentence
 
-+cracklife/scientist/c1a0_sci_lock1a.wav|0.128|4.367|Scientist 2: I'm afraid we will have to have\ngay sex right now, Gordon.
+lock1|0.128|4.367|Scientist 2: I'm afraid we will have to have\ngay sex right now, Gordon.
 
-+cracklife/scientist/c1a0_sci_lock2a.wav|0.109|5.835|Scientist 1: He's wearing a hazard suit, you obviously\ncan't penetrate his metal ass.
+lock2|0.109|5.835|Scientist 1: He's wearing a hazard suit, you obviously\ncan't penetrate his metal ass.
 
-+cracklife/scientist/c1a0_sci_lock3a.wav|0.160|2.003|Scientist 2: Wanna bet I can?
+lock3|0.160|2.003|Scientist 2: Wanna bet I can?
 
-+cracklife/scientist/c1a0_sci_lock4a.wav|0.209|4.587|Scientist 1: Are you fucking insane?\nThis is a fucking hazard suit.
+lock4|0.209|4.587|Scientist 1: Are you fucking insane?\nThis is a fucking hazard suit.
 
-+cracklife/scientist/c1a0_sci_lock5a.wav|0.228|4.980|Scientist 2: Shut up you nazi, I know you're\ngonna start a nazi apocalypse
-+cracklife/scientist/c1a0_sci_lock5a.wav|5.209|5.279|because I heard your secret evil plan and\nI heard that you speak nazi language.
+lock5|0.228|4.980|Scientist 2: Shut up you nazi, I know you're\ngonna start a nazi apocalypse
+lock5|5.209|5.279|because I heard your secret evil plan and\nI heard that you speak nazi language.
 
-+cracklife/scientist/c1a0_sci_lock6a.wav|0.0|2.454|Scientist 1: I'm not a nazi, shut the fuck up,
-+cracklife/scientist/c1a0_sci_lock6a.wav|2.455|4.025|and there is not going to be any nazi apocalypse.\nDo you get that?
+lock6|0.0|2.454|Scientist 1: I'm not a nazi, shut the fuck up,
+lock6|2.455|4.025|and there is not going to be any nazi apocalypse.\nDo you get that?
 
-+cracklife/scientist/c1a0_sci_lock7a.wav|0.520|4.617|Scientist 2: Yeah whatever, as long as I'm getting\npaid enough it should be okay.
+lock7|0.520|4.617|Scientist 2: Yeah whatever, as long as I'm getting\npaid enough it should be okay.
 
-+cracklife/scientist/c1a0_sci_lock8a.wav|0.0|1.334|Scientist 1: [Laughing]
-+cracklife/scientist/c1a0_sci_lock8a.wav|1.334|3.086|You will open the door without your free will.
+lock8|0.0|1.334|Scientist 1: [Laughing]
+lock8|1.334|3.086|You will open the door without your free will.
