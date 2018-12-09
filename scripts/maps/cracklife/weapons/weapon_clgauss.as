@@ -24,7 +24,7 @@ namespace CLGAUSS
 
 // Models
 const string strPeeMdl			= "models/cracklife/p_gauss.mdl";
-const string strVeeMdl			= "models/cracklife/v_gauss.mdl";
+const string strVeeMdl			= "models/cracklife/v_gauss_v2.mdl";
 const string strWeeMdl			= "models/cracklife/w_gauss.mdl";
 
 // Sounds

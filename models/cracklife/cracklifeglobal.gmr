@@ -16,11 +16,11 @@
 "models/zombie.mdl"       "models/cracklife/zombie.mdl"
 
 "models/p_egon.mdl"       "models/cracklife/p_egon.mdl"
-"models/v_egon.mdl"       "models/cracklife/v_egon.mdl"
+"models/v_egon.mdl"       "models/cracklife/v_egon_v2.mdl"
 "models/w_egon.mdl"       "models/cracklife/w_egon.mdl"
 
 "models/p_gauss.mdl"      "models/cracklife/p_gauss.mdl"
-"models/v_gauss.mdl"      "models/cracklife/v_gauss.mdl"
+"models/v_gauss.mdl"      "models/cracklife/v_gauss_v2.mdl"
 "models/w_gauss.mdl"      "models/cracklife/w_gauss.mdl"
 
 "models/p_grenade.mdl"    "models/cracklife/p_grenade.mdl"
