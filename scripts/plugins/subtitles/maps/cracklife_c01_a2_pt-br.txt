@@ -1,0 +1,28 @@
+# Map: Crack-Life (cracklife_c01_a2)
+# Language: PORTUGUESE BRAZIL
+# Subtitle Author(s):
+# AkiraJkr
+# Nick
+# R4to0
+
+# Format:
+# targetname|starttime|duration|sentence
+
+lock1|0.128|4.367|Scientist 2: Eu receio que teremos que fazer\nsexo gay agora mesmo, Gordon.
+
+lock2|0.109|5.835|Scientist 1: Ele esta vestindo um dos trajes, obviamente\nnao tem como penetrar a bunda metalica dele.
+
+lock3|0.160|2.003|Scientist 2: Quer apostar que consigo?
+
+lock4|0.209|4.587|Scientist 1: Caralho, tu e doido?\nIsso e uma porra de um traje de protecao.
+
+lock5|0.228|4.980|Scientist 2: Cale a boca seu nazista, eu sei que voce\nvai iniciar um apocalipse nazista
+lock5|5.209|5.279|porque eu ouvi seu plano secreto do mal e\neu ouvi que voce fala a lingua nazista.
+
+lock6|0.0|2.454|Scientist 1: Nao sou nazista, cala a porra da boca,
+lock6|2.455|4.025|E nao vai ter um apocalipse nazista. Tu entendeu?
+
+lock7|0.520|4.617|Scientist 2: E, tanto faz, contanto que eu esteja sendo\npago o suficiente esta bom.
+
+lock8|0.0|1.334|Scientist 1: [Risos]
+lock8|1.334|3.086|Voce vai abrir essa porta mesmo nao querendo.

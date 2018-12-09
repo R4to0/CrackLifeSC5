@@ -1,0 +1,58 @@
+# Map: Crack-Life (cracklife_c00)
+# Language: PORTUGUESE BRAZIL
+# Subtitle Author(s):
+# AkiraJkr
+
+# Revision:
+# R4to0
+# Tayklor
+
+# Format:
+# targetname|starttime|duration|sentence
+
+wav1|0.0|5.720|Bom dia bichinha e bem-vindo a Black Mesa,\num lugar que fica na puta que pariu
+wav1|5.767|3.720|e ninguem aqui e uma pessoa normal, exceto eu.
+
+wav2|0.0|3.951|Serio, todo mundo e um retardado mental\ne come a propria bunda.
+wav2|4.014|5.512|Eu nao acredito que quer trabalhar aqui,\nvoce realmente e uma bichinha suicida, ne?
+
+wav3|0.0|2.926|A maioria do pessoal aqui tem algo chamado Nivel de Liberacao.
+wav3|3.065|4.162|se voce nao tem um, os segurancas\nirao ter o direito de atirar em voce
+wav3|7.277|2.384|e jogar seu corpo no armario de alguem.
+wav3|9.888|4.906|Entao espero que tenha um, porque eu nao quero\nminha instalacao fedendo a bosta encardida.
+
+wav4|0.0|5.567|Ja que vomitar no trem faz as pessoas gritarem\nem voce e ficarem bravas, nos criamos uma regra rigorosa:
+wav4|5.670|0.959|Sem comer.
+wav4|6.678|3.038|E nem pense em fumar, ou beber.
+
+wav5|0.189|5.562|De qualquer forma, ja que quem trabalha aqui e um\nbando debando de pretos retardados, nos fizemos uma regra que diz:
+wav5|5.781|1.764|Nao va para fora da janela.
+wav5|7.595|4.326|Dezenove pessoas por ano morrem fazendo isso,\ne ainda estamos contando.
+
+wav6|0.0|4.645|Mas de qualquer forma, voces todos\nchupam uma rola grande, e eu sou o chefe.
+wav6|4.733|6.735|Eu nao sei mais o que dizer ja que eu falei\num monte de informacao bosta que ninguem se importa.
+
+wav7|0.0|4.820|Aqui na Black Mesa nos fazemos certeza que tratamos\ntodos os empregados da mesma forma que outros,
+wav7|4.870|2.489|o que significa que podem ir tomar no meio do cu.
+wav7|7.539|3.208|Se voce tem amigos, parentes ou irmas gostosas,
+wav7|10.834|5.302|por favor traga eles aqui para que possamos lentamente\nqueima-los no acido para testar nossos trajes de protecao.
+wav7|16.301|2.173|Sim, o mesmo que voce ira vestir.
+wav7|18.610|3.086|[Risos]
+
+wav8|0.0|1.538|Ah eu tenho uma ideia.
+wav8|1.764|7.258|Por que nao vai se divertir pulando naquela gosma verde estranha,\nela claramente nao e radioativa e perigosa para a sua saude.
+wav8|9.112|1.198|E serio,
+wav8|10.424|5.336|nos fazemos festas la e bebemos aquilo todo dia,\nja que e limpo e saudavel para a vida humana,
+wav8|15.828|2.759|se, por acaso, algo lhe faca se sentir doente,
+wav8|18.667|5.223|lhe daremos essa arma com apenas uma bala,\nnem mesmo um viado com deficiencia vai errar.
+wav8|24.081|3.075|Sim, estou falando sobre tornar-se um heroi.
+
+wav9|0.0|1.855|Proxima parada: Terra dos Viadinhos.
+wav9|1.909|0.900|soi soi
+wav9|2.879|4.292|Ou, como os idiotas no QG chamam:\nSetor C.
+wav9|7.303|1.979|O C significa cancer.
+
+wav10|0.0|4.039|Agora espere algumas horas ate esse\nsoldado russo gordo chegar.
+wav10|4.148|5.264|Apenas tome em mente que ele nao fala Ingles,\nentao nao faca contato com ele.
+wav10|9.545|1.916|Ah. Caralho, finalmente.
+wav10|11.619|2.887|Agora eu nao tenho que olhar pra essa sua cara feia.

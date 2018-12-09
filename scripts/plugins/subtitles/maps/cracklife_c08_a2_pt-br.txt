@@ -1,0 +1,24 @@
+# Map: Crack-Life (cracklife_c08_a2)
+# Language: PORTUGUESE BRAZIL
+# Subtitle Author(s):
+# AkiraJkr
+
+# Format:
+# targetname|starttime|duration|sentence
+
+amb2|0|1.610|Morra sua vadia de merda.
+amb2|1.914|0.275|E.
+amb2|2.510|0.716|Toma essa.
+amb2|3.535|3|[Risos]\nTe peguei agora seu hacker de merda.
+
+snoop1|0|1.811|Soldado 1: Entao, o que ele fez?
+
+snoop2|0|1.540|Soldado 2: Ele tava usando arma xitada.
+
+snoop3|0|2.266|Soldado 1: Caralho vo meter permaban nele.
+
+snoop4|0|2.876|Soldado 2: [Risos]\nDahora.
+
+snoop5|0|2.220|Soldado 1: Nem com proxy ele se salva.
+
+snoop6|0|2.060|Soldado 2: [Risos]
