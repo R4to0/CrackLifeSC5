@@ -6,51 +6,51 @@
 # KernCore
 
 # Format:
-# filepath|starttime|duration|sentence
+# targetname|starttime|duration|sentence
 
-cracklife/tride/c0a0_tr_gmorn.wav|0.0|5.720|Good morning fagget and welcome to Black Mesa,\na place in the middle of fucking nowhere
-cracklife/tride/c0a0_tr_gmorn.wav|5.767|3.720|and nobody in here is a normal person\n except me.
+wav1|0.0|5.720|Good morning fagget and welcome to Black Mesa,\na place in the middle of fucking nowhere
+wav1|5.767|3.720|and nobody in here is a normal person\n except me.
 
-cracklife/tride/c0a0_tr_time.wav|0.0|3.951|Seriously, everybody is a fucking retard and a freak.
-cracklife/tride/c0a0_tr_time.wav|4.014|5.512|I can't believe you want to work here,\nyou really are a suicidal faggot, are you?
+wav2|0.0|3.951|Seriously, everybody is a fucking retard and a freak.
+wav2|4.014|5.512|I can't believe you want to work here,\nyou really are a suicidal faggot, are you?
 
-cracklife/tride/c0a0_tr_dest.wav|0.0|2.926|Most people here have a thing called Clearance Level.
-cracklife/tride/c0a0_tr_dest.wav|3.065|4.162|If you do not have one, the security guards\nwill have the right to shoot you
-cracklife/tride/c0a0_tr_dest.wav|7.277|2.384|and dump your body into someone's closet.
-cracklife/tride/c0a0_tr_dest.wav|9.888|4.906|So I hope you have one, because I don't want\nmy facility smelling like rotting shit.
+wav3|0.0|2.926|Most people here have a thing called Clearance Level.
+wav3|3.065|4.162|If you do not have one, the security guards\nwill have the right to shoot you
+wav3|7.277|2.384|and dump your body into someone's closet.
+wav3|9.888|4.906|So I hope you have one, because I don't want\nmy facility smelling like rotting shit.
 
-cracklife/tride/c0a0_tr_noeat.wav|0.0|5.567|Since barfing in the train causes people to yell\nat you and get mad, we have made a strict rule:
-cracklife/tride/c0a0_tr_noeat.wav|5.670|0.959|No eating.
-cracklife/tride/c0a0_tr_noeat.wav|6.678|3.038|And don't even think about smoking, or drinking.
+wav4|0.0|5.567|Since barfing in the train causes people to yell\nat you and get mad, we have made a strict rule:
+wav4|5.670|0.959|No eating.
+wav4|6.678|3.038|And don't even think about smoking, or drinking.
 
-cracklife/tride/c0a0_tr_emerg.wav|0.189|5.562|Anyway, since people working here are a bunch of\nretarded niggers, we had to make a rule stating:
-cracklife/tride/c0a0_tr_emerg.wav|5.781|1.764|No peeking out of the window.
-cracklife/tride/c0a0_tr_emerg.wav|7.595|4.326|Nineteen people a year die by doing that,\nand we're still counting.
+wav5|0.189|5.562|Anyway, since people working here are a bunch of\nretarded niggers, we had to make a rule stating:
+wav5|5.781|1.764|No peeking out of the window.
+wav5|7.595|4.326|Nineteen people a year die by doing that,\nand we're still counting.
 
-cracklife/tride/c0a0_tr_tourn.wav|0.0|4.645|So anyway, you all suck a huge dick, and I am the boss.
-cracklife/tride/c0a0_tr_tourn.wav|4.733|6.735|I don't fucking know what to say now since I gave out a\nabunch of shitty information that nobody cares about.
+wav6|0.0|4.645|So anyway, you all suck a huge dick, and I am the boss.
+wav6|4.733|6.735|I don't fucking know what to say now since I gave out a\nabunch of shitty information that nobody cares about.
 
-cracklife/tride/c0a0_tr_jobs.wav|0.0|4.820|Here at Black Mesa we make sure all employees\nget the same treatment as others,
-cracklife/tride/c0a0_tr_jobs.wav|4.870|2.489|which means they can go fuck themselves.
-cracklife/tride/c0a0_tr_jobs.wav|7.539|3.208|If you have any friends, relatives or sexy sisters,
-cracklife/tride/c0a0_tr_jobs.wav|10.834|5.302|please bring them over so we can slowly burn them\nin acid to test our new hazard suits.
-cracklife/tride/c0a0_tr_jobs.wav|16.301|2.173|Yes, the one you're going to wear.
-cracklife/tride/c0a0_tr_jobs.wav|18.610|3.086|[Laughing]
+wav7|0.0|4.820|Here at Black Mesa we make sure all employees\nget the same treatment as others,
+wav7|4.870|2.489|which means they can go fuck themselves.
+wav7|7.539|3.208|If you have any friends, relatives or sexy sisters,
+wav7|10.834|5.302|please bring them over so we can slowly burn them\nin acid to test our new hazard suits.
+wav7|16.301|2.173|Yes, the one you're going to wear.
+wav7|18.610|3.086|[Laughing]
 
-cracklife/tride/c0a0_tr_haz.wav|0.0|1.538|Oh I have an idea.
-cracklife/tride/c0a0_tr_haz.wav|1.764|7.258|Why not having fun by jumping into that green strange goo,\nit's not radioactive and dangerous to your health at all.
-cracklife/tride/c0a0_tr_haz.wav|9.112|1.198|I am serious,
-cracklife/tride/c0a0_tr_haz.wav|10.424|5.336|we have parties in there and we drink it all day,\nsince it's clean and healthy for human life,
-cracklife/tride/c0a0_tr_haz.wav|15.828|2.759|if, however, something makes you feel sick,
-cracklife/tride/c0a0_tr_haz.wav|18.667|5.223|you are handled with this gun and only one bullet,\nnot even a disabled faggot will miss it.
-cracklife/tride/c0a0_tr_haz.wav|24.081|3.075|Yes, I am talking about becoming a hero.
+wav8|0.0|1.538|Oh I have an idea.
+wav8|1.764|7.258|Why not having fun by jumping into that green strange goo,\nit's not radioactive and dangerous to your health at all.
+wav8|9.112|1.198|I am serious,
+wav8|10.424|5.336|we have parties in there and we drink it all day,\nsince it's clean and healthy for human life,
+wav8|15.828|2.759|if, however, something makes you feel sick,
+wav8|18.667|5.223|you are handled with this gun and only one bullet,\nnot even a disabled faggot will miss it.
+wav8|24.081|3.075|Yes, I am talking about becoming a hero.
 
-cracklife/tride/c0a0_tr_arrive.wav|0.0|1.855|Next stop: Faggot Land.
-cracklife/tride/c0a0_tr_arrive.wav|1.909|0.900|soi soi
-cracklife/tride/c0a0_tr_arrive.wav|2.879|4.292|Or, as the faggots at the HQ call it:\nSector C.
-cracklife/tride/c0a0_tr_arrive.wav|7.303|1.979|The C stands for cancer.
+wav9|0.0|1.855|Next stop: Faggot Land.
+wav9|1.909|0.900|soi soi
+wav9|2.879|4.292|Or, as the faggots at the HQ call it:\nSector C.
+wav9|7.303|1.979|The C stands for cancer.
 
-cracklife/tride/c0a0_tr_exit.wav|0.0|4.039|Now wait a few hours for that fat spetsnaz soldier to arrive.
-cracklife/tride/c0a0_tr_exit.wav|4.148|5.264|Just keep in mind that he doesn't speak English,\nso avoid any contact with him.
-cracklife/tride/c0a0_tr_exit.wav|9.545|1.916|Ah. Fucking finally.
-cracklife/tride/c0a0_tr_exit.wav|11.619|2.887|Now I don't have to look at your ugly face.
+wav10|0.0|4.039|Now wait a few hours for that fat spetsnaz soldier to arrive.
+wav10|4.148|5.264|Just keep in mind that he doesn't speak English,\nso avoid any contact with him.
+wav10|9.545|1.916|Ah. Fucking finally.
+wav10|11.619|2.887|Now I don't have to look at your ugly face.
