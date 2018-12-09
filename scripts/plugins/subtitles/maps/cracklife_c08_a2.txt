@@ -1,0 +1,25 @@
+# Map: Crack-Life (cracklife_c08_a2)
+# Language: ENGLISH
+# Subtitle Author(s):
+# El Gringo
+# R4to0
+
+# Format:
+# targetname|starttime|duration|sentence
+
+amb2|0|1.610|Die you fucking cunt fucking.
+amb2|1.914|0.275|Yep.
+amb2|2.510|0.716|Take this
+amb2|3.535|3|[Laughing]\nI got you now fucking hacker.
+
+snoop1|0|1.811|Soldier 1: So, what did he do?
+
+snoop2|0|1.540|Soldier 2: He was using hacked weapons.
+
+snoop3|0|2.266|Soldier 1: Holy shit I will permaban him.
+
+snoop4|0|2.876|Soldier 2: [Laughing]\nAwesome.
+
+snoop5|0|2.220|Soldier 1: Not even proxy will save him.
+
+snoop6|0|2.060|Soldier 2: [Laughing]
