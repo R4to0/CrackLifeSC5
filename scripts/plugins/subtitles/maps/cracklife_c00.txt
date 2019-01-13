@@ -28,7 +28,7 @@ wav5|5.781|1.764|No peeking out of the window.
 wav5|7.595|4.326|Nineteen people a year die by doing that,\nand we're still counting.
 
 wav6|0.0|4.645|So anyway, you all suck a huge dick, and I am the boss.
-wav6|4.733|6.735|I don't fucking know what to say now since I gave out a\nabunch of shitty information that nobody cares about.
+wav6|4.733|6.735|I don't fucking know what to say now since I gave out a\na bunch of shitty information that nobody cares about.
 
 wav7|0.0|4.820|Here at Black Mesa we make sure all employees\nget the same treatment as others,
 wav7|4.870|2.489|which means they can go fuck themselves.
