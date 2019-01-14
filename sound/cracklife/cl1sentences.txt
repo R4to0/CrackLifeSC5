@@ -719,8 +719,8 @@ BA_STOP1 barney/stop2
 
 //c1a2 scripts
 //BA_BULLSQUID cracklife/barney/c1a2_ba_bullsquid // cracklife_c03
-BA_ZOMBIE2 barney/c1a2_ba_2zomb
-BA_ZOMBIE4 barney/c1a2_ba_4zomb
+//BA_ZOMBIE2 barney/c1a2_ba_2zomb // UNUSED
+//BA_ZOMBIE4 barney/c1a2_ba_4zomb // UNUSED
 //BA_CLIMB cracklife/barney/c1a2_ba_climb // cracklife_c03
 BA_SLEW barney/c1a2_ba_slew
 //BA_SURFACE cracklife/barney/c1a2_ba_surface // cracklife_c03
@@ -733,7 +733,7 @@ BA_TOPSIDE barney/c1a2_ba_top
 //c2a1 scripts
 //BA_HUB1A cracklife/barney/c2a1_ba_hub1a //cracklife_c06
 //BA_HUB2A barney/c2a1_ba_hub2a //cracklife_c06
-BA_AGAIN barney/c2a1_ba_again
+//BA_AGAIN barney/c2a1_ba_again // UNUSED
 
 //c2a2 scripts
 
@@ -744,13 +744,13 @@ BA_AGAIN barney/c2a1_ba_again
 //BA_ASSN cracklife/barney/c2a3_ba_assn //cracklife_c08_a2
 
 //c2a4 scripts
-BA_LONGNITE barney/c2a4_ba_longnite
+//BA_LONGNITE barney/c2a4_ba_longnite // UNUSED
 //BA_STERIL barney/c2a4_ba_steril //cracklife_c10
-BA_TEACH barney/c2a4_ba_teach
+//BA_TEACH barney/c2a4_ba_teach // UNUSED
 
-BA_ARG1A barney/c2a4_ba_arg1a
-BA_ARG2A barney/c2a4_ba_arg3a
-BA_ARG3A barney/c2a4_ba_arg5a
+//BA_ARG1A barney/c2a4_ba_arg1a // UNUSED
+//BA_ARG2A barney/c2a4_ba_arg3a // UNUSED
+//BA_ARG3A barney/c2a4_ba_arg5a // UNUSED
 
 //BA_TAU1A cracklife/barney/c2a4_ba_1tau //cracklife_c10
 //BA_TAU3A cracklife/barney/c2a4_ba_3tau //cracklife_c10
@@ -759,10 +759,10 @@ BA_ARG3A barney/c2a4_ba_arg5a
 //BA_ALIVE cracklife/barney/c2a4_ba_alive //cracklife_c10
 
 //c2a5 scripts
-BA_LETMEOUT barney/c2a5_ba_letout
-BA_RPG cracklife/barney/c2a5_ba_rpg
+//BA_LETMEOUT barney/c2a5_ba_letout // UNUSED
+//BA_RPG barney/c2a5_ba_rpg // UNUSED
 //BA_HELPME cracklife/barney/c2a5_ba_helpme //cracklife_c11_a2
-BA_SNIPED cracklife/barney/c2a5_ba_helpme
+//BA_SNIPED barney/c2a5_ba_sniped // UNUSED
 
 //c3a2 scripts
 //BA_SURVEY2A cracklife/barney/c3a2_ba_2surv //cracklife_c13_a4
