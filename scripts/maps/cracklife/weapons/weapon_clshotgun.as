@@ -29,21 +29,21 @@ const Vector VECTOR_CONE_DM_SHOTGUN( 0.08716, 0.04362, 0.00  );		// 10 degrees b
 const Vector VECTOR_CONE_DM_DOUBLESHOTGUN( 0.17365, 0.04362, 0.00 ); 	// 20 degrees by 5 degrees
 
 // Models
-const string strPeeMdl		= "models/cracklife/p_shotgun.mdl"; // Thanks Tayklor <3
-const string strVeeMdl		= "models/cracklife/v_shotgun.mdl";
-const string strWeeMdl		= "models/cracklife/w_shotgun.mdl"; // Thanks Tayklor <3
-const string strSShellMdl	= "models/shotgunshell.mdl"; // shotgun shell
+const string strPeeMdl = g_bCrackLifeMode ? "models/cracklife/p_shotgun.mdl" : "models/hlclassic/p_shotgun.mdl";
+const string strVeeMdl = g_bCrackLifeMode ? "models/cracklife/v_shotgun.mdl" : "models/clcampaign/v_shotgun.mdl";
+const string strWeeMdl = g_bCrackLifeMode ? "models/cracklife/w_shotgun.mdl" : "models/hlclassic/w_shotgun.mdl";
+const string strSShellMdl = "models/shotgunshell.mdl"; // shotgun shell
 	
 // Sounds
-const string strSngShotSnd	= "cracklife/weapons/sbarrel1.wav"; // Single shot
-const string strDblShotSnd	= "cracklife/weapons/dbarrel1.wav"; // Double shot
-const string strCockSnd		= "cracklife/weapons/scock1.wav"; // cock gun
-const string strRel1Snd		= "cracklife/weapons/reload1.wav";
-const string strRel2Snd		= "cracklife/weapons/reload1.wav";
-const string strEmptySnd	= "cracklife/weapons/357_cock1.wav"; // gun empty sound
+const string strSngShotSnd = g_bCrackLifeMode ? "cracklife/weapons/sbarrel1.wav" : "clcampaign/weapons/sbarrel1.wav"; // Single shot
+const string strDblShotSnd = g_bCrackLifeMode ? "cracklife/weapons/dbarrel1.wav" : "clcampaign/weapons/dbarrel1.wav"; // Double shot
+const string strCockSnd = g_bCrackLifeMode ? "cracklife/weapons/scock1.wav" : "clcampaign/weapons/scock1.wav"; // cock gun
+const string strRel1Snd = "cracklife/weapons/reload1.wav";
+const string strRel2Snd = "cracklife/weapons/reload1.wav";
+const string strEmptySnd = "cracklife/weapons/357_cock1.wav"; // gun empty sound
 
 // Sprites
-const string strExploSpr	= "sprites/zerogxplode.spr";
+const string strExploSpr = "sprites/zerogxplode.spr";
 
 // Weapon Info
 const uint iDefaultAmmo		= 12;

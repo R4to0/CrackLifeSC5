@@ -23,9 +23,9 @@ namespace CLHORNETGUN
 {
 
 // Models
-const string strPeeMdl		= "models/cracklife/p_hgun.mdl";
-const string strVeeMdl		= "models/cracklife/v_hgun.mdl";
-const string strWeeMdl		= "models/cracklife/w_hgun.mdl";
+const string strPeeMdl		=  g_bCrackLifeMode ? "models/cracklife/p_hgun.mdl" : "models/clcampaign/p_hgun.mdl";
+const string strVeeMdl		=  g_bCrackLifeMode ? "models/cracklife/v_hgun.mdl" : "models/clcampaign/v_hgun.mdl";
+const string strWeeMdl		=  g_bCrackLifeMode ? "models/cracklife/w_hgun.mdl" : "models/clcampaign/w_hgun.mdl";
 
 // Sounds
 const string strFire1Snd	= "cracklife/agrunt/ag_fire1.wav";
@@ -40,6 +40,10 @@ const uint iWeight			= 10;
 // Weapon HUD
 const uint iSlot			= 3;
 const uint iPosition		= 4;
+
+// Fire rate delay
+const float flFRDelay = g_bCrackLifeMode ? 0.25f : 0.1f;
+const float flRLDelay = g_bCrackLifeMode ? 0.5f : 0.15f;
 
 class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 {
@@ -128,6 +132,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 
 	void Holster( int skipLocal = 0 )
 	{
+        //m_pPlayer.m_flNextAttack = WeaponTimeBase() + flRLDelay; // 0.5
 		SetThink( null );
 		BaseClass.Holster( skipLocal );
 
@@ -151,7 +156,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		CBaseEntity@ pHornet = g_EntityFuncs.Create( "clhornet", m_pPlayer.GetGunPosition() + g_Engine.v_forward * 16 + g_Engine.v_right * 8 + g_Engine.v_up * -12, m_pPlayer.pev.v_angle, false, m_pPlayer.edict() );
 		pHornet.pev.velocity = g_Engine.v_forward * 300;
 
-		m_flRechargeTime = g_Engine.time + 0.5;
+		m_flRechargeTime = g_Engine.time + flRLDelay; // 0.5
 
 		m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
 
@@ -169,7 +174,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		// player "shoot" animation
 		m_pPlayer.SetAnimation( PLAYER_ATTACK1 );
 
-		self.m_flNextPrimaryAttack = g_Engine.time + 0.25;
+		self.m_flNextPrimaryAttack = g_Engine.time + flFRDelay; // 0.25
 		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 	
@@ -230,7 +235,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		//pHornet.SetThink( ThinkFunction( StartDart ) );
 		//SetThink( ThinkFunction( pHornet.StartDart ) );
 
-		m_flRechargeTime = g_Engine.time + 0.5;
+		m_flRechargeTime = g_Engine.time + flRLDelay; // 0.5
 
 		m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
 
