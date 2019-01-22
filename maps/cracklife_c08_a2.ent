@@ -4580,8 +4580,8 @@
 "playerdelaypush" "4.1#2"
 "targetname" "assassmm"
 "assassspeak" "0"
-"die" "4.1"
-"suspense" "4.5"
+"die" "3.3"
+"suspense" "3.7"
 "classname" "multi_manager"
 }
 {
