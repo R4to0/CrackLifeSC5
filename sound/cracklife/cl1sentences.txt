@@ -1,6 +1,10 @@
 // Crack-Life 1 sentences file. DO NOT MODIFY THIS SHIT -R4to0
 
-// Human Grunts - Grenade
+//--------------------------
+// HUMAN GRUNTS
+//--------------------------
+
+// Grenade cover
 HG_GREN0 cracklife/hgrunt/clik(p120) grenade1 clik
 HG_GREN1 cracklife/hgrunt/(t30) grenade2 clik
 HG_GREN2 cracklife/hgrunt/clik grenade3 clik
@@ -9,7 +13,7 @@ HG_GREN4 cracklife/hgrunt/clik(p110) grenade3 clik(p110)
 HG_GREN5 cracklife/hgrunt/clik grenade3 clik
 HG_GREN6 cracklife/hgrunt/clik grenade1 clik(p120)
 
-// Human Grunts - Player Alert
+// Player Alert
 HG_ALERT0 cracklife/hgrunt/(t30) freeman1(t20 p105), clik(p110)
 HG_ALERT1 cracklife/hgrunt/clik(p110) freeman2 clik
 HG_ALERT2 cracklife/hgrunt/clik freeman1 clik
@@ -18,13 +22,13 @@ HG_ALERT4 cracklife/hgrunt/(t20) freeman3, clik(p110) clik
 HG_ALERT5 cracklife/hgrunt/(t20) freeman2 clik
 HG_ALERT6 cracklife/hgrunt/(t30) freeman1 clik(p120)
 
-// Human Grunts - Monster Alert
+// Monster Alert
 HG_MONST0 cracklife/hgrunt/clik (t40) alien1 clik
 HG_MONST1 cracklife/hgrunt/clik alien2 clik(p120)
 HG_MONST2 cracklife/hgrunt/clik(p120) alien3 clik
 HG_MONST3 cracklife/hgrunt/clik clik (t30) alien2 clik(p120)
 
-// Human Grunts - Take cover
+// Take cover
 HG_COVER0 cracklife/hgrunt/clik (t30) cover1 (t0) clik
 HG_COVER1 cracklife/hgrunt/clik (t45) cover2 (t10) clik
 HG_COVER2 cracklife/hgrunt/clik (t45) cover3 (t10) clik
@@ -34,13 +38,13 @@ HG_COVER5 cracklife/hgrunt/clik(p120) cover3 clik
 HG_COVER6 cracklife/hgrunt/clik (t40) cover1 clik
 HG_COVER7 cracklife/hgrunt/clik (t40) cover2 clik
 
-// Human Grunts - Throw grenade
+// Throw grenade
 HG_THROW0 cracklife/hgrunt/clik(p120) throw1 (e100) clik
 HG_THROW1 cracklife/hgrunt/clik (t30) throw2 clik
 HG_THROW2 cracklife/hgrunt/clik (t35) throw3 clik(p120)
 HG_THROW3 cracklife/hgrunt/clik(p110) throw1 clik
  
-// Human Grunts - Taunt
+// Taunt
 HG_TAUNT0 cracklife/hgrunt/clik (t30 e75) taunt1 clik
 HG_TAUNT1 cracklife/hgrunt/clik(p120) (t40) taunt2 clik
 HG_TAUNT2 cracklife/hgrunt/clik (t40) taunt3 clik
@@ -48,18 +52,18 @@ HG_TAUNT3 cracklife/hgrunt/clik (t40) taunt4 clik
 HG_TAUNT4 cracklife/hgrunt/clik(p120) taunt5 clik
 HG_TAUNT5 cracklife/hgrunt/clik(p110) taunt6 clik
 
-// Human Grunts - Charge
+// Charge
 HG_CHARGE0 cracklife/hgrunt/clik charge1 clik
 HG_CHARGE1 cracklife/hgrunt/clik(p110) charge2 clik
 HG_CHARGE2 cracklife/hgrunt/clik(p120) charge3 clik
 HG_CHARGE3 cracklife/hgrunt/clik charge4 clik(p120)
 
-// Human Grunts - Idle
+// Idle
 HG_IDLE0 hgrunt/gr_idle1
 HG_IDLE1 hgrunt/gr_idle2
 HG_IDLE2 hgrunt/gr_idle3
 
-// Human Grunts - Narrative
+// Narrative
 
 //HG_SNOOP1A cracklife/hgrunt/c2a2_hg_chat1a // cracklife_07_a2
 //HG_SNOOP2A cracklife/hgrunt/c2a2_hg_chat2a // cracklife_07_a2
@@ -539,172 +543,176 @@ HEV_DET5 fvox/blip blip blip, antitoxin_shot(e25) radiation_detected(e50), onehu
 //HEV_GR2r fvox/range eighteen meters
 
 
-// Barney - Follow Player
-BA_OK0 cracklife/barney/ba_iwish
-BA_OK1 barney/hellonicesuit
-BA_OK2 barney/imwithyou
-BA_OK3 cracklife/barney/ba_stepoff
-BA_OK4 cracklife/barney/ba_endline
-BA_OK5 cracklife/barney/fuckyou
-BA_OK6 cracklife/barney/fuckyou
+//--------------------------
+// BARNEY
+//--------------------------
 
-// Barney - Stop following player
-BA_WAIT0 cracklife/taunts/taunt1
-BA_WAIT1 cracklife/agrunt/ag_alert2
-BA_WAIT2 cracklife/plats/elevmove2
-BA_WAIT3 cracklife/ambience/alienflyby1
-BA_WAIT4 cracklife/debris/beamstart1
-BA_WAIT5 cracklife/debris/bustglass1
+// Follow Player // MOVED TO barney.txt
+//BA_OK0 cracklife/barney/ba_iwish
+//BA_OK1 barney/hellonicesuit
+//BA_OK2 barney/imwithyou // default
+//BA_OK3 cracklife/barney/ba_stepoff
+//BA_OK4 cracklife/barney/ba_endline
+//BA_OK5 cracklife/barney/fuckyou
+//BA_OK6 cracklife/barney/fuckyou
 
-// Barney - First seen player
-BA_HELLO0 barney/hellonicesuit
-BA_HELLO1 barney/howdy
-BA_HELLO2 barney/howyoudoing
-BA_HELLO3 barney/haybuddy
-BA_HELLO4 barney/hayfella
-BA_HELLO5 barney/heybuddy
-BA_HELLO6 barney/heyfella
+// Stop following player // MOVED TO barney.txt
+//BA_WAIT0 cracklife/taunts/taunt1
+//BA_WAIT1 cracklife/agrunt/ag_alert2
+//BA_WAIT2 cracklife/plats/elevmove2
+//BA_WAIT3 cracklife/ambience/alienflyby1
+//BA_WAIT4 cracklife/debris/beamstart1
+//BA_WAIT5 cracklife/debris/bustglass1
 
-// Barney - Questioning other NPC
-BA_QUESTION0 barney/beertopside
-BA_QUESTION1 barney/wayout
-BA_QUESTION2 barney/getanyworse
-BA_QUESTION3 barney/gladof38
-BA_QUESTION4 barney/workingonstuff
-BA_QUESTION5 barney/wayout
-BA_QUESTION6 barney/whatsgoingon
-BA_QUESTION7 barney/aintscared
-BA_QUESTION8 barney/nodrill
-BA_QUESTION9 barney/gettingcloser
-BA_QUESTION10 barney/youhearthat
-BA_QUESTION11 barney/crewdied
-BA_QUESTION12 barney/somethingmoves
-BA_QUESTION13 barney/thinking
-BA_QUESTION14 barney/missingleg
+// First seen player
+//BA_HELLO0 barney/hellonicesuit
+//BA_HELLO1 barney/howdy
+//BA_HELLO2 barney/howyoudoing
+//BA_HELLO3 barney/haybuddy
+//BA_HELLO4 barney/hayfella
+//BA_HELLO5 barney/heybuddy
+//BA_HELLO6 barney/heyfella // diff from sc
 
-// Barney - Answering other NPC
-BA_ANSWER0 barney/noway
-BA_ANSWER1 barney/ireckon
-BA_ANSWER2 barney/soundsright
-BA_ANSWER3 barney/yessir
-BA_ANSWER4 barney/youbet
-BA_ANSWER5 barney/yougotit
-BA_ANSWER6 barney/yup
-BA_ANSWER7 barney/dontaskme
-BA_ANSWER8 barney/dontbet
-BA_ANSWER9 barney/dontbuyit
-BA_ANSWER10 barney/dontfigure
-BA_ANSWER11 barney/dontguess
-BA_ANSWER12 barney/hardtosay
-BA_ANSWER13 barney/justdontknow
-BA_ANSWER14 barney/nope
-BA_ANSWER15 barney/nosir
-BA_ANSWER16 barney/cantfigure
-BA_ANSWER17 barney/maybe
-BA_ANSWER18 barney/notelling
-BA_ANSWER19 barney/bequiet
-BA_ANSWER20 barney/youtalkmuch
-BA_ANSWER21 barney/alreadyasked
+// Questioning other NPC
+//BA_QUESTION0 barney/beertopside
+//BA_QUESTION1 barney/wayout
+//BA_QUESTION2 barney/getanyworse
+//BA_QUESTION3 barney/gladof38
+//BA_QUESTION4 barney/workingonstuff
+//BA_QUESTION5 barney/wayout
+//BA_QUESTION6 barney/whatsgoingon
+//BA_QUESTION7 barney/aintscared
+//BA_QUESTION8 barney/nodrill
+//BA_QUESTION9 barney/gettingcloser
+//BA_QUESTION10 barney/youhearthat
+//BA_QUESTION11 barney/crewdied
+//BA_QUESTION12 barney/somethingmoves
+//BA_QUESTION13 barney/thinking
+//BA_QUESTION14 barney/missingleg
 
-// Barney - player is staring at scientist
-BA_STARE0 barney/yup
-BA_STARE1 barney/yessir
-BA_STARE2 barney/howyoudoing
-BA_STARE3 barney/heyfella
+// Answering other NPC
+//BA_ANSWER0 barney/noway
+//BA_ANSWER1 barney/ireckon
+//BA_ANSWER2 barney/soundsright
+//BA_ANSWER3 barney/yessir
+//BA_ANSWER4 barney/youbet
+//BA_ANSWER5 barney/yougotit
+//BA_ANSWER6 barney/yup
+//BA_ANSWER7 barney/dontaskme
+//BA_ANSWER8 barney/dontbet
+//BA_ANSWER9 barney/dontbuyit
+//BA_ANSWER10 barney/dontfigure
+//BA_ANSWER11 barney/dontguess
+//BA_ANSWER12 barney/hardtosay
+//BA_ANSWER13 barney/justdontknow
+//BA_ANSWER14 barney/nope
+//BA_ANSWER15 barney/nosir
+//BA_ANSWER16 barney/cantfigure
+//BA_ANSWER17 barney/maybe
+//BA_ANSWER18 barney/notelling
+//BA_ANSWER19 barney/bequiet
+//BA_ANSWER20 barney/youtalkmuch
+//BA_ANSWER21 barney/alreadyasked
 
-// Barney - Idling
-BA_IDLE0 barney/whatisthat
-BA_IDLE1 barney/coldone
-BA_IDLE2 barney/guyresponsible
-BA_IDLE3 barney/bigmess
-BA_IDLE4 barney/luckwillturn
-BA_IDLE5 barney/bigplace
-BA_IDLE6 barney/targetpractice
-BA_IDLE7 barney/badfeeling
-BA_IDLE8 barney/ambush
-BA_IDLE9 barney/survive
-BA_IDLE10 barney/stophere
+// player is staring at scientist
+//BA_STARE0 barney/yup
+//BA_STARE1 barney/yessir
+//BA_STARE2 barney/howyoudoing
+//BA_STARE3 barney/heyfella
 
-// Barney - Attacking
-BA_ATTACK0 barney/openfire(e50)
-BA_ATTACK1 barney/openfire(s50)
-BA_ATTACK2 barney/standback
-BA_ATTACK3 barney/whatisthat
-BA_ATTACK4 barney/diebloodsucker
-BA_ATTACK5 barney/aimforhead
+// Idling
+//BA_IDLE0 barney/whatisthat
+//BA_IDLE1 barney/coldone
+//BA_IDLE2 barney/guyresponsible
+//BA_IDLE3 barney/bigmess
+//BA_IDLE4 barney/luckwillturn
+//BA_IDLE5 barney/bigplace
+//BA_IDLE6 barney/targetpractice
+//BA_IDLE7 barney/badfeeling
+//BA_IDLE8 barney/ambush
+//BA_IDLE9 barney/survive
+//BA_IDLE10 barney/stophere
 
-// Barney - Hear something*
-BA_HEAR0 barney/hearsomething
-BA_HEAR1 barney/icanhear
-BA_HEAR2 barney/soundsbad
+// Attacking
+//BA_ATTACK0 barney/openfire(e50)
+//BA_ATTACK1 barney/openfire(s50)
+//BA_ATTACK2 barney/standback
+//BA_ATTACK3 barney/whatisthat
+//BA_ATTACK4 barney/diebloodsucker
+//BA_ATTACK5 barney/aimforhead
 
-// Barney - Smells something
-BA_SMELL0 barney/somethingdied
-BA_SMELL1 barney/somethingstinky
-BA_SMELL2 barney/stench
+// Hear something*
+//BA_HEAR0 barney/hearsomething
+//BA_HEAR1 barney/icanhear
+//BA_HEAR2 barney/soundsbad
 
-// Barney - Heals (?)
-BA_CUREA barney/checkwounds
-BA_CUREB barney/youneedmedic
-BA_CUREC barney/realbadwound
+// Smells something
+//BA_SMELL0 barney/somethingdied
+//BA_SMELL1 barney/somethingstinky
+//BA_SMELL2 barney/stench
 
-// Barney - Getting hit
-BA_SCARED0 barney/donthurtem
-BA_SCARED1 barney/leavealone
+// Tells player that he needs medical attentions
+//BA_CUREA barney/checkwounds
+//BA_CUREB barney/youneedmedic
+//BA_CUREC barney/realbadwound
 
-// Barney - Wounded
-BA_WOUND0 barney/imhit
-BA_WOUND1 barney/hitbad
-BA_MORTAL0 barney/imdead
+// Getting hit
+//BA_SCARED0 barney/donthurtem
+//BA_SCARED1 barney/leavealone
 
-// Barney - If you shoot Barney:
-BA_SHOT0 cracklife/barney/ba_whoathere
-BA_SHOT1 cracklife/barney/ba_dotoyou
-BA_SHOT2 cracklife/barney/ba_endline
-BA_SHOT3 cracklife/barney/ba_tomb
-BA_SHOT4 cracklife/barney/ba_friends
-BA_SHOT5 cracklife/barney/ba_iwish
+// Wounded
+//BA_WOUND0 barney/imhit
+//BA_WOUND1 barney/hitbad
+//BA_MORTAL0 barney/imdead
 
-// Barney - When Barney’s really pissed at you:
-BA_MAD0 cracklife/barney/ba_stepoff
-BA_MAD1 cracklife/barney/ba_iwish
-BA_MAD2 cracklife/barney/ba_somuch
-BA_MAD3 cracklife/barney/ba_somuch
-BA_MAD4 cracklife/barney/ba_endline
-BA_MAD5 cracklife/barney/ba_dontmake
-BA_MAD6 cracklife/barney/ba_tomb
+// If you shoot Barney: // MOVED TO barney.txt
+// BA_SHOT0 cracklife/barney/ba_whoathere
+// BA_SHOT1 cracklife/barney/ba_dotoyou
+// BA_SHOT2 cracklife/barney/ba_endline
+// BA_SHOT3 cracklife/barney/ba_tomb
+// BA_SHOT4 cracklife/barney/ba_friends
+// BA_SHOT5 cracklife/barney/ba_iwish
 
-// Barney - When Barney’s killed something
-BA_KILL0 barney/ba_gotone
-BA_KILL1 barney/ba_another
-BA_KILL2 barney/ba_buttugly
-BA_KILL3 barney/ba_seethat
-BA_KILL4 barney/ba_close
-BA_KILL5 barney/ba_firepl
-BA_KILL6 barney/ba_bring
+// When Barney’s really pissed at you: // MOVED TO barney.txt
+//BA_MAD0 cracklife/barney/ba_stepoff
+//BA_MAD1 cracklife/barney/ba_iwish
+//BA_MAD2 cracklife/barney/ba_somuch
+//BA_MAD3 cracklife/barney/ba_somuch
+//BA_MAD4 cracklife/barney/ba_endline
+//BA_MAD5 cracklife/barney/ba_dontmake
+//BA_MAD6 cracklife/barney/ba_tomb
+
+// When Barney’s killed something
+//BA_KILL0 barney/ba_gotone
+//BA_KILL1 barney/ba_another
+//BA_KILL2 barney/ba_buttugly
+//BA_KILL3 barney/ba_seethat
+//BA_KILL4 barney/ba_close
+//BA_KILL5 barney/ba_firepl
+//BA_KILL6 barney/ba_bring
 
 
-// Barney - If you use Barney in Hazard Course
-BA_HAZ_OK0 holo/tr_ba_use
+// If you use Barney in Hazard Course
+//BA_HAZ_OK0 holo/tr_ba_use
 
-// Barney - If you unuse Barney in Hazard Course
-BA_HAZ_WAIT0 holo/tr_ba_unuse
+// If you unuse Barney in Hazard Course
+//BA_HAZ_WAIT0 holo/tr_ba_unuse
 
-// Barney - Barney in Hazard Course
-BA_LIGHTSON holo/tr_ba_lightson
+// Barney in Hazard Course
+//BA_LIGHTSON holo/tr_ba_lightson
 
-// Barney - If you use Barney before the disaster
-BA_POK0 cracklife/barney/ba_post
-BA_POK1 cracklife/barney/ba_duty
-BA_POK2 cracklife/barney/ba_raincheck
-BA_POK3 cracklife/barney/ba_later
+// If you use Barney before the disaster // MOVED TO barney.txt
+//BA_POK0 cracklife/barney/ba_post
+//BA_POK1 cracklife/barney/ba_duty
+//BA_POK2 cracklife/barney/ba_raincheck
+//BA_POK3 cracklife/barney/ba_later
 
-// Barney - if barney can't follow you
-BA_STOP0 barney/stop1
-BA_STOP1 barney/stop2
+// if barney can't follow you
+//BA_STOP0 barney/stop1
+//BA_STOP1 barney/stop2
 //BA_STOP2 barney/stop3
 
-// Barney - scripted sentences
+// scripted sentences
 
 //c1a0 scripts
 //BA_LATE cracklife/barney/c1a0_ba_late //cracklife_c00
@@ -722,9 +730,9 @@ BA_STOP1 barney/stop2
 //BA_ZOMBIE2 barney/c1a2_ba_2zomb // UNUSED
 //BA_ZOMBIE4 barney/c1a2_ba_4zomb // UNUSED
 //BA_CLIMB cracklife/barney/c1a2_ba_climb // cracklife_c03
-BA_SLEW barney/c1a2_ba_slew
+//BA_SLEW barney/c1a2_ba_slew
 //BA_SURFACE cracklife/barney/c1a2_ba_surface // cracklife_c03
-BA_TOPSIDE barney/c1a2_ba_top
+//BA_TOPSIDE barney/c1a2_ba_top
 
 //c1a4 scripts
 //BA_WHISPER cracklife/barney/c1a4_ba_wisp //cracklife_c05_a2
@@ -760,16 +768,16 @@ BA_TOPSIDE barney/c1a2_ba_top
 
 //c2a5 scripts
 //BA_LETMEOUT barney/c2a5_ba_letout // UNUSED
-//BA_RPG barney/c2a5_ba_rpg // UNUSED
+//BA_RPG cracklife/barney/c2a5_ba_rpg // UNUSED
 //BA_HELPME cracklife/barney/c2a5_ba_helpme //cracklife_c11_a2
-//BA_SNIPED barney/c2a5_ba_sniped // UNUSED
+//BA_SNIPED cracklife/barney/c2a5_ba_helpme // UNUSED
 
 //c3a2 scripts
 //BA_SURVEY2A cracklife/barney/c3a2_ba_2surv //cracklife_c13_a4
 //BA_SURVEY4A cracklife/barney/c3a2_ba_4surv //cracklife_c13_a4
 //BA_SURVEY6A cracklife/barney/c3a2_ba_6surv //cracklife_c13_a4
 //BA_SURVEY8A cracklife/barney/c3a2_ba_8surv //cracklife_c13_a4
-BA_PORTSTAY cracklife/barney/c3a2_ba_stay
+//BA_PORTSTAY cracklife/barney/c3a2_ba_stay // UNUSED?
 
 //crack life scripts
 //BA_FUCKYOU cracklife/barney/fuckyou

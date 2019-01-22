@@ -1,4 +1,41 @@
-"barney/ba_die1.wav"  "barnacle/bcl_die3.wav"
-"barney/ba_die2.wav"  "turret/tu_die3.wav"
+"barney/ba_die1.wav" "barnacle/bcl_die3.wav"
+"barney/ba_die2.wav" "turret/tu_die3.wav"
 "barney/ba_pain1.wav" "cracklife/barney/ba_pain1.wav"
 "barney/ba_pain3.wav" "cracklife/barney/ba_pain3.wav"
+
+"!BA_OK0" "cracklife/barney/ba_iwish.wav"
+"!BA_OK1" "barney/hellonicesuit.wav"
+"!BA_OK3" "cracklife/barney/ba_stepoff.wav"
+"!BA_OK4" "cracklife/barney/ba_endline.wav"
+"!BA_OK5" "cracklife/barney/fuckyou.wav"
+"!BA_OK6" "cracklife/barney/fuckyou.wav"
+
+"!BA_WAIT0" "cracklife/taunts/taunt1.wav"
+"!BA_WAIT1" "cracklife/agrunt/ag_alert2.wav"
+"!BA_WAIT2" "cracklife/plats/elevmove2.wav"
+"!BA_WAIT3" "cracklife/ambience/alienflyby1.wav"
+"!BA_WAIT4" "cracklife/debris/beamstart1.wav"
+"!BA_WAIT5" "cracklife/debris/bustglass1.wav"
+
+"!BA_HELLO6" "barney/heyfella.wav"
+
+"!BA_SHOT0" "cracklife/barney/ba_whoathere.wav"
+"!BA_SHOT1" "cracklife/barney/ba_dotoyou.wav"
+"!BA_SHOT2" "cracklife/barney/ba_endline.wav"
+"!BA_SHOT3" "cracklife/barney/ba_tomb.wav"
+"!BA_SHOT4" "cracklife/barney/ba_friends.wav"
+"!BA_SHOT5" "cracklife/barney/ba_iwish.wav"
+
+"!BA_MAD0" "cracklife/barney/ba_stepoff.wav"
+"!BA_MAD1" "cracklife/barney/ba_iwish.wav"
+"!BA_MAD2" "cracklife/barney/ba_somuch.wav"
+"!BA_MAD3" "cracklife/barney/ba_somuch.wav"
+"!BA_MAD4" "cracklife/barney/ba_endline.wav"
+"!BA_MAD5" "cracklife/barney/ba_dontmake.wav"
+"!BA_MAD6" "cracklife/barney/ba_tomb.wav"
+
+"!BA_POK0" "cracklife/barney/ba_post.wav"
+"!BA_POK1" "cracklife/barney/ba_duty.wav"
+"!BA_POK2" "cracklife/barney/ba_raincheck.wav"
+"!BA_POK3" "cracklife/barney/ba_later.wav"
+
