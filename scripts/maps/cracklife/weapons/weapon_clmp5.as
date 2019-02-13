@@ -6,6 +6,9 @@
 * Sven Co-op Re-conversion: Rafael "R4to0" Alves
  */
 
+namespace CLMP5
+{
+
 enum Mp5Animation
 {
 	MP5_LONGIDLE = 0,
@@ -15,48 +18,59 @@ enum Mp5Animation
 	MP5_DEPLOY,
 	MP5_FIRE1,
 	MP5_FIRE2,
-	MP5_FIRE3,
+	MP5_FIRE3
 };
 
-namespace CLMP5
-{
-
-// Let's Crack-Life this -R4to0
-const uint iDefaultGive 		= 999; // not
-const uint iMaxCarry			= 999; // sure
-const uint iMaxCarry2 			= 999; // about
-const uint iMaxClip				= 999; // this
-const uint iWeight				= 5;
-const uint iMP5Dmg				= int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mmAR_bullet" ) );
-const uint iAmmoGrenadesGive	= 200; // default: 2
-const float flPriFireDelay		= 0.0;
-const float flSecFireDelay		= 0.1;
+// Let's Crack-Life this
+// Confirmed IDA - 12 Feb 2019 -R4to0
+const uint g_DefGivePri 		= 999;
+const uint g_MaxAmmoPri			= 999;
+const uint g_MaxAmmoSec 		= 999;
+const uint g_MaxClip			= 999;
+const uint g_Weight				= 15;
+const uint g_PrimaryDmg			= int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mmAR_bullet" ) );
+const uint g_SecondaryDmg		= int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mmAR_grenade" ) );
+const uint g_DefGiveSec			= 999;
+const float g_PriFireDelay		= 0.001f;
+const float g_SecFireDelay		= 0.1f;
 
 // Weapon Info
-const uint iSlot				= 2;
-const uint iPosition			= 4;
-const string strPriAmmoType		= "cl_9mm"; //Default: 9mm
-const string strSecAmmoType		= "cl_ARgrenades"; //Default: ARgrenades
+const uint g_Slot				= 2;
+const uint g_Position			= 4;
+const string g_PriAmmoType		= "cl_9mm"; //Default: 9mm
+const string g_SecAmmoType		= "cl_ARgrenades"; //Default: ARgrenades
+const string g_AmmoName 		= "ammo_clmp5";
+const string g_SecAmmoName		= "ammo_clmp5grenades";
+const string g_WeaponName		= "weapon_clmp5";
+const string g_ProjName			= "proj_clgrenade";
 
 // Models
-const string strPeeMdl			= "models/hlclassic/p_9mmAR.mdl"; // SC HL1 "classic mode" model
-const string strVeeMdl			= "models/cracklife/v_9mmar.mdl"; // v2: Edited reload events
-const string strWeeMdl			= "models/hlclassic/w_9mmAR.mdl"; // SC HL1 "classic mode" model
-const string strShellMdl		= "models/shell.mdl"; // Shell
-const string strGrenadeMdl		= "models/grenade.mdl"; // Grenade
-const string strWeeGrenadeMdl	= "models/w_ARgrenade.mdl"; // Grenade
-const string strWeeAmmoMdl		= "models/w_9mmARclip.mdl"; // Ammo
+const string g_PeeMdl			= "models/hlclassic/p_9mmAR.mdl"; // SC HL1 "classic mode" model
+const string g_VeeMdl			= "models/cracklife/v_9mmar.mdl"; // v2: Edited reload events
+const string g_WeeMdl			= "models/hlclassic/w_9mmAR.mdl"; // SC HL1 "classic mode" model
+const string g_ShellMdl			= "models/shell.mdl"; // Shell
+const string g_GrenadeMdl		= "models/grenade.mdl"; // Grenade
+const string g_WeeGrenadeMdl	= "models/w_ARgrenade.mdl"; // Grenade
+const string g_WeeAmmoMdl		= "models/w_9mmARclip.mdl"; // Ammo
 
 // Sounds
-const string strClipInsSnd		= "hlclassic/items/clipinsert1.wav"; // Played by v2 model
-const string strClipRelSnd		= "hlclassic/items/cliprelease1.wav"; // Played by v2 model
-const string strFire1Snd		= "hlclassic/weapons/hks1.wav";
-const string strFire2Snd		= "hlclassic/weapons/hks2.wav";
-const string strFire3Snd		= "hlclassic/weapons/hks3.wav";
-const string strGL1Snd			= "hlclassic/weapons/glauncher.wav";
-const string strGL2Snd			= "hlclassic/weapons/glauncher2.wav";
-const string strEmptySnd		= "cracklife/weapons/357_cock1.wav";
-const string strAmmoSnd			= "items/9mmclip1.wav";
+const string g_ClipInsSnd		= "hlclassic/items/clipinsert1.wav"; // Played by v2 model
+const string g_ClipRelSnd		= "hlclassic/items/cliprelease1.wav"; // Played by v2 model
+const string g_Fire1Snd			= "hlclassic/weapons/hks1.wav";
+const string g_Fire2Snd			= "hlclassic/weapons/hks2.wav";
+const string g_Fire3Snd			= "hlclassic/weapons/hks3.wav";
+const string g_GL1Snd			= "hlclassic/weapons/glauncher.wav";
+const string g_GL2Snd			= "hlclassic/weapons/glauncher2.wav";
+const string g_EmptySnd			= "cracklife/weapons/357_cock1.wav";
+const string g_AmmoPickSnd		= "items/9mmclip1.wav";
+const string g_Debris1Snd		= "hlclassic/weapons/debris1.wav";
+const string g_Debris2Snd		= "hlclassic/weapons/debris2.wav";
+const string g_Debris3Snd		= "hlclassic/weapons/debris3.wav";
+
+// Sprites
+const string g_FireballSpr		= "sprites/zerogxplode.spr";
+const string g_ExplosionSpr		= "sprites/WXplo1.spr";
+const string g_SmokeSpr			= "sprites/steam1.spr";
 
 class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 {
@@ -69,12 +83,17 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 	int m_iShell;
 	int m_iSecondaryAmmo;
 
+	/*int SecondaryAmmoIndex()
+	{
+		return self.m_iSecondaryAmmoType;
+	}*/
+
 	void Spawn()
 	{
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeMdl );
+		g_EntityFuncs.SetModel( self, g_WeeMdl );
 
-		self.m_iDefaultAmmo = iDefaultGive;
+		self.m_iDefaultAmmo = g_DefGivePri;
 
 		self.m_iSecondaryAmmoType = 0;
 		self.FallInit();
@@ -84,32 +103,32 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 	{
 		// Models
 		self.PrecacheCustomModels();
-		g_Game.PrecacheModel( strVeeMdl );
-		g_Game.PrecacheModel( strWeeMdl );
-		g_Game.PrecacheModel( strPeeMdl );
-		m_iShell = g_Game.PrecacheModel( strShellMdl );
-		g_Game.PrecacheModel( strGrenadeMdl );
+		g_Game.PrecacheModel( g_VeeMdl );
+		g_Game.PrecacheModel( g_WeeMdl );
+		g_Game.PrecacheModel( g_PeeMdl );
+		m_iShell = g_Game.PrecacheModel( g_ShellMdl );
+		g_Game.PrecacheModel( g_GrenadeMdl );
 
 		// Sounds
-		g_SoundSystem.PrecacheSound( strClipInsSnd );
-		g_SoundSystem.PrecacheSound( strClipRelSnd );
-		g_SoundSystem.PrecacheSound( strFire1Snd );
-		g_SoundSystem.PrecacheSound( strFire2Snd );
-		g_SoundSystem.PrecacheSound( strFire3Snd );
-		g_SoundSystem.PrecacheSound( strGL1Snd );
-		g_SoundSystem.PrecacheSound( strGL2Snd );
-		g_SoundSystem.PrecacheSound( strEmptySnd );
+		g_SoundSystem.PrecacheSound( g_ClipInsSnd );
+		g_SoundSystem.PrecacheSound( g_ClipRelSnd );
+		g_SoundSystem.PrecacheSound( g_Fire1Snd );
+		g_SoundSystem.PrecacheSound( g_Fire2Snd );
+		g_SoundSystem.PrecacheSound( g_Fire3Snd );
+		g_SoundSystem.PrecacheSound( g_GL1Snd );
+		g_SoundSystem.PrecacheSound( g_GL2Snd );
+		g_SoundSystem.PrecacheSound( g_EmptySnd );
 	}
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= iMaxCarry;
-		info.iMaxAmmo2 	= iMaxCarry2;
-		info.iMaxClip 	= iMaxClip;
-		info.iSlot		= iSlot;
-		info.iPosition 	= iPosition;
+		info.iMaxAmmo1 	= g_MaxAmmoPri;
+		info.iMaxAmmo2 	= g_MaxAmmoSec;
+		info.iMaxClip 	= g_MaxClip;
+		info.iSlot		= g_Slot;
+		info.iPosition 	= g_Position;
 		info.iId		= g_ItemRegistry.GetIdForName( self.pev.classname );
-		info.iWeight 	= iWeight;
+		info.iWeight 	= g_Weight;
 
 		return true;
 	}
@@ -123,10 +142,15 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 			clmp5.WriteLong( g_ItemRegistry.GetIdForName( self.pev.classname ) );
 			clmp5.End();
 
-		return true;
+			return true;
 		}
 
 		return false;
+	}
+
+	bool Deploy()
+	{
+		return self.DefaultDeploy( self.GetV_Model( g_VeeMdl ), self.GetP_Model( g_PeeMdl ), MP5_DEPLOY, "mp5" );
 	}
 
 	bool PlayEmptySound()
@@ -135,20 +159,10 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		{
 			self.m_bPlayEmptySound = false;
 		
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strEmptySnd, 0.8, ATTN_NORM, 0, PITCH_NORM );
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_EmptySnd, 0.8f, ATTN_NORM, 0, PITCH_NORM );
 		}
 	
-	return false;
-	}
-
-	bool Deploy()
-	{
-		return self.DefaultDeploy( self.GetV_Model( strVeeMdl ), self.GetP_Model( strPeeMdl ), MP5_DEPLOY, "mp5" );
-	}
-
-	float WeaponTimeBase()
-	{
-		return g_Engine.time; //g_WeaponFuncs.WeaponTimeBase();
+		return false;
 	}
 
 	void PrimaryAttack()
@@ -156,15 +170,15 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		// don't fire underwater
 		if( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD )
 		{
-			self.PlayEmptySound( );
-			self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = WeaponTimeBase() + 0.15;
+			self.PlayEmptySound();
+			self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + 0.15f;
 			return;
 		}
 
 		if( self.m_iClip <= 0 )
 		{
 			self.PlayEmptySound();
-			self.m_flNextSecondaryAttack = self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.15;
+			self.m_flNextSecondaryAttack = self.m_flNextPrimaryAttack = g_Engine.time + 0.15f;
 			return;
 		}
 
@@ -184,9 +198,9 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		switch ( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed, 0, 2 ) )
 		{
-			case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
-			case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
-			case 2: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
+			case 0: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire1Snd, 1.0f, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
+			case 1: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire2Snd, 1.0f, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
+			case 2: g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire3Snd, 1.0f, ATTN_NORM, 0, 95 + Math.RandomLong( 0, 10 ) ); break;
 		}
 
 		// player "shoot" animation
@@ -194,9 +208,10 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		Vector vecSrc	 = m_pPlayer.GetGunPosition();
 		Vector vecAiming = m_pPlayer.GetAutoaimVector( AUTOAIM_5DEGREES );
-	
-		// optimized multiplayer. Widened to make it easier to hit a moving player
-		m_pPlayer.FireBullets( 1, vecSrc, vecAiming, VECTOR_CONE_6DEGREES, 8192, BULLET_PLAYER_MP5, 2, iMP5Dmg );
+
+		// VECTOR_CONE_6DEGREES = optimized multiplayer. Widened to make it easier to hit a moving player
+		// VECTOR_CONE_3DEGREES = single player spread
+		m_pPlayer.FireBullets( 1, vecSrc, vecAiming, ( g_WeaponMode ? VECTOR_CONE_6DEGREES : VECTOR_CONE_3DEGREES ), 8192, BULLET_PLAYER_MP5, 2, g_PrimaryDmg );
 
 		if( self.m_iClip == 0 && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 )
 			// HEV suit - indicate out of ammo condition
@@ -204,16 +219,16 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		m_pPlayer.pev.punchangle.x = Math.RandomLong( -2, 2 );
 
-		self.m_flNextPrimaryAttack = self.m_flNextPrimaryAttack + flPriFireDelay; // changed here
-		if( self.m_flNextPrimaryAttack < WeaponTimeBase() )
-			self.m_flNextPrimaryAttack = WeaponTimeBase() + flPriFireDelay; // changed here
+		self.m_flNextPrimaryAttack = self.m_flNextPrimaryAttack + g_PriFireDelay; // changed here
+		if( self.m_flNextPrimaryAttack < g_Engine.time )
+			self.m_flNextPrimaryAttack = g_Engine.time + g_PriFireDelay; // changed here
 
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 
 		TraceResult tr;
 		float x, y;
 		g_Utility.GetCircularGaussianSpread( x, y );
-		Vector vecDir = vecAiming + x * VECTOR_CONE_6DEGREES.x * g_Engine.v_right + y * VECTOR_CONE_6DEGREES.y * g_Engine.v_up;
+		Vector vecDir = vecAiming + x * ( g_WeaponMode ? VECTOR_CONE_6DEGREES : VECTOR_CONE_3DEGREES ).x * g_Engine.v_right + y * ( g_WeaponMode ? VECTOR_CONE_6DEGREES : VECTOR_CONE_3DEGREES ).y * g_Engine.v_up;
 		Vector vecEnd	= vecSrc + vecDir * 4096;
 		g_Utility.TraceLine( vecSrc, vecEnd, dont_ignore_monsters, m_pPlayer.edict(), tr );
 
@@ -235,7 +250,7 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		if( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD )
 		{
 			self.PlayEmptySound();
-			self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.15;
+			self.m_flNextPrimaryAttack = g_Engine.time + 0.15f;
 			return;
 		}
 
@@ -249,11 +264,11 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		m_pPlayer.m_iWeaponFlash = BRIGHT_GUN_FLASH;
 
 		m_pPlayer.m_iExtraSoundTypes = bits_SOUND_DANGER;
-		m_pPlayer.m_flStopExtraSoundTime = WeaponTimeBase() + 0.2;
+		m_pPlayer.m_flStopExtraSoundTime = g_Engine.time + 0.2f;
 
 		m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType ) - 1 );
 
-		m_pPlayer.pev.punchangle.x = -10.0;
+		m_pPlayer.pev.punchangle.x = -10.0f;
 
 		self.SendWeaponAnim( MP5_LAUNCH );
 
@@ -263,12 +278,12 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		if ( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed, 0, 1 ) != 0 )
 		{
 		// play this sound through BODY channel so we can hear it if player didn't stop firing MP5
-		g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strGL1Snd, 0.8, ATTN_NORM, 0, PITCH_NORM );
+		g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_GL1Snd, 0.8f, ATTN_NORM, 0, PITCH_NORM );
 		}
 		else
 		{
 			// play this sound through BODY channel so we can hear it if player didn't stop firing MP5
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strGL2Snd, 0.8, ATTN_NORM, 0, PITCH_NORM );
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_GL2Snd, 0.8f, ATTN_NORM, 0, PITCH_NORM );
 		}
 
 		Math.MakeVectors( m_pPlayer.pev.v_angle + m_pPlayer.pev.punchangle );
@@ -276,16 +291,18 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		// we don't add in player velocity anymore.
 		if( ( m_pPlayer.pev.button & IN_DUCK ) != 0 )
 		{
-			g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			//g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
 		}
 		else
 		{
-			g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5 + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			//g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5 + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5f + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
 		}
 
-		self.m_flNextPrimaryAttack = WeaponTimeBase() + flSecFireDelay; // changed here
-		self.m_flNextSecondaryAttack = WeaponTimeBase() + flSecFireDelay; // changed here
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + 5;// idle pretty soon after shooting.
+		self.m_flNextPrimaryAttack = g_Engine.time + g_SecFireDelay; // changed here
+		self.m_flNextSecondaryAttack = g_Engine.time + g_SecFireDelay; // changed here
+		self.m_flTimeWeaponIdle = g_Engine.time + 5;// idle pretty soon after shooting.
 
 		if( m_pPlayer.m_rgAmmo(self.m_iSecondaryAmmoType) <= 0 )
 			// HEV suit - indicate out of ammo condition
@@ -294,10 +311,10 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 	void Reload()
 	{
-        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == iMaxClip )
+        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == g_MaxClip )
             return;
 
-		self.DefaultReload( iMaxClip, MP5_RELOAD, 1.5, 0 );
+		self.DefaultReload( g_MaxClip, MP5_RELOAD, 1.5f, 0 );
 
 		//Set 3rd person reloading animation -Sniper
 		BaseClass.Reload();
@@ -309,7 +326,7 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		m_pPlayer.GetAutoaimVector( AUTOAIM_5DEGREES );
 
-		if( self.m_flTimeWeaponIdle > WeaponTimeBase() )
+		if( self.m_flTimeWeaponIdle > g_Engine.time )
 			return;
 
 		int iAnim;
@@ -322,7 +339,7 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		self.SendWeaponAnim( iAnim );
 
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );// how long till we do this again.
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );// how long till we do this again.
 	}
 }
 
@@ -334,21 +351,21 @@ class AmmoClip : ScriptBasePlayerAmmoEntity
 	void Spawn()
 	{ 
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeAmmoMdl );
+		g_EntityFuncs.SetModel( self, g_WeeAmmoMdl );
 		BaseClass.Spawn();
 	}
 
 	void Precache()
 	{
-		g_Game.PrecacheModel( strWeeAmmoMdl );
-		g_SoundSystem.PrecacheSound( strAmmoSnd );
+		g_Game.PrecacheModel( g_WeeAmmoMdl );
+		g_SoundSystem.PrecacheSound( g_AmmoPickSnd );
 	}
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{ 
-		if( pOther.GiveAmmo( iMaxClip, strPriAmmoType, iMaxClip ) != -1 )
+		if( pOther.GiveAmmo( g_MaxClip, g_PriAmmoType, g_MaxClip ) != -1 )
 		{
-			g_SoundSystem.EmitSound( self.edict(), CHAN_ITEM, strAmmoSnd, 1, ATTN_NORM );
+			g_SoundSystem.EmitSound( self.edict(), CHAN_ITEM, g_AmmoPickSnd, 1, ATTN_NORM );
 			return true;
 		}
 		return false;
@@ -363,46 +380,214 @@ class AmmoGrenade : ScriptBasePlayerAmmoEntity
 	void Spawn()
 	{
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeGrenadeMdl );
+		g_EntityFuncs.SetModel( self, g_WeeGrenadeMdl );
 		BaseClass.Spawn();
 	}
 	void Precache()
 	{
-		g_Game.PrecacheModel( strWeeGrenadeMdl );
-		g_SoundSystem.PrecacheSound( strAmmoSnd );
+		g_Game.PrecacheModel( g_WeeGrenadeMdl );
+		g_SoundSystem.PrecacheSound( g_AmmoPickSnd );
 	}
 	bool AddAmmo( CBaseEntity@ pOther ) 
 	{
-		if( pOther.GiveAmmo( iAmmoGrenadesGive, strSecAmmoType, iMaxCarry2 ) != -1 )
+		if( pOther.GiveAmmo( g_DefGiveSec, g_SecAmmoType, g_MaxAmmoSec ) != -1 )
 		{
-			g_SoundSystem.EmitSound( self.edict(), CHAN_ITEM, strAmmoSnd, 1, ATTN_NORM );
+			g_SoundSystem.EmitSound( self.edict(), CHAN_ITEM, g_AmmoPickSnd, 1, ATTN_NORM );
 			return true;
 		}
 		return false;
 	}
 }
 
-string GetAmmoName()
+/**
+ * Custom grenade projectile
+ */
+
+class CCLGrenade : ScriptBaseMonsterEntity
 {
-	return "ammo_clmp5";
+	int m_iModelIndexFireball;
+	int m_iModelIndexWExplosion;
+	int m_iModelIndexSmoke;
+
+	void Spawn()
+	{
+		Precache();
+		
+		self.pev.movetype = MOVETYPE_BOUNCE;
+		
+		self.pev.solid = SOLID_BBOX;
+		
+		g_EntityFuncs.SetModel( self, g_GrenadeMdl );
+		g_EntityFuncs.SetSize( self.pev, g_vecZero, g_vecZero );
+		
+		self.pev.dmg = 100;
+	}
+	
+	void Precache()
+	{
+		g_SoundSystem.PrecacheSound( g_Debris1Snd );
+		g_SoundSystem.PrecacheSound( g_Debris2Snd );
+		g_SoundSystem.PrecacheSound( g_Debris3Snd );
+	
+		m_iModelIndexFireball = g_Game.PrecacheModel( g_FireballSpr );
+		m_iModelIndexWExplosion = g_Game.PrecacheModel( g_ExplosionSpr );
+		m_iModelIndexSmoke = g_Game.PrecacheModel( g_SmokeSpr );
+	}
+
+	void Explode( TraceResult pTrace, int bitsDamageType )
+	{
+		self.pev.model = string_t(); //invisible
+		self.pev.solid = SOLID_NOT;// intangible
+
+		self.pev.takedamage = DAMAGE_NO;
+
+		// Pull out of the wall a bit
+		if( pTrace.flFraction != 1.0f )
+		{
+			self.pev.origin = pTrace.vecEndPos + ( pTrace.vecPlaneNormal * ( self.pev.dmg - 24 ) * 0.6f );
+		}
+
+		int iContents = g_EngineFuncs.PointContents( self.pev.origin );
+	
+		NetworkMessage expl( MSG_PAS, NetworkMessages::SVC_TEMPENTITY, self.pev.origin );
+			expl.WriteByte( TE_EXPLOSION );		// This makes a dynamic light and the explosion sprites/sound
+			expl.WriteCoord( self.pev.origin.x );	// Send to PAS because of the sound
+			expl.WriteCoord( self.pev.origin.y );
+			expl.WriteCoord( self.pev.origin.z );
+			if( iContents != CONTENTS_WATER )
+				expl.WriteShort( m_iModelIndexFireball );
+			else
+				expl.WriteShort( m_iModelIndexWExplosion );
+		expl.WriteByte( int( ( self.pev.dmg - 50 ) * 0.60f)  ); // scale * 10
+			expl.WriteByte( 15 ); // framerate
+			expl.WriteByte( TE_EXPLFLAG_NONE );
+		expl.End();
+
+		GetSoundEntInstance().InsertSound ( bits_SOUND_COMBAT, self.pev.origin, NORMAL_EXPLOSION_VOLUME, 3.0f, self );
+		entvars_t@ pevOwner;
+		if( self.pev.owner !is null )
+			@pevOwner = self.pev.owner.vars;
+		else
+			@pevOwner = null;
+
+		@self.pev.owner = null; // can't traceline attack owner if this is set
+
+		g_WeaponFuncs.RadiusDamage( self.pev.origin, self.pev, pevOwner, self.pev.dmg, self.pev.dmg * 2.5f, CLASS_NONE, bitsDamageType );
+
+		if( Math.RandomFloat( 0, 1 ) < 0.5f )
+			g_Utility.DecalTrace( pTrace, DECAL_SCORCH1 );
+		else
+			g_Utility.DecalTrace( pTrace, DECAL_SCORCH2 );
+
+		switch( Math.RandomLong( 0, 2 ) )
+		{
+			case 0:	g_SoundSystem.EmitSound( self.edict(), CHAN_VOICE, g_Debris1Snd, 0.55f, ATTN_NORM ); break;
+			case 1:	g_SoundSystem.EmitSound( self.edict(), CHAN_VOICE, g_Debris2Snd, 0.55f, ATTN_NORM ); break;
+			case 2:	g_SoundSystem.EmitSound( self.edict(), CHAN_VOICE, g_Debris3Snd, 0.55f, ATTN_NORM ); break;
+		}
+
+		self.pev.effects |= EF_NODRAW;
+		SetThink( ThinkFunction( this.Smoke ) );
+		self.pev.velocity = g_vecZero;
+		self.pev.nextthink = g_Engine.time + 0.3f;
+
+		if( iContents != CONTENTS_WATER )
+		{
+			int sparkCount = Math.RandomLong( 0, 3 );
+			for( int i = 0; i < sparkCount; i++ )
+				g_EntityFuncs.Create( "spark_shower", self.pev.origin, pTrace.vecPlaneNormal, false );
+		}
+	}
+	
+	void Smoke()
+	{
+		if( g_EngineFuncs.PointContents( self.pev.origin ) == CONTENTS_WATER )
+		{
+			g_Utility.Bubbles( self.pev.origin - Vector( 64, 64, 64 ), self.pev.origin + Vector( 64, 64, 64 ), 100 );
+		}
+		else
+		{
+			NetworkMessage smoke( MSG_PVS, NetworkMessages::SVC_TEMPENTITY, self.pev.origin );
+				smoke.WriteByte( TE_SMOKE );
+				smoke.WriteCoord( self.pev.origin.x );
+				smoke.WriteCoord( self.pev.origin.y );
+				smoke.WriteCoord( self.pev.origin.z );
+				smoke.WriteShort( m_iModelIndexSmoke );
+				smoke.WriteByte( int( ( self.pev.dmg - 50 ) * 0.80f ) ); // scale * 10
+				smoke.WriteByte( 12 ); // framerate
+			smoke.End();
+	}
+	g_EntityFuncs.Remove( self );
 }
 
-string GetSecAmmoName()
-{
-	return "ammo_clmp5grenades";
+	void ExplodeTouch( CBaseEntity@ pOther )
+	{
+		TraceResult tr;
+		Vector		vecSpot;// trace starts here!
+
+		@self.pev.enemy = @pOther.edict();
+
+		vecSpot = ( self.pev.origin - self.pev.velocity.Normalize() ) * 32;
+		g_Utility.TraceLine( vecSpot, ( vecSpot + self.pev.velocity.Normalize() ) * 64, ignore_monsters, self.edict(), tr );
+
+		Explode( tr, DMG_BLAST );
+	}
+
+	void DangerSoundThink()
+	{
+		if( !self.IsInWorld() )
+		{
+			g_EntityFuncs.Remove( self );
+			return;
+		}
+
+		GetSoundEntInstance().InsertSound( bits_SOUND_DANGER, ( self.pev.origin + self.pev.velocity ) * 0.5f, int ( self.pev.velocity.Length() ), 0.2f, self );
+		self.pev.nextthink = g_Engine.time + 0.2f;
+
+		if( self.pev.waterlevel != WATERLEVEL_DRY )
+		{
+			self.pev.velocity = self.pev.velocity * 0.5f;
+		}
+
+	}
 }
 
-string GetName()
+CCLGrenade@ ShootContact( entvars_t@ pevOwner, Vector vecStart, Vector vecVelocity )
 {
-	return "weapon_clmp5";
+	CBaseEntity@ cbeCLGrenade = g_EntityFuncs.CreateEntity( g_ProjName );
+	CCLGrenade@ pGrenade = cast<CCLGrenade@>( CastToScriptClass( cbeCLGrenade ) );
+	g_EntityFuncs.DispatchSpawn( pGrenade.self.edict() );
+
+	// contact grenades arc lower
+	pGrenade.pev.gravity = 0.5;// lower gravity since grenade is aerodynamic and engine doesn't know it.
+	g_EntityFuncs.SetOrigin( pGrenade.self, vecStart );
+	pGrenade.pev.velocity = vecVelocity;
+	pGrenade.pev.angles = Math.VecToAngles( pGrenade.pev.velocity );
+	@pGrenade.pev.owner = pevOwner.get_pContainingEntity();
+
+	// make monsters afaid of it while in the air
+	pGrenade.SetThink( ThinkFunction( pGrenade.DangerSoundThink ) );
+	pGrenade.pev.nextthink = g_Engine.time;
+
+	// Tumble in air
+	pGrenade.pev.avelocity.x = Math.RandomFloat( -100, -500 );
+
+	// Explode on contact
+	pGrenade.SetTouch( TouchFunction( pGrenade.ExplodeTouch ) );
+
+	pGrenade.pev.dmg = g_SecondaryDmg;
+
+	return pGrenade;
 }
 
 void Register()
 {
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::weapon_clmp5", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", strPriAmmoType, strSecAmmoType );
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoClip", GetAmmoName() );
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoGrenade", GetSecAmmoName() );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::weapon_clmp5", g_WeaponName );
+	g_ItemRegistry.RegisterWeapon( g_WeaponName, "cracklife", g_PriAmmoType, g_SecAmmoType );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoClip", g_AmmoName );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoGrenade", g_SecAmmoName );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::CCLGrenade", g_ProjName );
+	g_Game.PrecacheOther( g_ProjName );
 }
 
 } // End of namespace
