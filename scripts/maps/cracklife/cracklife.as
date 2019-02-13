@@ -16,11 +16,17 @@
 // False: Campaign Mode
 const bool g_bCrackLifeMode = true;
 
+// Weapon behaviour/mode (bIsMultiplayer function)
+// Like the singleplayer/multiplayer differences in vanilla HL
+// True: Multiplayer
+// False: Singleplayer
+const bool g_WeaponMode = false;
+
 // inb4 mapping for unused weapons
 array<ItemMapping@> g_ItemMappings =
 {
 	ItemMapping( "weapon_357",				CLPYTHON::GetName() ),
-	ItemMapping( "weapon_9mmAR",			CLMP5::GetName() ),
+	ItemMapping( "weapon_9mmAR",			CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_9mmhandgun",		CLGLOCK::GetName() ),
 	ItemMapping( "weapon_crowbar",			CLCROWBAR::GetName() ),
 	ItemMapping( "weapon_displacer",		"weapon_rpg" ),
@@ -29,17 +35,24 @@ array<ItemMapping@> g_ItemMappings =
 	ItemMapping( "weapon_glock",			CLGLOCK::GetName() ),
 	ItemMapping( "weapon_grapple",			CLCROWBAR::GetName() ),
 	ItemMapping( "weapon_hornetgun",		CLHORNETGUN::GetName() ),
-	ItemMapping( "weapon_m16",				CLMP5::GetName() ),
-	ItemMapping( "weapon_m249",				CLMP5::GetName() ),
-	ItemMapping( "weapon_minigun",			CLMP5::GetName() ),
+	ItemMapping( "weapon_m16",				CLMP5::g_WeaponName ),
+	ItemMapping( "weapon_m249",				CLMP5::g_WeaponName ),
+	ItemMapping( "weapon_minigun",			CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_pipewrench",		CLCROWBAR::GetName() ),
 	ItemMapping( "weapon_python",			CLPYTHON::GetName() ),
-	ItemMapping( "weapon_shockrifle",		CLMP5::GetName() ),
+	ItemMapping( "weapon_shockrifle",		CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_shotgun",			CLSHOTGUN::GetName() ),
 	ItemMapping( "weapon_sniperrifle",		"weapon_crossbow" ),
 	ItemMapping( "weapon_sporelauncher",	"weapon_rpg" ),
-	ItemMapping( "weapon_uzi",				CLMP5::GetName() ),
-	ItemMapping( "weapon_uziakimbo",		CLMP5::GetName() )
+	ItemMapping( "weapon_uzi",				CLMP5::g_WeaponName ),
+	ItemMapping( "weapon_uziakimbo",		CLMP5::g_WeaponName ),
+	
+	ItemMapping( "ammo_9mmAR",				CLMP5::g_AmmoName ),
+	ItemMapping( "ammo_9mmbox",				CLMP5::g_AmmoName ),
+	ItemMapping( "ammo_9mmclip",			CLMP5::g_AmmoName ),
+	ItemMapping( "ammo_uziclip",			CLMP5::g_AmmoName ),
+	ItemMapping( "ammo_mp5grenades",		CLMP5::g_SecAmmoName ),
+	ItemMapping( "ammo_ARgrenades",			CLMP5::g_SecAmmoName )
 };
 
 void MapInit()
