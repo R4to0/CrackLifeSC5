@@ -48,10 +48,10 @@ const string g_ProjName			= "proj_clgrenade";
 const string g_PeeMdl			= "models/hlclassic/p_9mmAR.mdl"; // SC HL1 "classic mode" model
 const string g_VeeMdl			= "models/cracklife/v_9mmar.mdl"; // v2: Edited reload events
 const string g_WeeMdl			= "models/hlclassic/w_9mmAR.mdl"; // SC HL1 "classic mode" model
-const string g_ShellMdl			= "models/shell.mdl"; // Shell
-const string g_GrenadeMdl		= "models/grenade.mdl"; // Grenade
-const string g_WeeGrenadeMdl	= "models/w_ARgrenade.mdl"; // Grenade
-const string g_WeeAmmoMdl		= "models/w_9mmARclip.mdl"; // Ammo
+const string g_ShellMdl			= "models/hlclassic/shell.mdl"; // Shell
+const string g_GrenadeMdl		= "models/hlclassic/grenade.mdl"; // Grenade
+const string g_WeeGrenadeMdl	= "models/hlclassic/w_ARgrenade.mdl"; // Grenade
+const string g_WeeAmmoMdl		= "models/hlclassic/w_9mmARclip.mdl"; // Ammo
 
 // Sounds
 const string g_ClipInsSnd		= "hlclassic/items/clipinsert1.wav"; // Played by v2 model
@@ -62,7 +62,7 @@ const string g_Fire3Snd			= "hlclassic/weapons/hks3.wav";
 const string g_GL1Snd			= "hlclassic/weapons/glauncher.wav";
 const string g_GL2Snd			= "hlclassic/weapons/glauncher2.wav";
 const string g_EmptySnd			= "cracklife/weapons/357_cock1.wav";
-const string g_AmmoPickSnd		= "items/9mmclip1.wav";
+const string g_AmmoPickSnd		= "hlclassic/items/9mmclip1.wav";
 const string g_Debris1Snd		= "hlclassic/weapons/debris1.wav";
 const string g_Debris2Snd		= "hlclassic/weapons/debris2.wav";
 const string g_Debris3Snd		= "hlclassic/weapons/debris3.wav";
@@ -165,6 +165,22 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		return false;
 	}
 
+	void GetDefaultShellInfo( CBasePlayer@ pPlayer, Vector& out ShellVelocity, Vector& out ShellOrigin, float forwardScale, float rightScale, float upScale )
+	{
+		Vector vecForward, vecRight, vecUp;
+		
+		g_EngineFuncs.AngleVectors( pPlayer.pev.v_angle, vecForward, vecRight, vecUp );
+		
+		const float fR = Math.RandomFloat( 50, 70 );
+		const float fU = Math.RandomFloat( 100, 150 );
+	 
+		for( int i = 0; i < 3; ++i )
+		{
+			ShellVelocity[i] = pPlayer.pev.velocity[i] + vecRight[i] * fR + vecUp[i] * fU + vecForward[i] * 25;
+			ShellOrigin[i]   = pPlayer.pev.origin[i] + pPlayer.pev.view_ofs[i] + vecUp[i] * upScale + vecForward[i] * forwardScale + vecRight[i] * rightScale;
+		}
+	}
+
 	void PrimaryAttack()
 	{
 		// don't fire underwater
@@ -194,6 +210,11 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 			case 1: self.SendWeaponAnim( MP5_FIRE2, 0, 0 ); break;
 			case 2: self.SendWeaponAnim( MP5_FIRE3, 0, 0 ); break;
 		}
+		
+		// Eject brass
+		Vector vecShellOrigin, vecShellVelocity;
+		GetDefaultShellInfo( m_pPlayer, vecShellVelocity, vecShellOrigin, 22, 6, -9 );
+		g_EntityFuncs.EjectBrass( vecShellOrigin, vecShellVelocity, m_pPlayer.pev.angles.y, m_iShell, TE_BOUNCE_SHELL ); 
 
 		// Fire sound
 		switch ( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed, 0, 2 ) )
@@ -268,7 +289,7 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType ) - 1 );
 
-		m_pPlayer.pev.punchangle.x = -10.0f;
+		m_pPlayer.pev.punchangle.x = -10.0f; // Is this right? -R4to0
 
 		self.SendWeaponAnim( MP5_LAUNCH );
 
@@ -277,8 +298,8 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		if ( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed, 0, 1 ) != 0 )
 		{
-		// play this sound through BODY channel so we can hear it if player didn't stop firing MP5
-		g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_GL1Snd, 0.8f, ATTN_NORM, 0, PITCH_NORM );
+			// play this sound through BODY channel so we can hear it if player didn't stop firing MP5
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_GL1Snd, 0.8f, ATTN_NORM, 0, PITCH_NORM );
 		}
 		else
 		{
@@ -291,13 +312,11 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 		// we don't add in player velocity anymore.
 		if( ( m_pPlayer.pev.button & IN_DUCK ) != 0 )
 		{
-			//g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
-			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 800 );
 		}
 		else
 		{
-			//g_EntityFuncs.ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5 + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
-			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5f + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 900 ); //800
+			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5f + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 800 );
 		}
 
 		self.m_flNextPrimaryAttack = g_Engine.time + g_SecFireDelay; // changed here
@@ -420,7 +439,7 @@ class CCLGrenade : ScriptBaseMonsterEntity
 		g_EntityFuncs.SetModel( self, g_GrenadeMdl );
 		g_EntityFuncs.SetSize( self.pev, g_vecZero, g_vecZero );
 		
-		self.pev.dmg = 100;
+		self.pev.dmg = g_SecondaryDmg; // 100
 	}
 	
 	void Precache()
@@ -458,7 +477,7 @@ class CCLGrenade : ScriptBaseMonsterEntity
 				expl.WriteShort( m_iModelIndexFireball );
 			else
 				expl.WriteShort( m_iModelIndexWExplosion );
-		expl.WriteByte( int( ( self.pev.dmg - 50 ) * 0.60f)  ); // scale * 10
+			expl.WriteByte( int( ( self.pev.dmg - 50 ) * 0.6f ) ); // scale * 10
 			expl.WriteByte( 15 ); // framerate
 			expl.WriteByte( TE_EXPLFLAG_NONE );
 		expl.End();
@@ -527,8 +546,8 @@ class CCLGrenade : ScriptBaseMonsterEntity
 
 		@self.pev.enemy = @pOther.edict();
 
-		vecSpot = ( self.pev.origin - self.pev.velocity.Normalize() ) * 32;
-		g_Utility.TraceLine( vecSpot, ( vecSpot + self.pev.velocity.Normalize() ) * 64, ignore_monsters, self.edict(), tr );
+		vecSpot = self.pev.origin - self.pev.velocity.Normalize() * 32;
+		g_Utility.TraceLine( vecSpot, vecSpot + self.pev.velocity.Normalize() * 64, ignore_monsters, self.edict(), tr );
 
 		Explode( tr, DMG_BLAST );
 	}
@@ -559,7 +578,7 @@ CCLGrenade@ ShootContact( entvars_t@ pevOwner, Vector vecStart, Vector vecVeloci
 	g_EntityFuncs.DispatchSpawn( pGrenade.self.edict() );
 
 	// contact grenades arc lower
-	pGrenade.pev.gravity = 0.5;// lower gravity since grenade is aerodynamic and engine doesn't know it.
+	pGrenade.pev.gravity = 0.5f;// lower gravity since grenade is aerodynamic and engine doesn't know it.
 	g_EntityFuncs.SetOrigin( pGrenade.self, vecStart );
 	pGrenade.pev.velocity = vecVelocity;
 	pGrenade.pev.angles = Math.VecToAngles( pGrenade.pev.velocity );
@@ -588,6 +607,8 @@ void Register()
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::AmmoGrenade", g_SecAmmoName );
 	g_CustomEntityFuncs.RegisterCustomEntity( "CLMP5::CCLGrenade", g_ProjName );
 	g_Game.PrecacheOther( g_ProjName );
+	g_Game.PrecacheOther( g_AmmoName );
+	g_Game.PrecacheOther( g_SecAmmoName );
 }
 
 } // End of namespace
