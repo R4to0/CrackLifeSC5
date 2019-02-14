@@ -6,6 +6,9 @@
 * Sven Co-op Re-conversion: Rafael "R4to0" Alves
 */
 
+namespace CLGLOCK
+{
+
 enum CLGlock_e
 {
 	CLGLRELOAD,
@@ -15,29 +18,26 @@ enum CLGlock_e
 	CLGLHOLSTER
 };
 
-namespace CLGLOCK
-{
-
 // Models
-const string strPeeMdl		= "models/cracklife/p_9mmhandgun.mdl"; //Thanks Tayklor
-const string strVeeMdl		= "models/cracklife/v_9mmhandgun.mdl";
-const string strWeeMdl		= "models/cracklife/w_9mmhandgun.mdl";
+const string g_PeeMdl		= "models/cracklife/p_9mmhandgun.mdl"; //Thanks Tayklor
+const string g_VeeMdl		= "models/cracklife/v_9mmhandgun.mdl";
+const string g_WeeMdl		= "models/cracklife/w_9mmhandgun.mdl";
 
 // Sounds
-const string strFireSnd		= "cracklife/debris/beamstart1.wav"; //PINGLES!
-const string strEmptySnd	= "cracklife/weapons/357_cock1.wav"; //NO!
+const string g_FireSnd		= "cracklife/debris/beamstart1.wav"; //PINGLES!
+const string g_EmptySnd		= "cracklife/weapons/357_cock1.wav"; //NO!
 
 // Weapon Info
-const uint iMaxCarry		= 999;
-const uint iMaxClip			= 17;
-const uint iWeight			= 10;
+const uint g_MaxAmmoPri		= 999;
+const uint g_MaxClip		= 17;
+const uint g_Weight			= 10;
+const uint g_PrimaryDmg 	= int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mm_bullet" ) );
+const string g_PriAmmoType	= "cl_9mm"; //Default: 9mm
+const string g_WeaponName	= "weapon_clglock";
 
 // Weapon HUD
-const uint iSlot			= 1;
-const uint iPosition		= 4;
-
-const uint iDamage = int( g_EngineFuncs.CVarGetFloat( "sk_plr_9mm_bullet" ) );
-
+const uint g_Slot			= 1;
+const uint g_Position		= 4;
 
 class weapon_clglock : ScriptBasePlayerWeaponEntity
 {
@@ -50,8 +50,8 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 	void Spawn()
 	{
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeMdl );
-		self.m_iDefaultAmmo = iMaxClip;
+		g_EntityFuncs.SetModel( self, g_WeeMdl );
+		self.m_iDefaultAmmo = g_MaxClip;
 		self.FallInit();
 	}
 
@@ -59,23 +59,23 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 	{
 		self.PrecacheCustomModels();
 
-		g_Game.PrecacheModel( strPeeMdl );
-		g_Game.PrecacheModel( strVeeMdl );
-		g_Game.PrecacheModel( strWeeMdl );
+		g_Game.PrecacheModel( g_PeeMdl );
+		g_Game.PrecacheModel( g_VeeMdl );
+		g_Game.PrecacheModel( g_WeeMdl );
 
-		g_SoundSystem.PrecacheSound( strFireSnd );
-		g_SoundSystem.PrecacheSound( strEmptySnd );
+		g_SoundSystem.PrecacheSound( g_FireSnd );
+		g_SoundSystem.PrecacheSound( g_EmptySnd );
 	}
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= iMaxCarry;
+		info.iMaxAmmo1 	= g_MaxAmmoPri;
 		info.iMaxAmmo2	= -1;
-		info.iMaxClip 	= iMaxClip;
-		info.iSlot 		= iSlot;
-		info.iPosition 	= iPosition;
+		info.iMaxClip 	= g_MaxClip;
+		info.iSlot 		= g_Slot;
+		info.iPosition 	= g_Position;
 		info.iId		= g_ItemRegistry.GetIdForName( self.pev.classname );
-		info.iWeight 	= iWeight;
+		info.iWeight 	= g_Weight;
 
 		return true;
 	}
@@ -94,14 +94,9 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 		return false;
 	}
 
-	float WeaponTimeBase()
-	{
-		return g_Engine.time; //g_WeaponFuncs.WeaponTimeBase();
-	}
-
 	bool Deploy()
 	{
-		return self.DefaultDeploy( strVeeMdl, strPeeMdl, CLGLDRAW, "onehanded" );
+		return self.DefaultDeploy( g_VeeMdl, g_PeeMdl, CLGLDRAW, "onehanded" );
 	}
 
 	void Holster( int skipLocal = 0 )
@@ -109,19 +104,19 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 		self.m_fInReload = false; // cancel any reload in progress.
 		SetThink( null );
 		BaseClass.Holster( skipLocal );
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 
 	void SecondaryAttack()
 	{
-		GlockFire( 0.1, 0.2 );
-		self.m_flNextSecondaryAttack = self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.2;
+		GlockFire( 0.1f, 0.2f );
+		self.m_flNextSecondaryAttack = self.m_flNextPrimaryAttack = g_Engine.time + 0.2f;
 	}
 
 	void PrimaryAttack()
 	{
-		GlockFire( 0.01, 0.3 );
-		self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = WeaponTimeBase() + 0.3;
+		GlockFire( 0.01f, 0.3f );
+		self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + 0.3f;
 	}
 
 	void GlockFire( float flSpread , float flCycleTime)
@@ -129,8 +124,8 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 		if( self.m_iClip <= 0 )
 		{
 			//self.PlayEmptySound();
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strEmptySnd, Math.RandomFloat( 0.92, 1.0 ), ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) );
-			self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.2f;
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_EmptySnd, Math.RandomFloat( 0.92f, 1.0f ), ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) );
+			self.m_flNextPrimaryAttack = g_Engine.time + 0.2f;
 
 			return;
 		}
@@ -144,18 +139,18 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		m_pPlayer.m_iWeaponVolume = NORMAL_GUN_VOLUME;
 		m_pPlayer.m_iWeaponFlash = NORMAL_GUN_FLASH;
-		g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFireSnd, Math.RandomFloat( 0.92, 1.0 ), ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) );
+		g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_FireSnd, Math.RandomFloat( 0.92f, 1.0f ), ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) );
 
 		Vector vecSrc	 = m_pPlayer.GetGunPosition();
 		Vector vecAiming = g_Engine.v_forward;
 
-		m_pPlayer.FireBullets( 1, vecSrc, vecAiming, Vector( flSpread, flSpread, flSpread ), 8192, BULLET_PLAYER_9MM, 0, iDamage );
+		m_pPlayer.FireBullets( 1, vecSrc, vecAiming, Vector( flSpread, flSpread, flSpread ), 8192, BULLET_PLAYER_9MM, 0, g_PrimaryDmg );
 
 		if( self.m_iClip == 0 && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 )
 			// HEV suit - indicate out of ammo condition
 			m_pPlayer.SetSuitUpdate( "!HEV_AMO0", false, 0 );
 	
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 
 		// Decal shit
 		TraceResult tr;
@@ -165,7 +160,7 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 		Vector vecEnd = vecSrc + vecDir * 4096;
 		g_Utility.TraceLine( vecSrc, vecEnd, dont_ignore_monsters, m_pPlayer.edict(), tr );
 
-		if( tr.flFraction < 1.0 )
+		if( tr.flFraction < 1.0f )
 		{
 			if( tr.pHit !is null )
 			{
@@ -179,37 +174,32 @@ class weapon_clglock : ScriptBasePlayerWeaponEntity
 
 	void Reload()
 	{
-        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == iMaxClip )
+        if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 || self.m_iClip == g_MaxClip )
 			return;
 
-		self.DefaultReload( iMaxClip, CLGLRELOAD, 2.6, 0 );
+		self.DefaultReload( g_MaxClip, CLGLRELOAD, 2.6f, 0 );
 		BaseClass.Reload();
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed, 10, 15 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed, 10, 15 );
 	}
 
 	void WeaponIdle()
 	{
 		self.ResetEmptySound();
 
-		if( self.m_flTimeWeaponIdle > WeaponTimeBase() )
+		if( self.m_flTimeWeaponIdle > g_Engine.time )
 			return;
 
 		int iAnim = CLGLIDLE;
 
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed, 60, 16 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed, 60, 16 );
 		self.SendWeaponAnim( iAnim );
 	}
 }
 
-string GetName()
-{
-	return "weapon_clglock";
-}
-
 void Register()
 {
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLGLOCK::weapon_clglock", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "9mm" );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLGLOCK::weapon_clglock", g_WeaponName );
+	g_ItemRegistry.RegisterWeapon( g_WeaponName, "cracklife", g_PriAmmoType );
 }
 
 } // End of namespace
