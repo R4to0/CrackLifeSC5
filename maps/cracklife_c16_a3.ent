@@ -12207,4 +12207,15 @@
 "spawnflags" "112"
 "classname" "ambient_generic"
 }
+{
+"origin" "0 0 0"
+"targetname" "game_playerspawn"
+"target" "!activator"
+"m_iszValueName" "armortype"
+"m_iszNewValue" "300"
+"m_iszValueType" "0"
+"m_trigonometricBehaviour" "0"
+"m_iAppendSpaces" "0"
+"classname" "trigger_changevalue"
+}
  
