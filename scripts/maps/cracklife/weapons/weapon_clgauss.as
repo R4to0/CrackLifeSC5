@@ -6,58 +6,60 @@
 * Sven Co-op Re-conversion: Rafael "R4to0" Alves
 */
 
+namespace CLGAUSS
+{
+
 enum gauss_e
 {
 	GAUSS_IDLE = 0,
 	GAUSS_IDLE2,
 	GAUSS_FIDGET,
-	GAUSstrSpinSndUP,
-	GAUSstrSpinSnd,
+	GAUSS_SPINUP,
+	GAUSS_SPIN,
 	GAUSS_FIRE,
 	GAUSS_FIRE2,
 	GAUSS_HOLSTER,
 	GAUSS_DRAW
 };
 
-namespace CLGAUSS
-{
-
 // Models
-const string strPeeMdl			= "models/cracklife/p_gauss.mdl";
-const string strVeeMdl			= "models/cracklife/v_gauss_v2.mdl";
-const string strWeeMdl			= "models/cracklife/w_gauss.mdl";
+const string g_PeeMdl				= "models/cracklife/p_gauss.mdl";
+const string g_VeeMdl				= "models/cracklife/v_gauss_v2.mdl";
+const string g_WeeMdl				= "models/cracklife/w_gauss.mdl";
 
 // Sounds
-const string strDisch1Snd		= "weapons/electro4.wav";
-const string strDisch2Snd		= "weapons/electro5.wav";
-const string strDisch3Snd		= "weapons/electro6.wav";
-const string strSpinSnd			= "cracklife/ambience/pulsemachine.wav";
-const string strShootSnd		= "cracklife/weapons/gauss2.wav";
+const string g_Disch1Snd			= "weapons/electro4.wav";
+const string g_Disch2Snd			= "weapons/electro5.wav";
+const string g_Disch3Snd			= "weapons/electro6.wav";
+const string g_SpinSnd				= "cracklife/ambience/pulsemachine.wav";
+const string g_ShootSnd				= "cracklife/weapons/gauss2.wav";
+const string g_EmptySnd				= "cracklife/weapons/357_cock1.wav"; //NO!
 
 // Sprites
-const string strGlowSpr			= "sprites/hotglow.spr";
-const string strBallSpr			= "sprites/hotglow.spr";
-const string strBeamSpr			= "sprites/smoke.spr";
+const string g_GlowSpr				= "sprites/hotglow.spr";
+const string g_BallSpr				= "sprites/hotglow.spr";
+const string g_BeamSpr				= "sprites/smoke.spr";
 
 // Weapon info
-const uint iMaxCarry			= 100;
-const uint iWeight				= 20;
-const uint iDefaultGive			= 20;
+const uint g_MaxCarry				= 100;
+const uint g_Weight					= 20;
+const uint g_DefaultGive			= 20;
+const string g_PriAmmoType			= "uranium";
+const string g_WeaponName			= "weapon_clgauss";
 
 // Weapon HUD
-const uint iSlot				= 3;
-const uint iPosition			= 5;
+uint g_Slot							= 3;
+uint g_Position						= 5;
 
 // Vars
-const uint iPrimaryChargeVolume	= 256;	// how loud gauss is while charging
-const uint iPrimaryFireVolume	= 450;	// how loud gauss is when discharged
-const bool bIsMultiplayer		= false;
-const float flSkPlrGauss		= g_EngineFuncs.CVarGetFloat( "sk_plr_gauss" ); // 20 vanilla HL, 19 SC(???)
+const uint g_PrimaryChargeVolume	= 256;	// how loud gauss is while charging
+const uint g_PrimaryFireVolume		= 450;	// how loud gauss is when discharged
+const float g_Damage				= g_EngineFuncs.CVarGetFloat( "sk_plr_gauss" ); // 20 vanilla HL, 19 SC(???)
 
 // Attack State
-const uint iNotAttacking		= 0;
-const uint iChargingStart		= 1;
-const uint iCharging			= 2;
+const uint iNotAttacking			= 0;
+const uint iChargingStart			= 1;
+const uint iCharging				= 2;
 
 class weapon_clgauss : ScriptBasePlayerWeaponEntity
 {
@@ -77,31 +79,32 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 	float GetFullChargeTime()
 	{
-		return ( ( bIsMultiplayer ) ? 1.5f : 4.0f ); // 3.0f in Sven Co-op!
+		return ( ( g_WeaponMode ) ? 1.5f : 4.0f ); // 3.0f in Sven Co-op!
 	}
 
 	void Spawn()
 	{
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeMdl );
-		self.m_iDefaultAmmo = iDefaultGive;
+		g_EntityFuncs.SetModel( self, g_WeeMdl );
+		self.m_iDefaultAmmo = g_DefaultGive;
 		self.FallInit(); // get ready to fall down.
 	}
 
 	void Precache()
 	{
 		self.PrecacheCustomModels();
-		g_Game.PrecacheModel( strPeeMdl );
-		g_Game.PrecacheModel( strVeeMdl );
-		g_Game.PrecacheModel( strWeeMdl );
-		g_Game.PrecacheModel( strGlowSpr );
-		g_Game.PrecacheModel( strBallSpr );
-		g_Game.PrecacheModel( strBeamSpr );
-		g_SoundSystem.PrecacheSound( strDisch1Snd );
-		g_SoundSystem.PrecacheSound( strDisch2Snd );
-		g_SoundSystem.PrecacheSound( strDisch3Snd );
-		g_SoundSystem.PrecacheSound( strSpinSnd );
-		g_SoundSystem.PrecacheSound( strShootSnd );
+		g_Game.PrecacheModel( g_PeeMdl );
+		g_Game.PrecacheModel( g_VeeMdl );
+		g_Game.PrecacheModel( g_WeeMdl );
+		g_Game.PrecacheModel( g_GlowSpr );
+		g_Game.PrecacheModel( g_BallSpr );
+		g_Game.PrecacheModel( g_BeamSpr );
+		g_SoundSystem.PrecacheSound( g_Disch1Snd );
+		g_SoundSystem.PrecacheSound( g_Disch2Snd );
+		g_SoundSystem.PrecacheSound( g_Disch3Snd );
+		g_SoundSystem.PrecacheSound( g_SpinSnd );
+		g_SoundSystem.PrecacheSound( g_ShootSnd );
+		g_SoundSystem.PrecacheSound( g_EmptySnd );
 	}
 
 	bool AddToPlayer( CBasePlayer@ pPlayer )
@@ -125,25 +128,25 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= iMaxCarry;
+		info.iMaxAmmo1 	= g_MaxCarry;
 		info.iMaxAmmo2	= -1;
 		info.iMaxClip 	= -1;
-		info.iSlot 		= iSlot;
-		info.iPosition 	= iPosition;
+		info.iSlot 		= g_Slot;
+		info.iPosition 	= g_Position;
 		info.iId		= g_ItemRegistry.GetIdForName( self.pev.classname );
-		info.iWeight 	= iWeight;
+		info.iWeight 	= g_Weight;
 		return true;
 	}
 
 	bool Deploy()
 	{
 		m_flPlayAftershock = 0.0f;
-		return self.DefaultDeploy( strVeeMdl, strPeeMdl, GAUSS_DRAW, "gauss" );
+		return self.DefaultDeploy( g_VeeMdl, g_PeeMdl, GAUSS_DRAW, "gauss" );
 	}
 
 	void Holster( int skipLocal = 0 )
 	{
-		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, strSpinSnd );
+		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, g_SpinSnd );
 		SetThink( null );
 		BaseClass.Holster( skipLocal );
 		self.SendWeaponAnim( GAUSS_HOLSTER );
@@ -167,7 +170,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			return;
 		}
 
-		m_pPlayer.m_iWeaponVolume = iPrimaryFireVolume;
+		m_pPlayer.m_iWeaponVolume = g_PrimaryFireVolume;
 		m_bPrimaryFire = true;
 
 		m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 2 );
@@ -185,7 +188,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 		{
 			if( m_iInAttack != iNotAttacking )
 			{
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strDisch1Snd, 1.0f, ATTN_NORM, 0, 80 + Math.RandomLong( 0,0x3f ) );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Disch1Snd, 1.0f, ATTN_NORM, 0, 80 + Math.RandomLong( 0,0x3f ) );
 				self.SendWeaponAnim( GAUSS_IDLE );
 				m_iInAttack = iNotAttacking;
 			}
@@ -201,7 +204,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 		{
 			if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 )
 			{
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "weapons/357_cock1.wav", 0.8f, ATTN_NORM );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_EmptySnd, 0.8f, ATTN_NORM );
 				self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + 0.5f; // m_pPlayer.m_flNextAttack = g_Engine.time + 0.5f;
 				return;
 			}
@@ -212,9 +215,9 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			m_flNextAmmoBurn = g_Engine.time;
 
 			// spin up
-			m_pPlayer.m_iWeaponVolume = iPrimaryChargeVolume;
+			m_pPlayer.m_iWeaponVolume = g_PrimaryChargeVolume;
 	
-			self.SendWeaponAnim( GAUSstrSpinSndUP );
+			self.SendWeaponAnim( GAUSS_SPINUP );
 			m_iInAttack = iChargingStart;
 			self.m_flTimeWeaponIdle = g_Engine.time + 0.5f;
 			m_flStartCharge = g_Engine.time;
@@ -225,7 +228,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 		{
 			if( self.m_flTimeWeaponIdle < g_Engine.time )
 			{
-				self.SendWeaponAnim( GAUSstrSpinSnd );
+				self.SendWeaponAnim( GAUSS_SPIN );
 				m_iInAttack = iCharging;
 			}
 		}
@@ -251,7 +254,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			if( g_Engine.time >= m_flNextAmmoBurn && m_flNextAmmoBurn != 1000 )
 			{
 				m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
-				m_flNextAmmoBurn = g_Engine.time + ( ( bIsMultiplayer ) ? 0.1f : 0.3f ); // 0.1 for HLDM
+				m_flNextAmmoBurn = g_Engine.time + ( ( g_WeaponMode ) ? 0.1f : 0.3f ); // 0.1 for HLDM
 			}
 
 			if( g_Engine.time >= m_flAmmoStartCharge )
@@ -270,18 +273,18 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			// if( m_iSoundState == 0 )
 				// g_Game.AlertMessage( at_console, "sound state %1\n", m_iSoundState );
 
-			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strSpinSnd, 1.0f, ATTN_NORM, m_iSoundState, int( pitch ) );
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_SpinSnd, 1.0f, ATTN_NORM, m_iSoundState, int( pitch ) );
 
 			m_iSoundState = SND_CHANGE_PITCH;	// hack for going through level transitions
 
-			m_pPlayer.m_iWeaponVolume = iPrimaryChargeVolume;
+			m_pPlayer.m_iWeaponVolume = g_PrimaryChargeVolume;
 
 			// self.m_flTimeWeaponIdle = g_Engine.time + 0.1;
 			if( m_flStartCharge < g_Engine.time - 10 )
 			{
 				// Player charged up too long. Zap him.
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strDisch1Snd, 1.0f, ATTN_NORM, 0, 80 + Math.RandomLong( 0,0x3f ) );
-				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM,   strDisch3Snd, 1.0f, ATTN_NORM, 0, 75 + Math.RandomLong( 0,0x3f ) );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Disch1Snd, 1.0f, ATTN_NORM, 0, 80 + Math.RandomLong( 0,0x3f ) );
+				g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_ITEM,   g_Disch3Snd, 1.0f, ATTN_NORM, 0, 75 + Math.RandomLong( 0,0x3f ) );
 		
 				m_iInAttack = iNotAttacking;
 				self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = self.m_flTimeWeaponIdle = g_Engine.time + 1.0f;
@@ -312,18 +315,18 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 		if( g_Engine.time - m_flStartCharge > GetFullChargeTime() )
 		{
-			flDamage = flSkPlrGauss * 10; //200
+			flDamage = g_Damage * 10; //200
 		}
 		else
 		{
-			flDamage = ( flSkPlrGauss * 10 ) * ( ( g_Engine.time - m_flStartCharge ) / GetFullChargeTime() ); //200
+			flDamage = ( g_Damage * 10 ) * ( ( g_Engine.time - m_flStartCharge ) / GetFullChargeTime() ); //200
 		}
 
 		if( m_bPrimaryFire )
 		{
 			// fixed damage on primary attack
 			//flDamage = 20;
-			flDamage = flSkPlrGauss;
+			flDamage = g_Damage;
 		}
 
 		// m_iInAttack is never 3, so this check is always true. - Solokiller
@@ -338,7 +341,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 				m_pPlayer.pev.velocity = m_pPlayer.pev.velocity - g_Engine.v_forward * flDamage * 5;
 			}
 
-			if( !bIsMultiplayer )
+			if( !g_WeaponMode )
 			{
 				// in deathmatch, gauss can pop you up into the air. Not in single play.
 				m_pPlayer.pev.velocity.z = flZVel;
@@ -356,7 +359,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 	void Fire( Vector vecOrigSrc, Vector vecDir, float flDamage )
 	{
-		m_pPlayer.m_iWeaponVolume = iPrimaryFireVolume;
+		m_pPlayer.m_iWeaponVolume = g_PrimaryFireVolume;
 
 		// if( !m_bPrimaryFire )
 			// g_irunninggausspred = true;
@@ -364,11 +367,11 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 		// This reliable event is used to stop the spinning sound
 		// It's delayed by a fraction of second to make sure it is delayed by 1 frame on the client
 		// It's sent reliably anyway, which could lead to other delays
-		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, strSpinSnd );
+		g_SoundSystem.StopSound( m_pPlayer.edict(), CHAN_WEAPON, g_SpinSnd );
 
 		// The main firing event is sent unreliably so it won't be delayed.
 		m_pPlayer.pev.punchangle.x = -2.0f;
-		g_SoundSystem.PlaySound( m_pPlayer.edict(), CHAN_WEAPON, strShootSnd, 0.5f + flDamage * ( 0.40 / 400.0f ), ATTN_NORM, 0, 85 - Math.RandomLong( 0, 0x1f ) );
+		g_SoundSystem.PlaySound( m_pPlayer.edict(), CHAN_WEAPON, g_ShootSnd, 0.5f + flDamage * ( 0.40 / 400.0f ), ATTN_NORM, 0, 85 - Math.RandomLong( 0, 0x1f ) );
 		self.SendWeaponAnim( GAUSS_FIRE2 );
 
 		/*g_Game.AlertMessage( at_console, "%1 %2 %3\n%4 %5 %6\n", 
@@ -421,7 +424,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 					beampoint.WriteCoord( tr.vecEndPos.x ); // End position of the beam X
 					beampoint.WriteCoord( tr.vecEndPos.y ); // End position of the beam Y
 					beampoint.WriteCoord( tr.vecEndPos.z ); // End position of the beam Z
-					beampoint.WriteShort( g_EngineFuncs.ModelIndex( strBeamSpr ) ); // Index of the sprite to use
+					beampoint.WriteShort( g_EngineFuncs.ModelIndex( g_BeamSpr ) ); // Index of the sprite to use
 					beampoint.WriteByte( 0 ); // Starting frame for the beam sprite
 					beampoint.WriteByte( 0 ); // Frame rate of the beam sprite
 					beampoint.WriteByte( 1 ); // How long to display the beam (0.1)  *10
@@ -447,7 +450,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 					beampoints.WriteCoord( tr.vecEndPos.x ); // End position of the beam X
 					beampoints.WriteCoord( tr.vecEndPos.y ); // End position of the beam Y
 					beampoints.WriteCoord( tr.vecEndPos.z ); // End position of the beam Z
-					beampoints.WriteShort( g_EngineFuncs.ModelIndex( strBeamSpr ) ); // Index of the sprite to use
+					beampoints.WriteShort( g_EngineFuncs.ModelIndex( g_BeamSpr ) ); // Index of the sprite to use
 					beampoints.WriteByte( 0 ); // Starting frame for the beam sprite
 					beampoints.WriteByte( 0 ); // Frame rate of the beam sprite
 					beampoints.WriteByte( 1 ); // How long to display the beam (0.1) *10
@@ -545,10 +548,10 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 
 								// exit blast damage
 								//g_WeaponFuncs.RadiusDamage( beam_tr.vecEndPos + vecDir * 8, self.pev, m_pPlayer.pev, flDamage, CLASS_NONE, DMG_BLAST );
-								float damage_radius = flDamage * ( ( bIsMultiplayer ) ? 1.75f : 2.5f );
+								float damage_radius = flDamage * ( ( g_WeaponMode ) ? 1.75f : 2.5f );
 							
 
-								/*if( bIsMultiplayer )
+								/*if( g_WeaponMode )
 								{
 									damage_radius = flDamage * 1.75f;  // Old code == 2.5
 								}
@@ -609,7 +612,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			glow.WriteCoord( tr.vecEndPos.x ); // Ending position X
 			glow.WriteCoord( tr.vecEndPos.y ); // Ending position Y
 			glow.WriteCoord( tr.vecEndPos.z ); // Ending position Z
-			glow.WriteShort( g_EngineFuncs.ModelIndex( strGlowSpr ) ); // sprite index
+			glow.WriteShort( g_EngineFuncs.ModelIndex( g_GlowSpr ) ); // sprite index
 			glow.WriteByte( int( flLife * 10 ) ); // Time to wait before fading out
 			glow.WriteByte( int( flScale ) ); // Sprite scale (0.2)
 			glow.WriteByte( int( flDamage ) ); // alpha
@@ -628,7 +631,7 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 			gaussball.WriteCoord( vecEnd.x ); // Ending position X
 			gaussball.WriteCoord( vecEnd.y ); // Ending position Y
 			gaussball.WriteCoord( vecEnd.z ); // Ending position Z
-			gaussball.WriteShort( g_EngineFuncs.ModelIndex( strBallSpr ) ); // sprite index
+			gaussball.WriteShort( g_EngineFuncs.ModelIndex( g_BallSpr ) ); // sprite index
 			gaussball.WriteByte( iCount ); // count
 			gaussball.WriteByte( int( flLife * 100 ) ); // Time to wait before fading out 
 			gaussball.WriteByte( Math.RandomLong( 1, 2 ) ); // Sprite scale
@@ -646,9 +649,9 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 		{
 			switch( Math.RandomLong( 0,3 ) )
 			{
-			case 0:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strDisch1Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
-			case 1:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strDisch2Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
-			case 2:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, strDisch3Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
+			case 0:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, g_Disch1Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
+			case 1:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, g_Disch2Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
+			case 2:	g_SoundSystem.EmitSound( m_pPlayer.edict(), CHAN_WEAPON, g_Disch3Snd, Math.RandomFloat( 0.7f, 0.8f ), ATTN_NORM ); break;
 			case 3:	break; // no sound
 			}
 			m_flPlayAftershock = 0.0f;
@@ -693,15 +696,10 @@ class weapon_clgauss : ScriptBasePlayerWeaponEntity
 	}
 }
 
-string GetName()
-{
-	return "weapon_clgauss";
-}
-
 void Register()
 {
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLGAUSS::weapon_clgauss", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "uranium" );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLGAUSS::weapon_clgauss", g_WeaponName );
+	g_ItemRegistry.RegisterWeapon( g_WeaponName, "cracklife", g_PriAmmoType );
 }
 
 } // End of namespace

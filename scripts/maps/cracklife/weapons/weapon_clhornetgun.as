@@ -9,6 +9,9 @@
 // Hornet projectile
 #include "proj_hornet"
 
+namespace CLHORNETGUN
+{
+
 enum hgun_e
 {
 	HGUN_IDLE1 = 0,
@@ -19,31 +22,29 @@ enum hgun_e
 	HGUN_SHOOT
 };
 
-namespace CLHORNETGUN
-{
-
 // Models
-const string strPeeMdl		=  g_bCrackLifeMode ? "models/cracklife/p_hgun.mdl" : "models/clcampaign/p_hgun.mdl";
-const string strVeeMdl		=  g_bCrackLifeMode ? "models/cracklife/v_hgun.mdl" : "models/clcampaign/v_hgun.mdl";
-const string strWeeMdl		=  g_bCrackLifeMode ? "models/cracklife/w_hgun.mdl" : "models/clcampaign/w_hgun.mdl";
+const string g_PeeMdl		=  g_bCrackLifeMode ? "models/cracklife/p_hgun.mdl" : "models/clcampaign/p_hgun.mdl";
+const string g_VeeMdl		=  g_bCrackLifeMode ? "models/cracklife/v_hgun.mdl" : "models/clcampaign/v_hgun.mdl";
+const string g_WeeMdl		=  g_bCrackLifeMode ? "models/cracklife/w_hgun.mdl" : "models/clcampaign/w_hgun.mdl";
 
 // Sounds
-const string strFire1Snd	= "cracklife/agrunt/ag_fire1.wav";
-const string strFire2Snd	= "cracklife/agrunt/ag_fire1.wav"; //ag_fire2.wav
-const string strFire3Snd	= "cracklife/agrunt/ag_fire1.wav"; //ag_fire3.wav
+const string g_Fire1Snd		= "cracklife/agrunt/ag_fire1.wav";
+const string g_Fire2Snd		= "cracklife/agrunt/ag_fire1.wav"; //ag_fire2.wav
+const string g_Fire3Snd		= "cracklife/agrunt/ag_fire1.wav"; //ag_fire3.wav
 
 // Weapon Info
-const uint iDefaultGive		= 8;
-const uint iMaxCarry		= 8;
-const uint iWeight			= 10;
+const uint g_DefGivePri		= 8;
+const uint g_MaxAmmoPri		= 8;
+const uint g_Weight			= 10;
+const string g_WeaponName	= "weapon_clhornetgun";
 
 // Weapon HUD
-const uint iSlot			= 3;
-const uint iPosition		= 4;
+uint g_Slot					= 3;
+uint g_Position				= 4;
 
 // Fire rate delay
-const float flFRDelay = g_bCrackLifeMode ? 0.25f : 0.1f;
-const float flRLDelay = g_bCrackLifeMode ? 0.5f : 0.15f;
+const float g_FRDelay = g_bCrackLifeMode ? 0.25f : 0.1f;
+const float g_RLDelay = g_bCrackLifeMode ? 0.5f : 0.15f;
 
 class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 {
@@ -65,9 +66,9 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 	void Spawn()
 	{
 		Precache();
-		g_EntityFuncs.SetModel( self, strWeeMdl );
+		g_EntityFuncs.SetModel( self, g_WeeMdl );
 
-		self.m_iDefaultAmmo = iDefaultGive;
+		self.m_iDefaultAmmo = g_DefGivePri;
 
 		m_iFirePhase = 0;
 
@@ -78,14 +79,14 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 	{
 		// Models
 		self.PrecacheCustomModels();
-		g_Game.PrecacheModel( strVeeMdl );
-		g_Game.PrecacheModel( strWeeMdl );
-		g_Game.PrecacheModel( strPeeMdl );
+		g_Game.PrecacheModel( g_VeeMdl );
+		g_Game.PrecacheModel( g_WeeMdl );
+		g_Game.PrecacheModel( g_PeeMdl );
 
 		// Sounds
-		g_SoundSystem.PrecacheSound( strFire1Snd );
-		g_SoundSystem.PrecacheSound( strFire2Snd );
-		g_SoundSystem.PrecacheSound( strFire3Snd );
+		g_SoundSystem.PrecacheSound( g_Fire1Snd );
+		g_SoundSystem.PrecacheSound( g_Fire2Snd );
+		g_SoundSystem.PrecacheSound( g_Fire3Snd );
 
 		// Precache hornet projectile
 		g_Game.PrecacheOther( "clhornet" );
@@ -108,31 +109,26 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= iMaxCarry;
+		info.iMaxAmmo1 	= g_MaxAmmoPri;
 		info.iMaxAmmo2	= -1;
 		info.iMaxClip 	= -1;
-		info.iSlot 		= iSlot;
-		info.iPosition 	= iPosition;
+		info.iSlot 		= g_Slot;
+		info.iPosition 	= g_Position;
 		info.iFlags		= ITEM_FLAG_SELECTONEMPTY; // select even if is empty
 		info.iId		= g_ItemRegistry.GetIdForName( self.pev.classname );
-		info.iWeight 	= iWeight;
+		info.iWeight 	= g_Weight;
 
 		return true;
 	}
 
-	float WeaponTimeBase()
-	{
-		return g_Engine.time; //g_WeaponFuncs.WeaponTimeBase();
-	}
-
 	bool Deploy()
 	{
-		return self.DefaultDeploy( strVeeMdl, strPeeMdl, HGUN_UP, "hive" );
+		return self.DefaultDeploy( g_VeeMdl, g_PeeMdl, HGUN_UP, "hive" );
 	}
 
 	void Holster( int skipLocal = 0 )
 	{
-        //m_pPlayer.m_flNextAttack = WeaponTimeBase() + flRLDelay; // 0.5
+        //m_pPlayer.m_flNextAttack = g_Engine.time + g_RLDelay; // 0.5
 		SetThink( null );
 		BaseClass.Holster( skipLocal );
 
@@ -156,7 +152,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		CBaseEntity@ pHornet = g_EntityFuncs.Create( "clhornet", m_pPlayer.GetGunPosition() + g_Engine.v_forward * 16 + g_Engine.v_right * 8 + g_Engine.v_up * -12, m_pPlayer.pev.v_angle, false, m_pPlayer.edict() );
 		pHornet.pev.velocity = g_Engine.v_forward * 300;
 
-		m_flRechargeTime = g_Engine.time + flRLDelay; // 0.5
+		m_flRechargeTime = g_Engine.time + g_RLDelay; // 0.5
 
 		m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
 
@@ -166,16 +162,16 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		switch ( Math.RandomLong ( 0 , 2 ) )
 		{
-			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
 		}
 
 		// player "shoot" animation
 		m_pPlayer.SetAnimation( PLAYER_ATTACK1 );
 
-		self.m_flNextPrimaryAttack = g_Engine.time + flFRDelay; // 0.25
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
+		self.m_flNextPrimaryAttack = g_Engine.time + g_FRDelay; // 0.25
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 	
 	void SecondaryAttack()
@@ -228,14 +224,16 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 			break;
 		}
 
-		CBaseEntity@ pHornet = g_EntityFuncs.Create( "clhornet", vecSrc, m_pPlayer.pev.v_angle, false, m_pPlayer.edict() );
+		CBaseEntity@ cbeclhornet = g_EntityFuncs.Create( "clhornet", vecSrc, m_pPlayer.pev.v_angle, false, m_pPlayer.edict() );
+		CLHORNET::clhornet@ pHornet = cast<CLHORNET::clhornet@>( CastToScriptClass( cbeclhornet ) );
+		g_EntityFuncs.DispatchSpawn( pHornet.self.edict() );
+
 		pHornet.pev.velocity = g_Engine.v_forward * 1200;
 		pHornet.pev.angles = Math.VecToAngles( pHornet.pev.velocity );
 
-		//pHornet.SetThink( ThinkFunction( StartDart ) );
-		//SetThink( ThinkFunction( pHornet.StartDart ) );
+		pHornet.SetThink( ThinkFunction( pHornet.StartDart ) );
 
-		m_flRechargeTime = g_Engine.time + flRLDelay; // 0.5
+		m_flRechargeTime = g_Engine.time + g_RLDelay; // 0.5
 
 		m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
 
@@ -245,24 +243,24 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		// Fire sound
 		switch ( Math.RandomLong ( 0 , 2 ) )
 		{
-			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
-			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, strFire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 0:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire1Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 1:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire2Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
+			case 2:	g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, g_Fire3Snd, 1.0, ATTN_NORM, 0, 98 + Math.RandomLong( 0, 3 ) ); break;
 		}
 
 		// player "shoot" animation
 		m_pPlayer.SetAnimation( PLAYER_ATTACK1 );
 
 		self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + 0.1;
-		self.m_flTimeWeaponIdle = WeaponTimeBase() + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
+		self.m_flTimeWeaponIdle = g_Engine.time + g_PlayerFuncs.SharedRandomFloat( m_pPlayer.random_seed,  10, 15 );
 	}
 
 	void Reload()
 	{
-		if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType )>= iMaxCarry )
+		if( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType )>= g_MaxAmmoPri )
 		return;
 
-		while( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) < iMaxCarry && m_flRechargeTime < g_Engine.time )
+		while( m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) < g_MaxAmmoPri && m_flRechargeTime < g_Engine.time )
 		{
 			m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) + 1 );
 			m_flRechargeTime += 0.5;
@@ -273,7 +271,7 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 	{
 		self.Reload();
 
-		if( m_flTimeWeaponIdle > WeaponTimeBase() )
+		if( m_flTimeWeaponIdle > g_Engine.time )
 			return;
 
 		int iAnim;
@@ -281,33 +279,28 @@ class weapon_clhornetgun : ScriptBasePlayerWeaponEntity
 		if (flRand <= 0.75)
 		{
 			iAnim = HGUN_IDLE1;
-			m_flTimeWeaponIdle = WeaponTimeBase() + 30.0 / 16 * (2);
+			m_flTimeWeaponIdle = g_Engine.time + 30.0 / 16 * (2);
 		}
 		else if (flRand <= 0.875)
 		{
 			iAnim = HGUN_FIDGETSWAY;
-			m_flTimeWeaponIdle = WeaponTimeBase() + 40.0 / 16.0;
+			m_flTimeWeaponIdle = g_Engine.time + 40.0 / 16.0;
 		}
 		else
 		{
 			iAnim = HGUN_FIDGETSHAKE;
-			m_flTimeWeaponIdle = WeaponTimeBase() + 35.0 / 16.0;
+			m_flTimeWeaponIdle = g_Engine.time + 35.0 / 16.0;
 		}
 
 		self.SendWeaponAnim( iAnim );
 	}
 }
 
-string GetName()
-{
-	return "weapon_clhornetgun";
-}
-
 void Register()
 {
 	CLHORNET::Register();
-	g_CustomEntityFuncs.RegisterCustomEntity( "CLHORNETGUN::weapon_clhornetgun", GetName() );
-	g_ItemRegistry.RegisterWeapon( GetName(), "cracklife", "Hornet" );
+	g_CustomEntityFuncs.RegisterCustomEntity( "CLHORNETGUN::weapon_clhornetgun", g_WeaponName );
+	g_ItemRegistry.RegisterWeapon( g_WeaponName, "cracklife", "Hornet" );
 }
 
 } // End of namespace
