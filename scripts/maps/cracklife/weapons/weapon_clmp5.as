@@ -35,8 +35,8 @@ const float g_PriFireDelay		= 0.001f;
 const float g_SecFireDelay		= 0.1f;
 
 // Weapon Info
-const uint g_Slot				= 2;
-const uint g_Position			= 4;
+uint g_Slot						= 2;
+uint g_Position					= 4;
 const string g_PriAmmoType		= "cl_9mm"; //Default: 9mm
 const string g_SecAmmoType		= "cl_ARgrenades"; //Default: ARgrenades
 const string g_AmmoName 		= "ammo_clmp5";
@@ -289,7 +289,7 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iSecondaryAmmoType ) - 1 );
 
-		m_pPlayer.pev.punchangle.x = -10.0f; // Is this right? -R4to0
+		m_pPlayer.pev.punchangle.x = -10.0f; // Is this right? -R4to0; It is https://github.com/ValveSoftware/halflife/blob/master/cl_dll/ev_hldm.cpp#L731 -R4to0
 
 		self.SendWeaponAnim( MP5_LAUNCH );
 
@@ -311,13 +311,9 @@ class weapon_clmp5 : ScriptBasePlayerWeaponEntity
 
 		// we don't add in player velocity anymore.
 		if( ( m_pPlayer.pev.button & IN_DUCK ) != 0 )
-		{
 			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 800 );
-		}
 		else
-		{
 			ShootContact( m_pPlayer.pev, m_pPlayer.pev.origin + m_pPlayer.pev.view_ofs * 0.5f + g_Engine.v_forward * 16 + g_Engine.v_right * 6, g_Engine.v_forward * 800 );
-		}
 
 		self.m_flNextPrimaryAttack = g_Engine.time + g_SecFireDelay; // changed here
 		self.m_flNextSecondaryAttack = g_Engine.time + g_SecFireDelay; // changed here
