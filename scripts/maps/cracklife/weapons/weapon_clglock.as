@@ -36,8 +36,8 @@ const string g_PriAmmoType	= "cl_9mm"; //Default: 9mm
 const string g_WeaponName	= "weapon_clglock";
 
 // Weapon HUD
-const uint g_Slot			= 1;
-const uint g_Position		= 4;
+uint g_Slot			= 1;
+uint g_Position		= 4;
 
 class weapon_clglock : ScriptBasePlayerWeaponEntity
 {
