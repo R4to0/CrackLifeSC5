@@ -1,6 +1,7 @@
 // Crack-Life Stuff
 #include "weapons/weapons"
 #include "weapons/mappings"
+#include "utils/adjhealth"
 #include "logo"
 
 // HLSP Stuff
