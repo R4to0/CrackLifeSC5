@@ -687,14 +687,17 @@
 }
 {
 "origin" "0 0 -64"
+"angles" "0 315 0"
+"targetname" "spawn_nihilanth"
+"new_model" "models/cracklife/nihilanth.mdl"
+"soundlist" "../cracklife/x/nihilanth.txt"
+"monstertype" "monster_nihilanth"
+"netname" "nihilanth"
 "maxhullsize" "0 0 0"
 "minhullsize" "0 0 0"
-"rendercolor" "0 0 0"
-"angles" "0 315 0"
-"targetname" "nihilanth"
-"model" "models/cracklife/nihilanth.mdl"
-"soundlist" "../cracklife/x/nihilanth.txt"
-"classname" "monster_nihilanth"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classname" "squadmaker"
 }
 {
 "origin" "1716 -2968 -3392"
@@ -5679,6 +5682,8 @@
 }
 {
 "origin" "-992 -3456 136"
+"ts_setbosshealth" "0"
+"spawn_nihilanth" "0.1"
 "start_tele_sound" "0.2"
 "trigger_auto" "0.2"
 "chapter_title" "5.2"
@@ -6095,6 +6100,14 @@
 "volume" "10"
 "spawnflags" "3"
 "classname" "ambient_music"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "ts_setbosshealth"
+"m_iszScriptFunctionName" "SetBossHealth"
 }
 {
 "origin" "0 0 0"
