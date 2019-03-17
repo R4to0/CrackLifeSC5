@@ -6093,7 +6093,7 @@
 "message" "cracklife/extra/gulag.ogg"
 "targetname" "giantdeadbabymusic"
 "volume" "10"
-"spawnflags" "1"
+"spawnflags" "3"
 "classname" "ambient_music"
 }
 {
