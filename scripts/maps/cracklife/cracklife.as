@@ -25,12 +25,12 @@ const bool g_WeaponMode = false;
 // inb4 mapping for unused weapons
 array<ItemMapping@> g_ItemMappings =
 {
-	ItemMapping( "weapon_357",				CLPYTHON::GetName() ),
+	ItemMapping( "weapon_357",				CLPYTHON::g_WeaponName ),
 	ItemMapping( "weapon_9mmAR",			CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_9mmhandgun",		CLGLOCK::g_WeaponName ),
 	ItemMapping( "weapon_crowbar",			CLCROWBAR::g_WeaponName ),
 	ItemMapping( "weapon_displacer",		"weapon_rpg" ),
-	ItemMapping( "weapon_eagle",			CLPYTHON::GetName() ),
+	ItemMapping( "weapon_eagle",			CLPYTHON::g_WeaponName ),
 	ItemMapping( "weapon_gauss",			CLGAUSS::g_WeaponName ),
 	ItemMapping( "weapon_glock",			CLGLOCK::g_WeaponName ),
 	ItemMapping( "weapon_grapple",			CLCROWBAR::g_WeaponName ),
@@ -39,9 +39,9 @@ array<ItemMapping@> g_ItemMappings =
 	ItemMapping( "weapon_m249",				CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_minigun",			CLMP5::g_WeaponName ),
 	ItemMapping( "weapon_pipewrench",		CLCROWBAR::g_WeaponName ),
-	ItemMapping( "weapon_python",			CLPYTHON::GetName() ),
+	ItemMapping( "weapon_python",			CLPYTHON::g_WeaponName ),
 	ItemMapping( "weapon_shockrifle",		CLMP5::g_WeaponName ),
-	ItemMapping( "weapon_shotgun",			CLSHOTGUN::GetName() ),
+	ItemMapping( "weapon_shotgun",			CLSHOTGUN::g_WeaponName ),
 	ItemMapping( "weapon_sniperrifle",		"weapon_crossbow" ),
 	ItemMapping( "weapon_sporelauncher",	"weapon_rpg" ),
 	ItemMapping( "weapon_uzi",				CLMP5::g_WeaponName ),
