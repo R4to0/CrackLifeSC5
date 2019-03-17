@@ -5681,7 +5681,7 @@
 "origin" "-992 -3456 136"
 "start_tele_sound" "0.2"
 "trigger_auto" "0.2"
-"title" "5.2"
+"chapter_title" "5.2"
 "fadein" "0.2"
 "forcespawn" "0.2"
 "spawn1" "0#0"
