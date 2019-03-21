@@ -5,6 +5,8 @@
 *  -w00tguy
 */
 
+#include "../point_checkpoint"
+
 // Crack-Life Stuff
 #include "weapons/weapons"
 #include "weapons/mappings"
@@ -24,6 +26,7 @@ void MapEnded( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, 
 void MapInit()
 {
 	g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
+	RegisterPointCheckPointEntity();
 
 	//Crack-Life
 	RegisterCrackLifeWeapons();
@@ -31,6 +34,10 @@ void MapInit()
 	// Initialize classic mode (item mapping only)
 	g_ClassicMode.SetItemMappings( @g_ItemMappings );
 	g_ClassicMode.ForceItemRemap( true );
+
+	// Map support is enabled here by default.
+	// So you don't have to add "mp_survival_supported 1" to the map config
+	g_SurvivalMode.EnableMapSupport();
 }
 
 
