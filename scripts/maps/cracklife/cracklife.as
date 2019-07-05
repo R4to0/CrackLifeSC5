@@ -2,7 +2,6 @@
 #include "weapons/weapons"
 #include "weapons/mappings"
 #include "utils/adjhealth"
-#include "logo"
 
 // HLSP Stuff
 #include "../hlsp/trigger_suitcheck"

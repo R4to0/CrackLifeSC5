@@ -6,7 +6,6 @@
 #include "../cracklife/weapons/weapon_clpython"
 #include "../cracklife/weapons/weapon_clhornetgun"
 #include "../cracklife/weapons/weapon_clgauss"
-#include "../cracklife/logo"
 
 // Crack-Life mode.
 // True: Original

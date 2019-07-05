@@ -11805,7 +11805,6 @@
 {
 "model" "*311"
 "angles" "0 0 0"
-"target" ""
 "classname" "trigger_once"
 }
 {
@@ -11946,6 +11945,7 @@
 "m_iMode" "1"
 "delay" "0"
 "targetname" "r4to0_gamestart"
+"m_iszScriptFile" "cracklife/logo"
 "m_iszScriptFunctionName" "ShowCrackLogo"
 }
 {
