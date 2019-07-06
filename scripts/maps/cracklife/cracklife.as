@@ -1,7 +1,6 @@
 // Crack-Life Stuff
 #include "weapons/weapons"
 #include "weapons/mappings"
-#include "utils/adjhealth"
 
 // HLSP Stuff
 #include "../hlsp/trigger_suitcheck"

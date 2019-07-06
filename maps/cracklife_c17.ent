@@ -6107,6 +6107,7 @@
 "m_iMode" "1"
 "delay" "0"
 "targetname" "ts_setbosshealth"
+"m_iszScriptFile" "cracklife/utils/adjhealth"
 "m_iszScriptFunctionName" "SetBossHealth"
 }
 {
