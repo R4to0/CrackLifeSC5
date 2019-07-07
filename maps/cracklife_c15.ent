@@ -3854,6 +3854,7 @@
 }
 {
 "origin" "2701 -83 0"
+"ts_setbosshealth" "0"
 "sackmusic" "0.2#1"
 "angles" "0 0 0"
 "trigger_auto" "0.2"
@@ -4067,8 +4068,17 @@
 "message" "cracklife/extra/stayinalive.ogg"
 "targetname" "sackmusic"
 "volume" "10"
-"spawnflags" "1"
+"spawnflags" "3"
 "classname" "ambient_music"
+}
+{
+"origin" "0 0 0"
+"classname" "trigger_script"
+"m_iMode" "1"
+"delay" "0"
+"targetname" "ts_setbosshealth"
+"m_iszScriptFile" "cracklife/utils/adjhealth"
+"m_iszScriptFunctionName" "SetBossHealth"
 }
 {
 "origin" "0 0 0"

@@ -12,36 +12,52 @@ void SetBossHealth( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useT
 	if( !g_BossHlthMultpEnabled || iCurrPlrs <= 1 )
 		return;
 
-	string szTargetName;
+	array<string> TargetNames;
+	array<uint> BaseHealths;
 
 	// Set monster classname depending on map name
-	if( g_Engine.mapname == "cracklife_c17" )
+	if( g_Engine.mapname == "cracklife_c17" ) // Nihilanth boss
 	{
-		szTargetName = "spawn_nihilanth";
+		TargetNames = { "spawn_nihilanth", "crystal1", "crystal2", "crystal3" };
+		BaseHealths = { int(g_EngineFuncs.CVarGetFloat( "sk_nihilanth_health" )), 1000, 1000, 1000 };
+		
 	}
-	/*else if( g_Engine.mapname == "cracklife_c15" )
+	else if( g_Engine.mapname == "cracklife_c15" ) // Gonarch
 	{
-		szTargetName = "monster_bigmomma";
-	}*/
+		TargetNames = { "big_momma", "goose3", "goose2", "goose1c", "goose7", "goose6", "goose7b", "goose11", "goose11b", "goose13" };
+		BaseHealths = { 300, 200, 200, 200, 300, 300, 300, 250, 250, 100 };
+	}
+	
+	// Do nothing if theres no targetname
+	if( TargetNames.length() < 1 || TargetNames.length() != BaseHealths.length() ) return;
+	
+	for( uint i = 0; i < TargetNames.length(); i++ )
+	{
 
-	EHandle hTarget = EHandle( GetEntityPointer( szTargetName ) ); // Get monster pointer
+		EHandle hTarget = EHandle( GetEntityPointer( TargetNames[i] ) ); // Get monster pointer
 
-	// Trashed pointer, shutting down!
-	if ( !hTarget.IsValid() )
-		return;
+		// Trashed pointer, shutting down!
+		if ( !hTarget.IsValid() )
+			continue;
 
-	uint iSkill = Math.clamp( 1, 3, int( g_EngineFuncs.CVarGetFloat( "skill" ) ) ); // Get current skill level and ensure this is between 1 and 3
+		// No health key, ignore
+		/*if( int( hTarget.GetEntity().pev.health ) < 1 )
+			continue;*/
 
-	//uint iCurNpcHlth = int( hTarget.GetEntity().pev.health ); // Get monster health
-	uint iCurNpcHlth = int( g_EngineFuncs.CVarGetFloat( "sk_nihilanth_health" ) );
+		uint iSkill = Math.clamp( 1, 3, int( g_EngineFuncs.CVarGetFloat( "skill" ) ) ); // Get current skill level and ensure this is between 1 and 3
 
-	// NewHealth = CurrentNPCHealth x ( Current player count x Server skill level )
-	uint iNewHealth = iCurNpcHlth * ( iCurrPlrs * iSkill );
+		uint iCurNpcHlth = BaseHealths[i];
 
-	//hTarget.GetEntity().pev.max_health = iNewHealth; 
-	hTarget.GetEntity().pev.health = iNewHealth;
+		// NewHealth = CurrentNPCHealth x ( ( Current player count / 2 ) x Server skill level )
+		uint iNewHealth = iCurNpcHlth * ( int( Math.Floor( iCurrPlrs / 2 ) ) * iSkill );
 
-	//g_PlayerFuncs.ClientPrintAll( HUD_PRINTNOTIFY, "DEBUG: " + szTargetName + " health has been set to " + iNewHealth + " for " + iCurrPlrs + " players.\n" );
+		hTarget.GetEntity().pev.health = iNewHealth;
+		if( int( hTarget.GetEntity().pev.max_health ) > 1 )
+			hTarget.GetEntity().pev.max_health = iNewHealth;
+
+		//g_PlayerFuncs.ClientPrintAll( HUD_PRINTNOTIFY, "DEBUG: " + TargetNames[i] + " health has been set to " + iNewHealth + " for " + iCurrPlrs + " players.\n" );
+	
+	}
 }
 
 CBaseEntity@ GetEntityPointer( string szTargetname )
