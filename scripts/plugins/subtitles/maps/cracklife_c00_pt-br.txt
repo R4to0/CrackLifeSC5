@@ -25,7 +25,7 @@ wav4|0.0|5.567|Ja que vomitar no trem faz as pessoas gritarem\nem voce e ficarem
 wav4|5.670|0.959|Sem comer.
 wav4|6.678|3.038|E nem pense em fumar, ou beber.
 
-wav5|0.189|5.562|De qualquer forma, ja que quem trabalha aqui e um\nbando debando de pretos retardados, nos fizemos uma regra que diz:
+wav5|0.189|5.562|De qualquer forma, ja que quem trabalha aqui e um\nbando de pretos retardados, nos fizemos uma regra que diz:
 wav5|5.781|1.764|Nao va para fora da janela.
 wav5|7.595|4.326|Dezenove pessoas por ano morrem fazendo isso,\ne ainda estamos contando.
 
