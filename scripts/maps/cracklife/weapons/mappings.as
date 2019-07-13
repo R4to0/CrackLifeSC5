@@ -26,6 +26,7 @@ array<ItemMapping@> g_ItemMappings =
 	ItemMapping( "ammo_9mmAR",				CLMP5::g_AmmoName ),
 	ItemMapping( "ammo_9mmbox",				CLMP5::g_AmmoName ),
 	ItemMapping( "ammo_9mmclip",			CLMP5::g_AmmoName ),
+	ItemMapping( "ammo_glockclip",			CLMP5::g_AmmoName ),
 	ItemMapping( "ammo_uziclip",			CLMP5::g_AmmoName ),
 	ItemMapping( "ammo_mp5grenades",		CLMP5::g_SecAmmoName ),
 	ItemMapping( "ammo_ARgrenades",			CLMP5::g_SecAmmoName )

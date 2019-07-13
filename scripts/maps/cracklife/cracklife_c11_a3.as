@@ -5,11 +5,15 @@
 *  -w00tguy
 */
 
+// HLSP Stuff
 #include "../point_checkpoint"
 
 // Crack-Life Stuff
 #include "weapons/weapons"
 #include "weapons/mappings"
+
+// Survival
+#include "survmode"
 
 void MapEnded( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
 {
@@ -37,7 +41,8 @@ void MapInit()
 
 	// Map support is enabled here by default.
 	// So you don't have to add "mp_survival_supported 1" to the map config
-	g_SurvivalMode.EnableMapSupport();
+	if( ShouldRunSurvivalMode( g_Engine.mapname ) )
+		g_SurvivalMode.EnableMapSupport();
 }
 
 
