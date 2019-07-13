@@ -2035,28 +2035,28 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "minlight" "0.1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-208 904 -1656"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "minlight" "0.1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-224 904 -1656"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "minlight" "0.1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-240 904 -1656"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "minlight" "0.1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-380 904 -1656"
@@ -2426,7 +2426,7 @@
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "minlight" "0.1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "780 288 -1660"

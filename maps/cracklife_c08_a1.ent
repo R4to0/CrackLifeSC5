@@ -2222,7 +2222,7 @@
 "angles" "0 0 0"
 "delay" "23"
 "spawnflags" "1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-492 -1396 -716"
@@ -2230,7 +2230,7 @@
 "angles" "0 0 0"
 "delay" "23"
 "spawnflags" "1"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-532 -1356 -716"

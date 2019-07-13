@@ -6659,7 +6659,7 @@
 "origin" "-264 1520 16"
 "rendercolor" "0 0 0"
 "angles" "0 38 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "model" "*249"

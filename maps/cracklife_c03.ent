@@ -3163,7 +3163,7 @@
 }
 {
 "origin" "1162 -893 -217"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1520 -773 224"
@@ -8044,12 +8044,12 @@
 {
 "origin" "247 871 100"
 "angles" "0 239 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "246 903 100"
 "angles" "0 29 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "152 958 94"
@@ -9283,12 +9283,12 @@
 {
 "origin" "95 -2350 -533"
 "angles" "0 327 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "95 -2318 -533"
 "angles" "0 103 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "113 -2221 -525"
@@ -13808,12 +13808,12 @@
 }
 {
 "origin" "-226 -1129 -543"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-194 -1129 -543"
 "angles" "0 57 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1876 -614 -574"
@@ -14701,12 +14701,12 @@
 {
 "origin" "1376 -806 -564"
 "angles" "0 289 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1412 -806 -564"
 "angles" "0 59 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1906 -744 -484"
@@ -14731,12 +14731,12 @@
 }
 {
 "origin" "1776 -218 -588"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1815 -216 -588"
 "angles" "0 64 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "1263 -15 -547"
@@ -17181,12 +17181,12 @@
 }
 {
 "origin" "-1491 -1337 27"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-1476 -1367 27"
 "angles" "0 82 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-1435 -1344 49"
@@ -17215,7 +17215,7 @@
 }
 {
 "origin" "-2081 -1501 103"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-2124 -1530 102"
@@ -17348,12 +17348,12 @@
 }
 {
 "origin" "-2931 -1551 19"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-2829 -1533 19"
 "angles" "0 233 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-2891 -1627 19"

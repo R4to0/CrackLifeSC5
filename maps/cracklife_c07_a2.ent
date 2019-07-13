@@ -8262,13 +8262,13 @@
 "origin" "-2120 1924 -620"
 "rendercolor" "0 0 0"
 "angles" "0 334 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-2152 1884 -620"
 "rendercolor" "0 0 0"
 "angles" "0 241 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-832 2276 -628"
@@ -8925,7 +8925,7 @@
 {
 "origin" "-2118 1851 -609"
 "angles" "0 233 0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-2180 1757 -609"

@@ -6849,13 +6849,13 @@
 "origin" "-1227 -3024 -1639"
 "rendercolor" "0 0 0"
 "angles" "0 40 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-1227 -2991 -1639"
 "rendercolor" "0 0 0"
 "angles" "0 40 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "-1386 -2964 -1639"

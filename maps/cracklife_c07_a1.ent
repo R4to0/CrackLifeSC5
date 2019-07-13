@@ -1927,7 +1927,7 @@
 "origin" "2970 -722 -1767"
 "rendercolor" "0 0 0"
 "angles" "0 233 0"
-"classname" "ammo_9mmclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "2908 -816 -1767"

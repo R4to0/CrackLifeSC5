@@ -8618,7 +8618,7 @@
 "origin" "-1376 -1920 -1024"
 "angles" "0 0 0"
 "delay" "0"
-"classname" "ammo_glockclip"
+"classname" "ammo_clmp5"
 }
 {
 "origin" "976 928 -488"
