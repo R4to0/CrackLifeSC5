@@ -4254,7 +4254,7 @@
 }
 {
 "origin" "-171 -528 1812"
-"message" "cracklife/media/Half-Life10.mp3"
+"message" "cracklife/media/half-life10.mp3"
 "targetname" "akirasong"
 "volume" "10"
 "spawnflags" "1"

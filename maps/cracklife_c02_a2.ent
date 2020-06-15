@@ -8582,7 +8582,7 @@
 {
 "origin" "1667 -2955 1240"
 "volume" "10"
-"message" "cracklife/media/Half-Life10.mp3"
+"message" "cracklife/media/half-life10.mp3"
 "targetname" "crabmusic"
 "spawnflags" "1"
 "classname" "ambient_music"
