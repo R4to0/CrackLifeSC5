@@ -531,14 +531,15 @@ class CCLGrenade : ScriptBaseMonsterEntity
 				smoke.WriteByte( int( ( self.pev.dmg - 50 ) * 0.80f ) ); // scale * 10
 				smoke.WriteByte( 12 ); // framerate
 			smoke.End();
+		}
+
+		g_EntityFuncs.Remove( self );
 	}
-	g_EntityFuncs.Remove( self );
-}
 
 	void ExplodeTouch( CBaseEntity@ pOther )
 	{
 		TraceResult tr;
-		Vector		vecSpot;// trace starts here!
+		Vector		vecSpot; // trace starts here!
 
 		@self.pev.enemy = @pOther.edict();
 
