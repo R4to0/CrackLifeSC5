@@ -15,6 +15,11 @@
 // Survival
 #include "survmode"
 
+// Crack-Life mode.
+// True: Original
+// False: Campaign Mode
+const bool g_bCrackLifeMode = true;
+
 void MapEnded( CBaseEntity@ pActivator, CBaseEntity@ pCaller, USE_TYPE useType, float flValue )
 {
 	if ( g_SurvivalMode.IsEnabled() )
