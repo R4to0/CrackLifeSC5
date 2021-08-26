@@ -9,6 +9,11 @@
 // Survival
 #include "survmode"
 
+// Crack-Life mode.
+// True: Original
+// False: Campaign Mode
+const bool g_bCrackLifeMode = true;
+
 void MapInit()
 {
 	// HLSP Stuff

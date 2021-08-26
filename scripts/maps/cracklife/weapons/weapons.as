@@ -6,11 +6,6 @@
 #include "weapon_clhornetgun"
 #include "weapon_clgauss"
 
-// Crack-Life mode.
-// True: Original
-// False: Campaign Mode
-const bool g_bCrackLifeMode = true;
-
 // Weapon behaviour/mode (bIsMultiplayer function)
 // Like the singleplayer/multiplayer differences in vanilla HL
 // True: Multiplayer
