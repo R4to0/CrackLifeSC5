@@ -1982,7 +1982,6 @@
 {
 "origin" "208 416 -336"
 "angles" "0 0 0"
-"leveldead_loadvote" "9"
 "targetname" "leveldead_mm2"
 "leveldead_fade" "3.5"
 "leveldead_hurt" "0"
@@ -2988,14 +2987,6 @@
 "angles" "0 0 0"
 "spawnflags" "1"
 "classname" "path_corner"
-}
-{
-"origin" "228 460 -352"
-"angles" "0 0 0"
-"targetname" "leveldead_loadvote"
-"m_iszScriptFunctionName" "MapEnded"
-"m_iMode" "1"
-"classname" "trigger_script"
 }
 {
 "origin" "284 -112 -236"
