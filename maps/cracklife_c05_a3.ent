@@ -714,6 +714,7 @@
 {
 "model" "*82"
 "origin" "599 561 -1521"
+"use_type" "2"
 "target" "pipedoor2"
 "startdirection" "Forward"
 "rendercolor" "255 255 255"
@@ -727,6 +728,10 @@
 {
 "model" "*83"
 "model_center" "505 593 -1698"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "light_origin" "pipelighttarget"
 "explosion" "1"
 "weapon" "1"
@@ -2229,6 +2234,7 @@
 }
 {
 "model" "*141"
+"use_type" "3"
 "targetname" "startmap_button"
 "angles" "0 0 0"
 "rendercolor" "255 255 255"
@@ -2281,6 +2287,10 @@
 }
 {
 "model" "*148"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "targetname" "startmap_door"
 "health" "1"
 "stopsnd" "6"
@@ -2716,6 +2726,7 @@
 {
 "model" "*154"
 "origin" "-1848 115 1634"
+"use_type" "3"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "wait" "3"
@@ -2728,6 +2739,7 @@
 {
 "model" "*155"
 "origin" "-1188 822 1426"
+"use_type" "3"
 "rendercolor" "0 0 0"
 "angles" "0 0 0"
 "wait" "3"
@@ -2739,6 +2751,10 @@
 }
 {
 "model" "*156"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -2983,7 +2999,10 @@
 }
 {
 "model" "*162"
-"health" "1"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -3026,6 +3045,10 @@
 }
 {
 "model" "*166"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "health" "1"
 "explosion" "1"
 "weapon" "1"
@@ -3122,6 +3145,11 @@
 {
 "model" "*175"
 "origin" "2446 -571 -1800"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
+"m_iOpenFlags" "2"
 "health" "1"
 "explosion" "1"
 "weapon" "1"
@@ -3132,9 +3160,9 @@
 "_minlight" ".06"
 "distance" "75"
 "dmg" "5000"
-"wait" "4"
+"wait" "-1"
 "speed" "65"
-"spawnflags" "4448"
+"spawnflags" "608"
 "classname" "func_door_rotating"
 }
 {
@@ -3230,6 +3258,10 @@
 }
 {
 "model" "*182"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3243,6 +3275,10 @@
 }
 {
 "model" "*183"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3256,6 +3292,10 @@
 }
 {
 "model" "*184"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3278,6 +3318,10 @@
 }
 {
 "model" "*186"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3291,6 +3335,10 @@
 }
 {
 "model" "*187"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "WaveHeight" "3.2"
 "skin" "-3"
@@ -3305,6 +3353,10 @@
 }
 {
 "model" "*188"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3318,6 +3370,10 @@
 }
 {
 "model" "*189"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3331,6 +3387,10 @@
 }
 {
 "model" "*190"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"
@@ -3344,6 +3404,10 @@
 }
 {
 "model" "*191"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendercolor" "0 0 0"
 "skin" "-3"
 "explosion" "1"

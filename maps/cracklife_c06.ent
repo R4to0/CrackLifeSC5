@@ -40,6 +40,10 @@
 }
 {
 "model" "*5"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "angles" "0 0 0"
 "volume" "1"
 "stopsnd" "1"
@@ -58,6 +62,10 @@
 {
 "model" "*6"
 "origin" "-728 148 144"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "movesnd" "9"
 "explosion" "1"
 "weapon" "1"
@@ -74,6 +82,10 @@
 {
 "model" "*7"
 "origin" "-728 236 144"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "movesnd" "9"
 "explosion" "1"
 "weapon" "1"
@@ -111,6 +123,10 @@
 {
 "model" "*10"
 "origin" "-348 -307 107"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -647,6 +663,10 @@
 {
 "model" "*68"
 "origin" "1264 -796 40"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "dmg" "1000"
 "explosion" "1"
 "weapon" "1"
@@ -665,6 +685,10 @@
 {
 "model" "*69"
 "origin" "896 -756 40"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "dmg" "1000"
 "explosion" "1"
 "weapon" "1"
@@ -764,6 +788,10 @@
 }
 {
 "model" "*86"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -972,6 +1000,10 @@
 "model" "*105"
 "origin" "-1216 -16 88"
 "speed" "100"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -1206,6 +1238,10 @@
 }
 {
 "model" "*135"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -1224,6 +1260,10 @@
 }
 {
 "model" "*136"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "health" "1"
 "explosion" "1"
 "weapon" "1"
@@ -1244,6 +1284,10 @@
 {
 "model" "*137"
 "origin" "-528 1812 80"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "movesnd" "9"
 "explosion" "1"
 "weapon" "1"
@@ -1406,6 +1450,8 @@
 }
 {
 "origin" "0 -304 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "track03"
 "targetname" "track02"
@@ -1414,6 +1460,8 @@
 }
 {
 "origin" "1024 -64 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks04"
 "targetname" "tracks03"
@@ -1421,6 +1469,8 @@
 }
 {
 "origin" "0 -16 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "targetname" "track03"
 "classname" "path_track"
@@ -1735,6 +1785,8 @@
 }
 {
 "origin" "896 0 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks03"
 "targetname" "tracks02"
@@ -1917,6 +1969,8 @@
 }
 {
 "origin" "1088 -192 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks05"
 "targetname" "tracks04"
@@ -1924,6 +1978,8 @@
 }
 {
 "origin" "1088 -592 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks06"
 "targetname" "tracks05"
@@ -1933,6 +1989,8 @@
 }
 {
 "origin" "1088 -1472 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks07"
 "targetname" "tracks06"
@@ -1940,6 +1998,8 @@
 }
 {
 "origin" "1152 -1600 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks08"
 "targetname" "tracks07"
@@ -1947,6 +2007,8 @@
 }
 {
 "origin" "1280 -1664 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks09"
 "targetname" "tracks08"
@@ -1954,6 +2016,8 @@
 }
 {
 "origin" "2368 -1664 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks10"
 "targetname" "tracks09"
@@ -1973,6 +2037,8 @@
 }
 {
 "origin" "2496 -1728 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks11"
 "targetname" "tracks10"
@@ -1980,6 +2046,8 @@
 }
 {
 "origin" "2560 -1856 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks12"
 "targetname" "tracks11"
@@ -1987,6 +2055,8 @@
 }
 {
 "origin" "2560 -2112 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "targetname" "tracks12"
 "classname" "path_track"
@@ -2926,6 +2996,8 @@
 }
 {
 "origin" "-16 0 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks02"
 "targetname" "tracks01"
@@ -2933,6 +3005,8 @@
 }
 {
 "origin" "288 0 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "tracks02"
 "targetname" "tracks01"
@@ -4174,6 +4248,8 @@
 }
 {
 "origin" "0 -792 0"
+"maxspeed" "-1"
+"newspeed" "-1"
 "angles" "0 0 0"
 "target" "track02"
 "targetname" "track01"
@@ -4775,6 +4851,11 @@
 {
 "model" "*158"
 "origin" "645 -1508 642"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
+"m_iOpenFlags" "2"
 "health" "1"
 "explosion" "1"
 "weapon" "1"
@@ -4786,7 +4867,7 @@
 "dmg" "5000"
 "wait" "4"
 "speed" "65"
-"spawnflags" "4449"
+"spawnflags" "4705"
 "classname" "func_door_rotating"
 }
 {
@@ -4849,6 +4930,10 @@
 }
 {
 "model" "*163"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -4880,6 +4965,10 @@
 }
 {
 "model" "*166"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -6105,6 +6194,10 @@
 }
 {
 "model" "*211"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
@@ -6253,6 +6346,10 @@
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "angles" "0 0 0"
 "distance" "90"
 "healthvalue" "0"
@@ -6414,6 +6511,10 @@
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "angles" "90 0 0"
 "wait" "-1"
 "skin" "-3"
@@ -6431,6 +6532,10 @@
 "explosion" "1"
 "weapon" "1"
 "m_iObeyTriggerMode" "2"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "angles" "90 0 0"
 "healthvalue" "0"
 "stopsnd" "6"
@@ -9705,6 +9810,10 @@
 }
 {
 "model" "*312"
+"fireonclosed_triggerstate" "2"
+"fireonopened_triggerstate" "2"
+"fireonclosing_triggerstate" "2"
+"fireonopening_triggerstate" "2"
 "rendermode" "2"
 "skin" "-3"
 "explosion" "1"
